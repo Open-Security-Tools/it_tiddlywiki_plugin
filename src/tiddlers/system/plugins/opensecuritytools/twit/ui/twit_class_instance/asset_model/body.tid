@@ -1,0 +1,11 @@
+created: 20220721210144609
+modified: 20220726091427632
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset_model/body
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[has[twit_class]filter<is_physical>asset_model<currentTiddler>sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/row}}
+</$list>
+</div>

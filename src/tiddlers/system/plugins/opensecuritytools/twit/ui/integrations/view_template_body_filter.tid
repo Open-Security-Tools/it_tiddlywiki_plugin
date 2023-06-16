@@ -1,0 +1,9 @@
+created: 20230604154859768
+list-before: $:/config/ViewTemplateBodyFilters/hide-body
+modified: 20230605070059327
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/plugins/opensecuritytools/twit/ui/integrations/view_template_body_filter
+type: text/vnd.tiddlywiki
+
+[prefix[$:/plugins/opensecuritytools/twit/macros/]] +[!is[image]limit[1]then[$:/core/ui/ViewTemplate/body/code]]
+[prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]then[$:/plugins/opensecuritytools/twit/ui/twit_class/body_view]]

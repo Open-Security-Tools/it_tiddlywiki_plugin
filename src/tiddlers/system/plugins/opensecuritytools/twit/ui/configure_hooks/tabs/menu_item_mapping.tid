@@ -1,0 +1,36 @@
+caption: Menu Item Mapping
+created: 20230531211300459
+creator: paul
+modified: 20230604171450441
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/menu_item_mapping
+type: text/vnd.tiddlywiki
+
+\define actionPath() $:/plugins/opensecuritytools/twit/defs/hooks/
+<style>
+input.edit-action-field {
+  width: 100%;
+}
+</style>
+
+<table style="width: 100%;">
+<tr>
+<th>Hook</th>
+<th>Menu Item</th>
+<th>Error?</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix<actionPath>sort[]]">
+<$list filter="[all[current]removeprefix<actionPath>]" variable="name">
+<tr>
+<td><$link><<name>></$link></td>
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/configure_hooks/helpers/select_menu_item}}
+</td>
+<td>
+<$checkbox field="error" checked="yes" unchecked="" default=""></$checkbox>
+</td>
+</tr>
+</$list>
+</$list>
+</table>

@@ -1,0 +1,20 @@
+caption: Menu Item Order
+created: 20230510200647833
+creator: paul
+modified: 20230604171259264
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/menu_item_order
+type: text/vnd.tiddlywiki
+
+\define actionPath() $:/plugins/opensecuritytools/twit/defs/hooks/
+<$button>
+Populate Actions
+<$action-listops 
+	$tiddler="$:/plugins/opensecuritytools/twit/internal_config"
+	$field="hooks_actions"
+	$subfilter="[all[shadows+tiddlers]prefix<actionPath>removeprefix<actionPath>sortby{$:/plugins/opensecuritytools/twit/internal_config!!hooks_actions}]"
+/>
+</$button>
+
+<<list-links-draggable tiddler:"$:/plugins/opensecuritytools/twit/internal_config" field:"hooks_actions">>

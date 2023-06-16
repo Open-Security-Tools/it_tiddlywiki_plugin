@@ -1,0 +1,19 @@
+created: 20230604153210990
+modified: 20230605071128372
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/paths
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define pathTwit() $:/plugins/opensecuritytools/twit/
+
+\define pathUI() $(pathTwit)$ui/
+
+\define pathUITwitClassInstance() $(pathUI)$twit_class_instance/
+
+\define pathTwitClassDef() $(pathTwit)$defs/twit_class/
+
+\define pathTwitClassTypeDef() $(pathTwit)$defs/twit_class_type/
+
+\define pathTwitHooks() $(pathTwit)$defs/hooks/

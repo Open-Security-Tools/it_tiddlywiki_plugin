@@ -1,0 +1,18 @@
+created: 20230509201913916
+modified: 20230510220228743
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_proximity
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+<i class="far fa-clock"/> Impact now! (0)
+<$action-setfield proximity="0"/>
+</$button>
+<$button class="tc-btn-invisible">
+<i class="far fa-clock"/> Impact any day (1)
+<$action-setfield proximity="1"/>
+</$button>
+<$button class="tc-btn-invisible">
+<i class="far fa-clock"/> Impact in a while (2)
+<$action-setfield proximity="2"/>
+</$button>

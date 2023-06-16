@@ -1,0 +1,8 @@
+created: 20230510213439074
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/hit_issue}}
+modified: 20230510213830740
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_can_be_hit
+type: text/vnd.tiddlywiki
+

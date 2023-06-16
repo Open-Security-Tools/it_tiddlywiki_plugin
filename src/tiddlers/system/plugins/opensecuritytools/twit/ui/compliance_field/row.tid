@@ -1,0 +1,34 @@
+created: 20220806204129265
+modified: 20220807145316043
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/row
+type: text/vnd.tiddlywiki
+
+\define compliance_actions()
+<$list filter="[all[current]twit_compliance_field_actions:$(complianceField)$[]]" variable=action>
+<<action>>
+</$list>
+\end
+\define compliance_status()
+<$list filter="[all[current]twit_compliance_field_status:$(complianceField)$[]]" variable=status>
+<<status>>
+</$list>
+\end
+<div class="tc-menu-list-item">
+<div class="py-todo">
+<label class="">
+<i class="fas fa-balance-scale"/>
+<$list filter="[all[current]compare:string:eq<complianceParent>]" variable=ignore03>
+<$view field=<<complianceField>>/>
+</$list>
+<$list filter="[all[current]compare:string:ne<complianceParent>]" variable=ignore03>
+<$link><$view field=<<complianceField>>/></$link>
+</$list>
+</label>
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btns}}
+<<compliance_actions2>>
+<span class="py-todo-actions">
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btn_status}}
+</span>
+</div>
+</div>

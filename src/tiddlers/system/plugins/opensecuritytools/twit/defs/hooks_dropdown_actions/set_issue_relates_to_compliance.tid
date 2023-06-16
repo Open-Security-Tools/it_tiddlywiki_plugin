@@ -1,0 +1,10 @@
+created: 20230510194814319
+modified: 20230510195035077
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_relates_to_compliance
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
++<i class="far fa-check-square"/> Relates to Compliance
+<$action-setfield relates_to_compliance="yes"/>
+</$button>

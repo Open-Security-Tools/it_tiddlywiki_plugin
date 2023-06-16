@@ -1,0 +1,18 @@
+action_name: Delete Compliance Assertion
+created: 20220807094248053
+modified: 20220807102224891
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/actions/delete
+type: text/vnd.tiddlywiki
+
+\define delete_actions()
+<$action-confirm $message="Do you wish to delete compliance: $(complianceTitle)$?">
+<$action-deletefield $field="$(complianceField)$"/>
+<$action-deletefield $field="$(complianceField)$_comment"/>
+<$action-deletefield $field="$(complianceField)$_assessment"/>
+<$action-deletefield $field="$(complianceField)$_period"/>
+<$action-deletefield $field="$(complianceField)$_reviewed"/>
+</$action-confirm>
+\end
+<$list filter="[all[current]get<complianceField>]" variable=complianceTitle>
+<<delete_actions>>
+</$list>

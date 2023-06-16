@@ -1,0 +1,8 @@
+created: 20220721204921295
+list-before: $:/config/FieldEditorFilters/default
+modified: 20220721204931712
+tags: $:/tags/FieldEditorFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/hooks/asset_owner
+type: text/vnd.tiddlywiki
+
+[regexp[asset_owner$]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/asset_owner]]

@@ -1,0 +1,36 @@
+created: 20220726083927761
+modified: 20220726132135665
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_model
+type: text/vnd.tiddlywiki
+
+\define droppable-set-asset-model-actions()
+<$list filter="[title<actionTiddler>twit_class[asset_model]]" variable=ignore>
+<$action-setfield asset_model=<<actionTiddler>>/>
+</$list>
+\end
+\define tooltip() Asset Model
+\define asset_model_icon()
+{{$:/plugins/opensecuritytools/twit/defs/twit_class/asset_model||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+\end
+<$droppable actions=<<droppable-set-asset-model-actions>>>
+<$list filter="[all[current]get[asset_model]]">
+<$button
+	class="py-btn btn-small"
+	tooltip=<<tooltip>>
+>
+<<asset_model_icon>>
+<$view field=manufacturer/> - <$view field=model_number/>
+<$action-navigate $to=<<currentTiddler>>/>
+</$button>
+</$list>
+<$list filter="[all[current]!has[asset_model]]" variable=ignore>
+<$button
+	class="py-btn btn-small py-disabled"
+	tooltip=<<tooltip>>
+>
+<<asset_model_icon>>
+?
+</$button>
+</$list>
+</$droppable>

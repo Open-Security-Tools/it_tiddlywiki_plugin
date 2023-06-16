@@ -1,0 +1,16 @@
+can_connect: yes
+can_host: yes
+class_name: Server
+class_name_plural: Servers
+created: 20210926214004859
+family: fas
+glyph: fa-server
+has_operating_system: yes
+is_host: yes
+modified: 20220808070620836
+physical_class: infrastructure
+tag_colour: hsl(100, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/server
+type: physical
+

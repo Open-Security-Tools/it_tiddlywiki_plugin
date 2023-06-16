@@ -1,0 +1,20 @@
+created: 20230605103010858
+modified: 20230605103637793
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/list_of_connected_items
+type: text/vnd.tiddlywiki
+
+\define connectedItemsFilter() [all[current]get[nics]enlist-input[]] [all[current]get[nics]enlist-input[]get[ip_addresses]enlist-input[]] [all[current]get[ip_addresses]enlist-input[]]
+\define hasConnectedItemsFilter() $(connectedItemsFilter)$ +[first[]]
+\define sortedConnectedItemsFilter() $(connectedItemsFilter)$ +[sort[]]
+
+
+<$list filter=<<hasConnectedItemsFilter>> variable=ignore>
+Connected items:
+
+<div class="py-todos">
+<$list filter=<<sortedConnectedItemsFilter>> >
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>
+</$list>

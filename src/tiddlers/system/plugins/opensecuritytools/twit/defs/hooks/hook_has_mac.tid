@@ -1,0 +1,8 @@
+created: 20230530205302872
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/copy_mac}}
+modified: 20230601211725196
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_has_mac
+type: text/vnd.tiddlywiki
+

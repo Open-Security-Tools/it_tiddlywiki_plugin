@@ -1,0 +1,11 @@
+class_name: Development
+class_name_plural: Developments
+created: 20220720171512706
+family: fas
+glyph: fa-code-branch
+modified: 20220720172109520
+tag_colour: hsl(305, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/development
+type: contextual
+

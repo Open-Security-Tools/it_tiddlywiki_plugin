@@ -1,0 +1,13 @@
+created: 20220714203040900
+modified: 20230604164829825
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_external_links
+type: text/vnd.tiddlywiki
+
+<$list filter= "[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]removeprefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]] +[join[ ]]" variable="fn">
+<$list filter="[all[current]fields:include<fn>]" variable="fnn">
+<$list filter="[all[current]get<fnn>]" variable="fv">
+<$macrocall $name="local_uri_button" type=<<fnn>> uri=<<fv>>/>
+</$list>
+</$list>
+</$list>

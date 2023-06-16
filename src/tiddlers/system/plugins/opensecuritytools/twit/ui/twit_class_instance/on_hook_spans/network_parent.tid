@@ -1,0 +1,22 @@
+created: 20230530214116514
+modified: 20230601100839264
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/network_parent
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]twit_class[nic]]" variable="ignore">
+<$list filter="[all[current]listed[nics]first[]]">
+<$button class="py-btn py-small">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>
+</$list>
+<$list filter="[all[current]twit_class[ip_address]]" variable="ignore">
+<$list filter="[all[current]get[mac]listed[nics]first[]]">
+<$button class="py-btn py-small">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>
+</$list>

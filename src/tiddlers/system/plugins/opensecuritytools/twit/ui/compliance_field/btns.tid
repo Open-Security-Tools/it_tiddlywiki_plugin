@@ -1,0 +1,8 @@
+created: 20220806225939706
+modified: 20220807092009866
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/btns
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btn_assessment_due}}
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btn_comment}}

@@ -1,0 +1,15 @@
+created: 20230317081519558
+creator: paul
+modified: 20230510200611396
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/row_element_icons
+type: text/vnd.tiddlywiki
+
+\define isMissingActionDefinition() [addprefix<pathTwitHooks>unique[]!has[modified]]
+<$list filter="[all[current]twit_hooks[]filter<isMissingActionDefinition>]">
+!!{{!!title}}
+</$list>
+<$list filter="[all[current]twit_hooks[]sortby{$:/plugins/opensecuritytools/twit/internal_config!!hooks_row_items}addprefix<pathTwitHooks>get[row_element]unique[]]" variable="hook">
+<<hook>>
+</$list>

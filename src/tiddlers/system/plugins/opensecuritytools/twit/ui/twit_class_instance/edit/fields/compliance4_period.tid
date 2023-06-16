@@ -1,0 +1,7 @@
+created: 20220807152005959
+modified: 20220807152014067
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/compliance4_period
+type: text/vnd.tiddlywiki
+
+<$edit-text type=number field=compliance4_period/>

@@ -1,0 +1,7 @@
+created: 20220721201834269
+modified: 20220723083135542
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/target_version
+type: text/vnd.tiddlywiki
+
+<$edit-text size=10 field=target_version/>

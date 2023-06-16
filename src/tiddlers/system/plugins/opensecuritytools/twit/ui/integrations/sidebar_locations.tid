@@ -1,0 +1,10 @@
+caption: Locations
+created: 20220726132443432
+creator: paul
+modified: 20230604141407479
+modifier: paul
+tags: $:/tags/MoreSideBar
+title: $:/plugins/opensecuritytools/twit/ui/integrations/sidebar_locations
+type: text/vnd.tiddlywiki
+
+<$list filter="[twit_class[location]sort[]]" template="$:/core/ui/ListItemTemplate"/>

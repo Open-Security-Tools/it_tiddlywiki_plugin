@@ -1,0 +1,16 @@
+created: 20230509200846337
+modified: 20230510214358082
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_missing_resolution
+type: text/vnd.tiddlywiki
+
+\define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<$list filter="[all[shadows+tiddlers]prefix<resolutionPath>]" variable=resolutionTiddler>
+<$list filter="[title<resolutionTiddler>removeprefix<resolutionPath>]" variable=resolutionName>
+<$button class="tc-btn-invisible">
+<$transclude tiddler=<<resolutionTiddler>> field=icon/>
+Resolve as <$transclude tiddler=<<resolutionTiddler>> field=caption/>
+<$action-setfield resolution=<<resolutionName>>/>
+</$button>
+</$list>
+</$list>

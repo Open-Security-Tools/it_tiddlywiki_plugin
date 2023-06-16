@@ -1,0 +1,23 @@
+created: 20220817201610660
+modified: 20230604150737777
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_page_icons_pills
+type: text/css
+
+.uris_page_icon {
+  color: grey !important;
+	font-size: 0.80em;
+}
+.twit-pill-container { 
+	position: relative;
+	color: black;
+}
+
+.twit-pill-container .twit-pill { 
+	position: absolute; 
+	top: -4px; 
+	right: -4px; 
+	font-size: 0.75em;
+	color: #00FF00;
+	opacity: 0.75;
+}

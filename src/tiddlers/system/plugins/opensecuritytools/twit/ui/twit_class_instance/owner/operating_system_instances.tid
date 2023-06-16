@@ -1,0 +1,12 @@
+caption: Operating System Instances
+created: 20220727073641563
+modified: 20220807204638240
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/owner/operating_system_instances
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[has[twit_class]filter<is_physical>asset_owner<currentTiddler>filter<has_operating_system>] [has[twit_class]filter<is_physical>asset_owner<currentTiddler>twit_hosted_children[]filter<has_operating_system>] +[sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/row}}
+</$list>
+</div>

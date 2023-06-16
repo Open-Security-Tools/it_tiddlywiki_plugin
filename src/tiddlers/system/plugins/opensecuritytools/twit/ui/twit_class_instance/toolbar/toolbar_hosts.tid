@@ -1,0 +1,69 @@
+created: 20220720153239373
+modified: 20230604164842757
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_hosts
+type: text/vnd.tiddlywiki
+
+\define add-this-tiddler() [[$(actionTiddler)$]filter<is_hosted>]+[putfirst[]]
+\define droppable-hosts-actions()
+<$action-listops $tiddler=<<currentTiddler>> $field='hosts'  $subfilter=<<add-this-tiddler>>/>
+\end
+
+\define btn_none()
+<$button
+   class="py-btn btn-small py-disabled"
+   tooltip="Doesn't host anything yet!"
+>
+<i class=<<icon_class>>/>
+0
+</$button>
+\end
+
+\define btn_one()
+<$button
+   class="py-btn btn-small"
+   tooltip="Entity hosted by this item"
+>
+<i class=<<icon_class>>/>
+<$list filter="[list[!!hosts]first[]]">
+<<currentTiddler>>
+<$action-navigate $to=<<currentTiddler>>/>
+</$list>
+</$button>
+\end
+
+\define btn_many()
+<$button
+   class="py-btn btn-small"
+   popup=<<popupTiddler>>
+   tooltip="<<host_count>> entities hosted by this item"
+>
+<i class=<<icon_class>>/>
+<<host_count>>
+<i class="fas fa-caret-down"/>
+</$button>
+\end
+
+<$vars popupTiddler=<<qualify "$:/state/twit/hosts-dropdown">> icon_class="fas fa-chevron-circle-down">
+<$droppable actions=<<droppable-hosts-actions>>>
+<$list filter="[list[!!hosts]count[]]" variable=host_count>
+<$list filter="[title<host_count>compare:integer:eq[0]]" variable=ignore>
+<<btn_none>>
+</$list>
+<$list filter="[title<host_count>compare:integer:eq[1]]" variable=ignore>
+<<btn_one>>
+</$list>
+<$list filter="[title<host_count>compare:integer:gt[1]]" variable=ignore>
+<<btn_many>>
+</$list>
+</$list>
+</$droppable>
+
+<$list filter="[list[!!hosts]first[]]" variable=ignore>
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down apy-drop-down">
+<$list filter="[list[!!hosts]]">
+<$link>{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/></$link>
+</$list>
+  </$reveal>
+</$list>
+</$vars>

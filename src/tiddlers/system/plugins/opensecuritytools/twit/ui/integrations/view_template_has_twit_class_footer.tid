@@ -1,0 +1,22 @@
+created: 20210523210219240
+creator: paul
+modified: 20230604165802411
+modifier: paul
+tags: $:/tags/ViewTemplate
+title: $:/plugins/opensecuritytools/twit/ui/integrations/view_template_has_twit_class_footer
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[twit_class]]" variable=ignore>
+<$list filter="[all[current]twit_class[asset_model]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset_model/body}}
+</$list>
+
+<$list filter="[all[current]twit_class[operating_system]]" variable=ignore>
+<$transclude tiddler="$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/list_of_instances" mode=block/>
+</$list>
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/list_of_compliance_actions}}
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/list_of_related_issues}}
+
+</$list>

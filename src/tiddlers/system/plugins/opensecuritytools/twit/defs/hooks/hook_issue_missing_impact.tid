@@ -1,0 +1,9 @@
+created: 20230508203742658
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_impact}}
+error: yes
+modified: 20230531092721371
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_missing_impact
+type: text/vnd.tiddlywiki
+

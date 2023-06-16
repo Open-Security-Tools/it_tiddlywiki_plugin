@@ -1,0 +1,15 @@
+can_connect: yes
+can_host: 
+class_name: Printer
+class_name_plural: Printers
+created: 20211102084938847
+family: fas
+glyph: fa-print
+has_operating_system: yes
+modified: 20220721083824927
+physical_class: user_terminal
+tag_colour: hsl(20, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/printer
+type: physical
+

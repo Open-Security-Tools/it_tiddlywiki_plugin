@@ -1,0 +1,22 @@
+created: 20220722184441172
+creator: paul
+modified: 20220722213239869
+modifier: paul
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/os_integrity
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define _call_error(msg)
+<$tiddler tiddler="Welcome!">
+<<currentTiddler>>
+<transclude tiddler="$(on_error)$" mode="$(mode)$"/>
+</$tiddler>
+\end
+
+\define os_errors(on_error: "blank", on_success: "blank", mode: "inline")
+<$let on_error="$on_error$" mode="$mode$">
+<<_call_error "this is a fish">>
+</$let>
+\end

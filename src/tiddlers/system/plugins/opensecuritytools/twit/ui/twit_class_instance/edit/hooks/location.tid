@@ -1,0 +1,8 @@
+created: 20220721204626887
+list-before: $:/config/FieldEditorFilters/default
+modified: 20220721204637155
+tags: $:/tags/FieldEditorFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/hooks/location
+type: text/vnd.tiddlywiki
+
+[regexp[location$]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/location]]

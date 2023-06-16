@@ -1,0 +1,14 @@
+can_connect: yes
+class_name: Tablet
+class_name_plural: Tablets
+created: 20210926214158848
+family: fas
+glyph: fa-tablet
+has_operating_system: yes
+modified: 20220808070612766
+physical_class: user_terminal
+tag_colour: hsl(140, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/tablet
+type: physical
+

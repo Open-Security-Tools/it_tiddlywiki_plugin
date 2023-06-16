@@ -1,0 +1,17 @@
+created: 20230509205011501
+creator: paul
+modified: 20230604171653796
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_issues/helpers/select_icon
+type: text/vnd.tiddlywiki
+
+\define iconPath() $:/plugins/opensecuritytools/twit/images/
+\define iconOption() <option value="{{||$(dropdownIconName)$}}">$(friendlyIconName)$</option>
+<$select field="icon">
+<$list filter="[all[tiddlers+shadows]prefix<iconPath>]" variable="dropdownIconName">
+<$list filter="[title<dropdownIconName>removeprefix<iconPath>titlecase[]]" variable="friendlyIconName">
+<<iconOption>>
+</$list>
+</$list>
+</$select>

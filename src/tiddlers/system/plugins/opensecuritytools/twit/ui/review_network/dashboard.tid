@@ -1,0 +1,7 @@
+created: 20230530081023901
+modified: 20230604174412142
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/review_network/dashboard
+type: text/vnd.tiddlywiki
+
+<<tabs "[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/ui/review_network/tabs/]]" "$:/plugins/opensecuritytools/twit/ui/review_network/tabs/networks" "$:/state/twit/network_dashboard_tabs">>

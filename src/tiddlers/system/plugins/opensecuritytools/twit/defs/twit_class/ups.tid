@@ -1,0 +1,13 @@
+can_connect: no
+class_name: UPS
+class_name_plural: UPSs
+created: 20220714152653133
+family: fas
+glyph: fa-car-battery
+modified: 20220719104516660
+physical_class: infrastructure
+tag_colour: hsl(180, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/ups
+type: physical
+

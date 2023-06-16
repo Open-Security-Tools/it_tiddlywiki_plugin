@@ -1,0 +1,7 @@
+created: 20220719103939210
+modified: 20230604142309988
+tags: $:/tags/TiddlerColourFilter
+title: $:/plugins/opensecuritytools/twit/ui/integrations/tiddler_colour_has_twit_class_data_driven_background
+type: text/vnd.tiddlywiki
+
+[get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]get[tag_colour]]

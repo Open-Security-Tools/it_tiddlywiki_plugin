@@ -1,0 +1,11 @@
+class_name: Domain
+class_name_plural: Domains
+created: 20211120191633456
+family: fas
+glyph: fa-globe
+modified: 20220719104410858
+tag_colour: hsl(130, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/domain
+type: virtual
+

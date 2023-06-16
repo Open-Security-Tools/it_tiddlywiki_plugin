@@ -1,0 +1,15 @@
+created: 20220801073939985
+modified: 20220819072618084
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_label
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[asset_serial]else[Asset Label]]" variable=tooltip>
+<$button
+	class="py-btn btn-small"
+	tooltip=<<tooltip>>
+>
+<i class="fas fa-tag"/>
+#<$view field=twit_id/>
+</$button>
+</$list>

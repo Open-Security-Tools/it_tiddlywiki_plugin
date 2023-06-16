@@ -1,0 +1,45 @@
+created: 20211226225819624
+modified: 20230601104043625
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/filters
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define has_twit_action_errors() [twit_actions[]addprefix[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/]get[action_type]addprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]get[action_type_severity]compare:integer:eq[2]]
+
+\define has_twit_action_asset_errors() [twit_actions:asset[]addprefix[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/]get[action_type]addprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]get[action_type_severity]compare:integer:eq[2]]
+
+
+\define has_twit_action_warnings() [twit_actions[]addprefix[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/]get[action_type]addprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]get[action_type_severity]compare:integer:eq[1]]
+
+\define has_compliant_hosting() [twit_hosted_parents_inclusive[]get[asset_owner]compliance_tracking[yes]]
+
+\define has_operating_system() [get[twit_class]addprefix<pathTwitClassDef>has_operating_system[yes]]
+
+\define unrelated_tagging() [!twit_class[issue]tagging[]!has[twit_class]]
+
+\define debug_unrelated_tagging() [tagging[]]
+
+\define can_host() [get[twit_class]addprefix<pathTwitClassDef>can_host[yes]]
+
+\define is_hosted() [get[twit_class]addprefix<pathTwitClassDef>is_hosted[yes]]
+
+\define has_compliance() [fields:include[compliance1 compliance2 compliance3 compliance4]]
+
+\define is_physical() [get[twit_class]addprefix<pathTwitClassDef>type[physical]]
+
+\define is_physical_infrastructure() [get[twit_class]addprefix<pathTwitClassDef>type[physical]physical_class[infrastructure]]
+
+\define is_compliance_enabled() [get[asset_owner]compliance_tracking[yes]]
+
+\define is_physical_or_virtual() [get[twit_class]addprefix<pathTwitClassDef>type[physical]] [get[twit_class]addprefix<pathTwitClassDef>type[virtual]]
+
+\define attached_network_entities() [twit_class[network]tagging[]filter<is_physical_or_virtual>]
+
+\define can_connect() [get[twit_class]addprefix<pathTwitClassDef>can_connect[yes]]
+
+\define is_host() [get[twit_class]addprefix<pathTwitClassDef>is_host[yes]]
+
+\define is_compliance_asset() [get[asset_owner]compliance_tracking[yes]]
+

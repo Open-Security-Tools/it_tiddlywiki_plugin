@@ -1,0 +1,11 @@
+created: 20211211021946241
+modified: 20230604150823430
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_twit_toolbar_icon
+type: text/css
+
+i.twit_toolbar_icon {
+  color: #D0D0D0;
+	width: 32px;
+	max-height: 22px;
+}

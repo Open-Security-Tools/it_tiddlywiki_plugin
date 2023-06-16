@@ -1,0 +1,15 @@
+can_connect: yes
+can_host: 
+class_name: Scanner
+class_name_plural: Scanners
+created: 20211102085056492
+family: fas
+glyph: fa-eye
+has_operating_system: yes
+modified: 20220721083827900
+physical_class: user_terminal
+tag_colour: hsl(60, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/scanner
+type: physical
+

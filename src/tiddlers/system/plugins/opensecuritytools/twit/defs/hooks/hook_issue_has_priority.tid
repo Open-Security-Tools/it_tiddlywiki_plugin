@@ -1,0 +1,8 @@
+created: 20230510220546406
+dropdown_action: 
+modified: 20230510221129657
+row_element: {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_priority}}
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_has_priority
+type: text/vnd.tiddlywiki
+

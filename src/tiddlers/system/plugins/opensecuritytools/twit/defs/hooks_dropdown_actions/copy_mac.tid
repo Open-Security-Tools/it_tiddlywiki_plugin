@@ -1,0 +1,15 @@
+created: 20230601211522218
+modified: 20230601211709602
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/copy_mac
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[mac]]">
+<$button
+	class="tc-btn-invisible"
+	message="tm-copy-to-clipboard"
+	param=<<currentTiddler>>
+>
+<i class="far fa-copy"/> Copy <<currentTiddler>>
+</$button>
+</$list>

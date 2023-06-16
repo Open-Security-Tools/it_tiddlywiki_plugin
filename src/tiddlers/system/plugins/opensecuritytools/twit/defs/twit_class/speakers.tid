@@ -1,0 +1,12 @@
+class_name: Speaker
+class_name_plural: Speakers
+created: 20220730214830523
+family: fas
+glyph: fa-volume-up
+modified: 20220730214959433
+physical_class: infrastructure
+tag_colour: hsl(102, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/speakers
+type: physical
+

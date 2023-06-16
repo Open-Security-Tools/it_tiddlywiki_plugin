@@ -1,0 +1,12 @@
+caption: Has Errors
+created: 20220729165937720
+modified: 20230604141723966
+tags: $:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel
+title: $:/plugins/opensecuritytools/twit/ui/settings/errors
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[has[twit_class]filter<has_twit_action_errors>]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/has_actions/row}}
+</$list>
+</div>

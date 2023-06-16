@@ -1,0 +1,8 @@
+created: 20220806232520708
+modified: 20220806232528882
+status_colour: red
+status_name: Missing Assessment
+status_severity: 2
+title: $:/plugins/opensecuritytools/twit/defs/compliance_field_status/missing_assessment
+type: text/vnd.tiddlywiki
+

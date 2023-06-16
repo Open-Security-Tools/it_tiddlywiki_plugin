@@ -1,0 +1,10 @@
+created: 20230601104703109
+modified: 20230602215233536
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/add_network_parent
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+Add MAC or IPv4 linkage!
+<$action-navigate/>
+</$button>

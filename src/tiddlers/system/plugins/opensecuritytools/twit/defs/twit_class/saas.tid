@@ -1,0 +1,14 @@
+can_connect: no
+can_host: yes
+class_name: SaaS
+class_name_plural: SaaS
+created: 20220714151324300
+family: fas
+glyph: fa-handshake
+modified: 20220808070627308
+physical_class: infrastructure
+tag_colour: hsl(40, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/saas
+type: virtual
+

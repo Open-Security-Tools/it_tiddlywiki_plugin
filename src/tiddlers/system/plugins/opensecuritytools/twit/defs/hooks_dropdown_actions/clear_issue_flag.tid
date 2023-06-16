@@ -1,0 +1,10 @@
+created: 20230518110308411
+modified: 20230518110339654
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/clear_issue_flag
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+-<i class="fas fa-flag"/> Clear flag
+<$action-deletefield is_flagged/>
+</$button>
