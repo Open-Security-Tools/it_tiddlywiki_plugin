@@ -1,0 +1,17 @@
+created: 20230508215709513
+modified: 20230509201139204
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/reopen_issue
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+<i class="far fa-folder-open"/> Re-Open
+<$action-deletefield closed/>
+<$list filter="[all[current]get[reopened_count]else[0]add[1]]" variable=reopenedCount>
+<$action-setfield reopened_count=<<reopenedCount>>/>
+</$list>
+<$list filter="[all[current]get[repeated_hit_count]else[0]add[1]]" variable=newRepeatedHitCount>
+<$action-setfield repeated_hit_count=<<newRepeatedHitCount>>/>
+</$list>
+<$action-deletefield resolution/>
+</$button>

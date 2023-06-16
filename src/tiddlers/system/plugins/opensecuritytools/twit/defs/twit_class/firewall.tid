@@ -1,0 +1,16 @@
+can_connect: yes
+can_host: yes
+class_name: Firewall
+class_name_plural: Firewalls
+created: 20210926214039647
+family: fas
+glyph: fa-shield-alt
+has_operating_system: yes
+is_host: yes
+modified: 20220808070649024
+physical_class: infrastructure
+tag_colour: hsl(150, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/firewall
+type: physical
+

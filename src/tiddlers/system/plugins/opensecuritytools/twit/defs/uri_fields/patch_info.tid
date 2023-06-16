@@ -1,0 +1,12 @@
+background_colour: #d1ebf2
+created: 20220716214524683
+hue: 200
+icon_family: fas
+icon_glyph: fa-wrench
+modified: 20220718225512869
+name: Patch Info
+singular_name: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/uri_fields/patch_info
+type: physical
+

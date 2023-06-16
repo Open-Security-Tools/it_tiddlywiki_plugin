@@ -1,0 +1,30 @@
+created: 20220725185851086
+modified: 20230605072616394
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/contextual-class
+type: text/vnd.tiddlywiki
+
+<$set name=twit_class tiddler="$:/twit/explorer-state/contextual-twit-class">
+
+<<explorer_root_btn>><$button>
+<$list filter="[title[contextual]addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
+<$view field=title/>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+</$button>
+<$list filter="[title<twit_class>]">
+<<disabled_twit_class_button>>
+</$list>
+<hr/>
+
+<$list filter="[title<twit_class>addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]get[explore_view]]" variable=explore_view>
+<$transclude tiddler=<<explore_view>>/>
+</$list>
+<$list filter="[title<twit_class>addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]!has[explore_view]]" variable=ignore>
+<div class="py-todos">
+<$list filter ="[twit_class<twit_class>sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>
+</$list>
+</$set>

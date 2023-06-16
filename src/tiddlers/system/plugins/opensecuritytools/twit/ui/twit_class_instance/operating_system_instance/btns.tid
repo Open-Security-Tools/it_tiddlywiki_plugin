@@ -1,0 +1,8 @@
+created: 20220729195113001
+modified: 20220729195142935
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btns
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btn_installed_version}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btn_patching_strategy}}

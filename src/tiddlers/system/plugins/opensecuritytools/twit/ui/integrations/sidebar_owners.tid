@@ -1,0 +1,10 @@
+caption: Owners
+created: 20220726132717301
+creator: paul
+modified: 20230604141449861
+modifier: paul
+tags: $:/tags/MoreSideBar
+title: $:/plugins/opensecuritytools/twit/ui/integrations/sidebar_owners
+type: text/vnd.tiddlywiki
+
+<$list filter="[twit_class[owner]sort[]]" template="$:/core/ui/ListItemTemplate"/>

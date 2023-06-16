@@ -1,0 +1,7 @@
+created: 20220716103832876
+modified: 20220726090159871
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]" template="$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon"/>

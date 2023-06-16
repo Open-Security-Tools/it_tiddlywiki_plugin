@@ -1,0 +1,11 @@
+created: 20230509202323761
+modified: 20230511160242275
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_proximity
+type: text/vnd.tiddlywiki
+
+<span class="row_element">
+<$list filter="[all[current]proximity[0]]">Now!</$list>
+<$list filter="[all[current]proximity[1]]">Any Day</$list>
+<$list filter="[all[current]proximity[2]]">In a While</$list>
+</span>

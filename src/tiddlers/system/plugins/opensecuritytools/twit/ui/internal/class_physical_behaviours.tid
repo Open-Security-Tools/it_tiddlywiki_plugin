@@ -1,0 +1,36 @@
+caption: Physical Behaviours
+created: 20220714143521182
+modified: 20220715223537840
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/class_physical_behaviours
+type: text/vnd.tiddlywiki
+
+\define class_inline_icon(class)
+<$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
+<td><$link>$class$</$link></td>
+<td>{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}</td>
+<td>
+<$select field=physical_class>
+<option>user_terminal</option>
+<option>accessory</option>
+<option>infrastructure</option>
+</$select>
+</td>
+</$set>
+\end
+
+Physical/Virtual/Contextual are mutually exclusive!
+
+
+<table>
+<tr>
+<th>Class</th>
+<th>Inline Icon</th>
+<th>Physical Class</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type[physical]] +[removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]" variable="class">
+<tr>
+<$macrocall $name="class_inline_icon" class=<<class>>/>
+</tr>
+</$list>
+</table>

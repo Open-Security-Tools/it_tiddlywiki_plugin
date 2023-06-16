@@ -1,0 +1,7 @@
+created: 20220723083439656
+modified: 20220723083642412
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/is_supported
+type: text/vnd.tiddlywiki
+
+<$checkbox checked="yes" unchecked="" field=is_supported/>

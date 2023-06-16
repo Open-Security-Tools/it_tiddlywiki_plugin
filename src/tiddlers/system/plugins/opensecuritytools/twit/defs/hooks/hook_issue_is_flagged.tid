@@ -1,0 +1,8 @@
+created: 20230518105600327
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/clear_issue_flag}}
+modified: 20230602115005152
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_is_flagged
+type: text/vnd.tiddlywiki
+

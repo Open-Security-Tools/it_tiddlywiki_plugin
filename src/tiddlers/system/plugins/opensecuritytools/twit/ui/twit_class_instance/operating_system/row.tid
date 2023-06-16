@@ -1,0 +1,20 @@
+created: 20220726085925943
+modified: 20220729195223093
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/row
+type: text/vnd.tiddlywiki
+
+<div class="tc-menu-list-item">
+<div class="py-todo">
+<label class="">
+<i style="color: lightgray;" class="fas fa-grip-lines"/>
+<$link><$view field=title/></$link>
+</label>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btns}}
+<span class="py-todo-actions">
+<$vars context=operating_system>
+<<entity_action_button>>
+</$vars>
+</span>
+</div>
+</div>

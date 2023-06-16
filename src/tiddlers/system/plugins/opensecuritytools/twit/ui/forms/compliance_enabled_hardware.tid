@@ -1,0 +1,51 @@
+created: 20220716080723857
+creator: paul
+modified: 20220716122604877
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/compliance_enabled_hardware
+type: text/vnd.tiddlywiki
+
+<$list filter="[has[twit_class]filter<is_physical>filter<is_compliance_enabled>get[twit_class]unique[]sort[]]">
+<$list filter="[all[current]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]">
+
+!! {{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}  <$view field= class_name_plural/>
+</$list>
+
+<table>
+<tr>
+<th>Asset Id</th>
+<th>Labelled</th>
+<th>Name</th>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Owner</th>
+</tr>
+<$list filter="[twit_class<currentTiddler>filter<is_physical>filter<is_compliance_enabled>sort[]]">
+<tr>
+<td>
+<$link>
+#{{!!twit_id}}
+</$link>
+</td>
+<td>
+<$checkbox field=labelled/>
+</td>
+<td><$link>{{!!title}}</$link></td>
+<td>
+<$list filter="[all[current]get[asset_model]]">
+{{!!manufacturer}}
+</$list>
+</td>
+<td>
+<$list filter="[all[current]get[asset_model]]">
+<$link>{{!!model_number}}</$link>
+</$list>
+</td>
+<td>
+<$link to={{!!asset_owner}}>{{!!asset_owner}}</$link>
+</td>
+</tr>
+</$list>
+</table>
+</$list>

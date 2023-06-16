@@ -1,0 +1,21 @@
+created: 20220807092439005
+creator: paul
+modified: 20220807094050272
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/edit_compliance_comment
+type: text/vnd.tiddlywiki
+
+\define edit_comment()
+<$edit-text field="$(complianceField)$_comment" size=60/>
+\end
+Edit compliance comment:
+
+<$set name="targetTiddler" tiddler="$:/state/twit/compliance_edit_form" field="target">
+<$set name="complianceField" tiddler="$:/state/twit/compliance_edit_form" field="compliance_field">
+<$tiddler tiddler=<<targetTiddler>>>
+<<edit_comment>>
+</$tiddler>
+</$set>
+</$set>
+

@@ -1,0 +1,43 @@
+created: 20220725213709697
+modified: 20230604152851266
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/explorer
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define _explorer_root_icon() <i class="fas fa-laptop-house"/>
+
+\define explorer_root_btn_disabled()
+<$button disabled=yes>
+<<_explorer_root_icon>>
+</$button>
+\end
+
+\define explorer_root_btn()
+<$button>
+<<_explorer_root_icon>>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="explorer-root"/>
+</$button>
+\end
+
+\define explorer_twit_class_display()
+<$list filter="[title<currentTiddler>addprefix<pathTwitClassDef>]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+<$vars singlular={{!!class_name}} plural={{!!class_name_plural}}>
+<$list filter="[title<count>compare:number:eq[1]then<singlular>else<plural>]" variable=entry>
+<<entry>>
+</$list>
+</$vars>
+</$list>
+(<<count>>)
+\end
+
+\define disabled_twit_class_button()
+<$button disabled=yes>
+<$list filter="[all[current]addprefix<pathTwitClassDef>]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+<$view field=class_name_plural/>
+</$list>
+</$button>
+\end

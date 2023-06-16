@@ -1,0 +1,29 @@
+caption: Patching Strategies
+created: 20220722174553599
+modified: 20220729191850575
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/patching_strategies
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Field</th>
+<th>Name</th>
+<th>Check Days</th>
+<th>Check Version</th>
+<th>Check Description</th>
+</tr>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/patching_strategy/]nsort[check_days]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/patching_strategy/]]" variable=tailname>
+<$link><<tailname>></$link>
+</$list>
+</td>
+<td><$edit-text size=20 field=name/></td>
+<td><$edit-text size=4 field=check_days type=number/></td>
+<td align=center><$checkbox field="check_version" checked="yes" unchecked=""/></td>
+<td><$edit-text size=30 field=check_description/></td>
+</tr>
+</$list>
+</table>

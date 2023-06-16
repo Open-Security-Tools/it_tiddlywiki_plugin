@@ -1,0 +1,11 @@
+created: 20230508212711136
+modified: 20230509164051503
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_open
+type: text/vnd.tiddlywiki
+
+<$button
+	class="py-btn btn-small"
+>
+OPEN
+</$button>

@@ -1,0 +1,11 @@
+action_name: Set Asset Model's Number
+action_type: error
+created: 20220729152138491
+modified: 20220801073506773
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/asset_model_set_model_number
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!has[model_number]]">
+<$action-setfield model_number=""/>
+</$list>
+<$action-sendmessage $message="tm-edit-tiddler" $param=<<currentTiddler>>/>

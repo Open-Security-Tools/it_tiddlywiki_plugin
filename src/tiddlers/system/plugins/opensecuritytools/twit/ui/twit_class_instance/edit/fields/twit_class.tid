@@ -1,0 +1,51 @@
+created: 20220721202228602
+modified: 20220803224256696
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/twit_class
+type: text/vnd.tiddlywiki
+
+\define twit_class_actions()
+<$list filter="[all[current]has[twit_class]filter<has_operating_system>!has[installed_os_version]]" variable=ignore>
+<$action-setfield installed_os_version=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<has_operating_system>!has[operating_system]]" variable=ignore>
+<$action-setfield operating_system=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<has_operating_system>!has[check_date]]" variable=ignore>
+<$action-setfield check_date=""/> 
+</$list>
+<$list filter="[all[current]twit_class[asset_model]!has[manufacturer]]" variable=ignore>
+<$action-setfield manufacturer=""/> 
+</$list>
+<$list filter="[all[current]twit_class[asset_model]!has[model_number]]" variable=ignore>
+<$action-setfield model_number=""/> 
+</$list>
+<$list filter="[all[current]twit_class[operating_system]!has[target_version]]" variable=ignore>
+<$action-setfield target_version=""/> 
+</$list>
+<$list filter="[all[current]twit_class[operating_system]!has[is_supported]]" variable=ignore>
+<$action-setfield is_supported=""/> 
+</$list>
+<$list filter="[all[current]twit_class[operating_system]!has[patching_strategy]]" variable=ignore>
+<$action-setfield patching_strategy=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<is_physical>!has[asset_model]]" variable=ignore>
+<$action-setfield asset_model=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<is_physical>!has[asset_serial]]" variable=ignore>
+<$action-setfield asset_serial=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<is_physical>!has[asset_owner]]" variable=ignore>
+<$action-setfield asset_owner=""/> 
+</$list>
+<$list filter="[all[current]has[twit_class]filter<is_physical>!has[location]]" variable=ignore>
+<$action-setfield location=""/> 
+</$list>
+\end
+<$select field=twit_class actions=<<twit_class_actions>>>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]">
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]" variable=class>
+<option value=<<class>>><$view field="class_name"/></option>
+</$list>
+</$list>
+</$select>

@@ -1,0 +1,14 @@
+created: 20220729162005497
+modified: 20220729162650590
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/owner/btn_compliance_tracking
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]compliance_tracking[yes]]">
+<$button
+  class="py-btn btn-small"
+	tooltip="Has compliance tracking enabled"
+>
+<i class="fas fa-balance-scale"/>
+</$button>
+</$list>

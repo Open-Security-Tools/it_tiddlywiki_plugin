@@ -1,0 +1,14 @@
+class_name: NIC
+class_name_plural: NICs
+created: 20230530212830819
+display_table: $:/plugins/opensecuritytools/twit/ui/context/none/all_networks
+family: fas
+glyph: fa-ethernet
+icon: $:/core/icon
+modified: 20230604222712616
+row_name_template: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/nic
+tag_colour: hsl(330, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/nic
+type: virtual
+

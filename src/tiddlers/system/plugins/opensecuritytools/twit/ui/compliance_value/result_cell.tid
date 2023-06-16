@@ -1,0 +1,15 @@
+created: 20220715214109413
+modified: 20220715214440336
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_value/result_cell
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]compare:string:eq[Yes]]">
+<td class="status_green"><$view field=title/></td>
+</$list>
+<$list filter="[all[current]compare:string:eq[Partial]]">
+<td class="status_orange"><$view field=title/></td>
+</$list>
+<$list filter="[all[current]!compare:string:eq[Yes]!compare:string:eq[Partial]]">
+<td class="status_red"><$view field=title/></td>
+</$list>

@@ -1,0 +1,16 @@
+can_connect: yes
+can_host: yes
+class_name: Virtual Machine
+class_name_plural: Virtual Machines
+created: 20210926213950691
+family: fas
+glyph: fa-ghost
+has_operating_system: yes
+is_host: yes
+is_hosted: yes
+modified: 20220808070608259
+tag_colour: hsl(200, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/virtual_machine
+type: virtual
+

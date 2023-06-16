@@ -1,0 +1,19 @@
+created: 20220718222854492
+modified: 20220718222906321
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/grouped_uris
+type: text/vnd.tiddlywiki
+
+<$list filter= "[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]]">
+
+! <$view field=name/>
+
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]]">
+
+<ul>
+<$list filter="[all[]has<currentTiddler>]">
+<li><$link><<currentTiddler>></$link></li>
+</$list>
+</ul>
+</$list>
+</$list>

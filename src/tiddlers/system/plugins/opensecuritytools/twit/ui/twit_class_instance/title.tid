@@ -1,0 +1,13 @@
+created: 20230601093751855
+modified: 20230604164707666
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/title
+type: text/vnd.tiddlywiki
+
+\define classPrefix() $:/plugins/opensecuritytools/twit/defs/twit_class/
+
+<$list filter="[all[current]get[twit_class]addprefix<classPrefix>else<currentTiddler>]" variable="classTiddler">
+<$transclude tiddler=<<classTiddler>> field="titleTemplate" mode="inline">
+<$view field="title"/>
+</$transclude>
+</$list>

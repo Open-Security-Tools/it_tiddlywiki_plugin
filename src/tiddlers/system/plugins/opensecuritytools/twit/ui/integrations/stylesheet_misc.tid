@@ -1,0 +1,71 @@
+created: 20190923165924142
+creator: paul
+modified: 20230604150724590
+modifier: paul
+tags: [[Wiki Internals]] $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_misc
+type: text/css
+
+button.py-disabled {
+	color: lightgray;
+}
+
+div.twit_entity_toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-bottom: 5px;
+}
+
+div.py-todo2 label i {
+color: lightgray;
+}
+
+div.action_buttons {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.action_buttons button {
+   margin-bottom: 5px;
+}
+
+.py-btn.btn-success { border-color: #39e739; color: #39e739; fill: #39e739; }
+
+.py-btn.btn-success:active { box-shadow: 0 0 0 0.2rem rgba(0,255,0,.2); }
+
+.py-btn.btn-primary-red { background-color: #9e271b; border-color: #9e271b; color: #ffffff; fill: #ffffff; }
+
+.py-btn.btn-primary-red:active { box-shadow: 0 0 0 0.2rem rgba(125,255,255,.3); }
+
+.toolbar_docs_nested {
+padding-left: 40px !important;
+}
+
+.toolbar_docs_nested2 {
+padding-left: 80px !important;
+}
+
+.top-table tr th {
+   text-align: right;
+}
+
+.logs-table tr td {
+  padding: 5px;
+  font-size: 10px;
+}
+
+.logs-table tr td:nth-child(1) {
+  border-right: 2px solid #606060;
+}
+
+.logs-table tr:nth-child(1) {
+  border-right: 2px solid blue;
+}
+
+.logs-table tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+

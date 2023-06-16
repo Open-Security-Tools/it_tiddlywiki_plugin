@@ -1,0 +1,12 @@
+class_name: Token
+class_name_plural: Tokens
+created: 20211106110636770
+family: fas
+glyph: fa-key
+modified: 20220719104514531
+physical_class: accessory
+tag_colour: hsl(160, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/token
+type: physical
+

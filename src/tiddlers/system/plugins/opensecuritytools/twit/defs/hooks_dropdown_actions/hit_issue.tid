@@ -1,0 +1,27 @@
+created: 20230510213519364
+modified: 20230510213955839
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/hit_issue
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[closed]]" variable="ignore">
+<$button class="tc-btn-invisible">
+<i class="fas fa-sync"/> It's happened again!
+<$action-deletefield closed/>
+<$list filter="[all[current]get[reopened_count]else[0]add[1]]" variable=reopenedCount>
+<$action-setfield reopened_count=<<reopenedCount>>/>
+</$list>
+<$list filter="[all[current]get[repeated_hit_count]else[0]add[1]]" variable=newRepeatedHitCount>
+<$action-setfield repeated_hit_count=<<newRepeatedHitCount>>/>
+</$list>
+<$action-deletefield resolution/>
+</$button>
+</$list>
+<$list filter="[all[current]!has[closed]]" variable="ignore">
+<$button class="tc-btn-invisible">
+<i class="far fa-clone"/> It's happened again!
+<$list filter="[all[current]get[repeated_hit_count]else[0]add[1]]" variable=newRepeatedHitCount>
+<$action-setfield repeated_hit_count=<<newRepeatedHitCount>>/>
+</$list>
+</$button>
+</$list>

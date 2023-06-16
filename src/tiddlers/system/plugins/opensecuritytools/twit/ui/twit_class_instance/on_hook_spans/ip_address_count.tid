@@ -1,0 +1,9 @@
+created: 20230530202541901
+modified: 20230531214712087
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/ip_address_count
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[ip_addresses]enlist-input[]count[]]">
+<span class="row_element"><<currentTiddler>>-IPs</span>
+</$list>

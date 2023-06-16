@@ -1,0 +1,17 @@
+created: 20230509063206774
+modified: 20230510222639318
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/resolve_issue
+type: text/vnd.tiddlywiki
+
+\define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<$list filter="[all[shadows+tiddlers]prefix<resolutionPath>]" variable=resolutionTiddler>
+<$list filter="[title<resolutionTiddler>removeprefix<resolutionPath>]" variable=resolutionName>
+<$button class="tc-btn-invisible">
+<$transclude tiddler=<<resolutionTiddler>> field=icon/>
+Resolve as <$transclude tiddler=<<resolutionTiddler>> field=caption/>
+<$action-setfield resolution=<<resolutionName>>/>
+<$action-setfield closed=<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">>/>
+</$button>
+</$list>
+</$list>

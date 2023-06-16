@@ -1,0 +1,13 @@
+background_colour: #a9cce3
+created: 20220714155751997
+hue: 10
+icon_family: fas
+icon_glyph: fa-code
+modified: 20220718225429708
+name: API
+plural_name: APIs
+singular_name: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/uri_fields/api
+type: physical
+

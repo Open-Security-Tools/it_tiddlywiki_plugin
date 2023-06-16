@@ -1,0 +1,9 @@
+created: 20230530211259914
+modified: 20230530211856430
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/hosts_count
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[hosts]enlist-input[]count[]]">
+<span class="row_element"><<currentTiddler>>-DNS</span>
+</$list>

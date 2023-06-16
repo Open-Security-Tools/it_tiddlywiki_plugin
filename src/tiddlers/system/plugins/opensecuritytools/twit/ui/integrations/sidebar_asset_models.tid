@@ -1,0 +1,10 @@
+caption: Asset Models
+created: 20220726132624134
+creator: paul
+modified: 20230604141355544
+modifier: paul
+tags: $:/tags/MoreSideBar
+title: $:/plugins/opensecuritytools/twit/ui/integrations/sidebar_asset_models
+type: text/vnd.tiddlywiki
+
+<$list filter="[twit_class[asset_model]sort[]]" template="$:/core/ui/ListItemTemplate"/>

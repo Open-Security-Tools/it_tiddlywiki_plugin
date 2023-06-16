@@ -1,0 +1,11 @@
+created: 20230509062848481
+modified: 20230510210343143
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_reopened
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[reopened_count]]" variable=reopenedCount>
+<span class="row_element">
+<i class="fas fa-sync"/> <<reopenedCount>>
+</span>
+</$list>

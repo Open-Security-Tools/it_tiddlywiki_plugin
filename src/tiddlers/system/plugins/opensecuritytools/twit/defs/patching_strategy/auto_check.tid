@@ -1,0 +1,9 @@
+check_days: 365
+check_description: Check that it is automatically updating!
+created: 20220722173133948
+modified: 20220728214407929
+name: Automatic
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/patching_strategy/auto_check
+type: text/vnd.tiddlywiki
+

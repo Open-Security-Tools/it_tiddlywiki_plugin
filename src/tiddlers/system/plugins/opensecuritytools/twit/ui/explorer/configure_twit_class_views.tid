@@ -1,0 +1,24 @@
+created: 20230604153050827
+modified: 20230604172820817
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/configure_twit_class_views
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Class</th>
+<th>View</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix<pathTwitClassDef>sorted[]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix<pathTwitClassDef>]" variable=name>
+<$link><<name>></$link>
+</$list>
+</td>
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/explorer/helpers/select_explore_view}}
+</td>
+</tr>
+</$list>
+</table>

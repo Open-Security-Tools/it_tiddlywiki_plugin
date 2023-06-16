@@ -1,0 +1,12 @@
+background_colour: #fae5d3
+created: 20220714155815290
+hue: 250
+icon_family: fab
+icon_glyph: fa-git
+modified: 20220718225518642
+name: Repository
+singular_name: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/uri_fields/repository
+type: physical
+

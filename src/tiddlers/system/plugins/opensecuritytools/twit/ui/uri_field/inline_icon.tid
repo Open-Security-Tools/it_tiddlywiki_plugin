@@ -1,0 +1,17 @@
+created: 20220714162455303
+modified: 20230604141928405
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define render_class()
+<i class="fa fa-link twit-pill-container $(fieldIconClass)$">
+<i class="$(family)$ $(glyph)$ twit-pill"/>
+</i>
+\end
+<$set name="family" value={{!!icon_family}}>
+<$set name="glyph" value={{!!icon_glyph}}>
+<<render_class>>
+</$set>
+</$set>

@@ -1,0 +1,15 @@
+can_connect: yes
+class_name: Camera
+class_name_plural: Cameras
+created: 20230604161942902
+family: fas
+glyph: fa-video
+has_operating_system: yes
+is_hosted: 
+modified: 20230604162223532
+physical_class: infrastructure
+tag_colour: hsl(135, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/camera
+type: physical
+

@@ -1,0 +1,15 @@
+can_connect: yes
+can_host: yes
+class_name: Cluster
+class_name_plural: Clusters
+created: 20210926213849603
+family: fas
+glyph: fa-cubes
+has_operating_system: 
+is_hosted: yes
+modified: 20220808070653850
+tag_colour: hsl(70, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/cluster
+type: virtual
+

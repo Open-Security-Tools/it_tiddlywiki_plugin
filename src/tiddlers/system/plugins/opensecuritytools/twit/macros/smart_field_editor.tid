@@ -1,0 +1,46 @@
+created: 20211103202921857
+modified: 20211104170733597
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/smart_field_editor
+type: text/vnd.tiddlywiki
+
+\define saveFieldWidgetInner()
+<$list filter="[<fV>compare:string:ne<wV>]" variable="ignore01">
+<$button>
+<$action-setfield $tiddler={{!!title}} $(fN)$="$(wV)$"/>
+Save
+</$button>
+</$list>
+\end
+
+\define saveFieldWidget(fn)
+<$edit-text field="$fn$.temp" size=15/>
+<$vars fN="$fn$" fV={{!!$fn$}} wN="$fn$.temp" wV={{!!$fn$.temp}}>
+<<saveFieldWidgetInner>>
+</$vars>
+\end
+
+
+\define saveFieldSelectWidget(fn, options)
+<$select field="$fn$.temp">
+<$list filter="$options$">
+<option value=<<currentTiddler>>><$view field="title"/></option>
+</$list>
+</$select>
+<$vars fN="$fn$" fV={{!!$fn$}} wN="$fn$.temp" wV={{!!$fn$.temp}}>
+<<saveFieldWidgetInner>>
+</$vars>
+\end
+
+
+\define setupFieldEditActionsInternal()
+<$action-setfield $tiddler={{!!title}} $(wN)$="$(fV)$"/>
+\end
+
+\define setupFieldEditActions(filter, field)
+<$list filter="$filter$">
+<$vars fN="$field$" fV={{!!$field$}} wN="$field$.temp" wV={{!!$field$.temp}}>
+<<setupFieldEditActionsInternal>>
+</$vars>
+</$list>
+\end

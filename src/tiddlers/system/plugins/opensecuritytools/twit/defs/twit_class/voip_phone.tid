@@ -1,0 +1,13 @@
+can_connect: yes
+class_name: VoIP Phone
+class_name_plural: VoIP Phones
+created: 20210926214128905
+family: fas
+glyph: fa-phone
+has_operating_system: yes
+modified: 20220721083839867
+physical_class: user_terminal
+tag_colour: hsl(220, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/voip_phone
+type: physical

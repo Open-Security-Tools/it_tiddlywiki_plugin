@@ -1,0 +1,7 @@
+created: 20220721202016386
+modified: 20220723152309722
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/checked_date
+type: text/vnd.tiddlywiki
+
+<$view field=checked_date format="date" template="DD MMM YYYY"/>

@@ -1,0 +1,8 @@
+created: 20220806232901554
+modified: 20220806232909463
+status_colour: red
+status_name: No (Expired)
+status_severity: 2
+title: $:/plugins/opensecuritytools/twit/defs/compliance_field_status/no_expired
+type: text/vnd.tiddlywiki
+

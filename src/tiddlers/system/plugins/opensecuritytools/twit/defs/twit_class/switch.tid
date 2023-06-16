@@ -1,0 +1,15 @@
+can_connect: yes
+class_name: Switch
+class_name_plural: Switches
+created: 20210926214024319
+family: fas
+glyph: fa-random
+has_operating_system: yes
+is_hosted: 
+modified: 20220721083833851
+physical_class: infrastructure
+tag_colour: hsl(120, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/switch
+type: physical
+

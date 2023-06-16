@@ -1,0 +1,39 @@
+created: 20230317180923559
+creator: paul
+modified: 20230531092816211
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/row_actions
+type: text/vnd.tiddlywiki
+
+\define isMissingActionDefinition() [addprefix<pathTwitHooks>unique[]!has[modified]]
+<$list filter="[all[current]twit_hooks[]filter<isMissingActionDefinition>]">
+!!{{!!title}}
+</$list>
+<$list filter="[all[current]twit_hooks[]addprefix<pathTwitHooks>get[dropdown_action]first[]]" variable="ignore">
+<$list filter="[all[current]twit_hooks[]addprefix<pathTwitHooks>error[yes]get[dropdown_action]first[]then[py-btn btn-danger]else[py-btn]]" variable="btnClass">
+<$vars
+  popupTiddler=<<qualify "$:/state/twit/row-actions-dropdown">>
+>
+  <$button
+    class=<<btnClass>>
+    popup=<<popupTiddler>>
+    tooltip="Actions"
+    aria-label="actions"
+  >
+	  {{$:/plugins/nico/projectify/images/dots}}
+  </$button>
+  <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+<div class="tc-drop-down py-drop-down py-date-picker py-todo-actions-drop-down">
+<$list filter="[all[current]twit_hooks[]sortby{$:/plugins/opensecuritytools/twit/internal_config!!hooks_actions}addprefix<pathTwitHooks>get[dropdown_action]first[]]" variable="hook">
+<<hook>>
+</$list>
+<$list filter="[all[current]twit_hooks[]sortby{$:/plugins/opensecuritytools/twit/internal_config!!hooks_actions}addprefix<pathTwitHooks>get[dropdown_action]butfirst[]]" variable="hook">
+<hr>
+<<hook>>
+</$list>
+</div>
+  </$reveal>
+</$vars>
+</$list>
+</$list>

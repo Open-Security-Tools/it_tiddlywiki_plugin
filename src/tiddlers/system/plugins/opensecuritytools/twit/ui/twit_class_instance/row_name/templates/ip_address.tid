@@ -1,0 +1,33 @@
+created: 20230604222548087
+modified: 20230604222558153
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/ip_address
+type: text/vnd.tiddlywiki
+
+<$link>
+<$list filter="[all[current]get[network]get[prefix_length]else[?]]" variable="prefixLength">
+<$view field="title"/>/<<prefixLength>>
+</$list>
+</$link>
+<$list filter="[all[current]has[mac]]" variable="ignore">
+<$list filter="[all[current]get[mac]]">
+-
+<$link>
+<$view field=title/>
+</$link>
+</$list>
+<$list filter="[all[current]get[mac]listed[nics]first[]]">
+-
+<$link>
+<$view field=title/>
+</$link>
+</$list>
+</$list>
+<$list filter="[all[current]!has[mac]]" variable="ignore">
+<$list filter="[all[current]listed[ip_addresses]filter<can_connect>first[]]">
+-
+<$link>
+<$view field=title/>
+</$link>
+</$list>
+</$list>

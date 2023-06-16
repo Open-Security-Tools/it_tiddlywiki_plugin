@@ -1,0 +1,41 @@
+caption: Global Behaviours
+created: 20220713191240535
+modified: 20220715223537843
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/class_type_behaviours
+type: text/vnd.tiddlywiki
+
+\define class_inline_icon(class)
+<$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
+<td><$link>$class$</$link></td>
+<td>{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}</td>
+<td>
+<$select field="type">
+<option>physical</option>
+<option>virtual</option>
+<option>contextual</option>
+</$select>
+</td>
+<td>
+<$edit-text field=class_name/>
+</td>
+<td>
+<$edit-text field=class_name_plural/>
+</td>
+</$set>
+\end
+
+<table>
+<tr>
+<th>Class</th>
+<th>Inline Icon</th>
+<th>Type</th>
+<th>Singular Name</th>
+<th>Plural Name</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]" variable="class">
+<tr>
+<$macrocall $name="class_inline_icon" class=<<class>>/>
+</tr>
+</$list>
+</table>

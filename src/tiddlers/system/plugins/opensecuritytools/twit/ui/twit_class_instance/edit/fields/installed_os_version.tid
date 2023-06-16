@@ -1,0 +1,10 @@
+created: 20220721180203011
+modified: 20220721200832824
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/installed_os_version
+type: text/vnd.tiddlywiki
+
+<$edit-text field=installed_os_version/>
+<$list filter="[all[current]get[operating_system]get[target_version]]">
+(latest operating system version is <<currentTiddler>>)
+</$list>

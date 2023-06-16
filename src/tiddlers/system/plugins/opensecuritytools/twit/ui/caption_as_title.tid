@@ -1,0 +1,7 @@
+created: 20230604214810167
+modified: 20230604215828561
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/caption_as_title
+type: text/vnd.tiddlywiki
+
+<$view field=caption/>

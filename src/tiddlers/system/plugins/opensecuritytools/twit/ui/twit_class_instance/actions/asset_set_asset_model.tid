@@ -1,0 +1,11 @@
+action_name: Set Asset Model
+action_type: error
+created: 20220729125709573
+modified: 20220729135700344
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/asset_set_asset_model
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!has[asset_model]]">
+<$action-setfield asset_model=""/>
+</$list>
+<$action-sendmessage $message="tm-edit-tiddler" $param=<<currentTiddler>>/>

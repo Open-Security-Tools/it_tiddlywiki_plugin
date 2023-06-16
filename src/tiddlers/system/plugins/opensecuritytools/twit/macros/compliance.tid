@@ -1,0 +1,16 @@
+created: 20220731144849228
+creator: paul
+modified: 20220807150928363
+modifier: paul
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/compliance
+type: text/vnd.tiddlywiki
+
+\define assessment_select()
+<$select field="compliance$(complianceindex)$_assessment" actions='
+<$action-setfield reviewed$(complianceindex)$=<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">>/>'>
+<option>yes</option>
+<option>no</option>
+<option>partial</option>
+</$select>
+\end

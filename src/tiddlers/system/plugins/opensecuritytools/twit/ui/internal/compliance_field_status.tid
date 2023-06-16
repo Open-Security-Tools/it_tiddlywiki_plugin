@@ -1,0 +1,40 @@
+caption: Actions
+created: 20220806220427556
+modified: 20220806224954942
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/compliance_field_status
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Status</th>
+<th>Name</th>
+<th>Severity</th>
+<th>Colour</th>
+</tr>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]sort[]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]]" variable=tailname>
+<$link><<tailname>></$link>
+</$list>
+</td>
+<td><$edit-text size=40 field=status_name/></td>
+<td><$edit-text type=number size=1 field=status_severity/></td>
+<td><$edit-text size=10 field=status_colour/></td>
+</tr>
+</$list>
+</table>
+
+<hr/>
+
+New status: <$edit-text tiddler="$:/twit/state/compliance_field_status_form" field=new_status_title/>
+<$button class="py-btn">
+Add
+<$list filter="[title[$:/twit/state/compliance_field_status_form]get[new_status_title]addprefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]]">
+<$list filter="[all[current]is[missing]]">
+<$action-createtiddler $basetitle=<<currentTiddler>> text=""/>
+<$action-setfield $tiddler="$:/twit/state/compliance_field_status_form" new_status_title=""/>
+</$list>
+</$list>
+</$button>
