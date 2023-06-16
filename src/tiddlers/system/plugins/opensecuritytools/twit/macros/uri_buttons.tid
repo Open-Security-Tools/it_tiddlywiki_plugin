@@ -1,0 +1,53 @@
+created: 20220714163715167
+modified: 20220724221320820
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/uri_buttons
+type: text/vnd.tiddlywiki
+
+\define add-this-tiddler() [[$(currentTiddler)$]]+[putfirst[]]
+
+\define local_uri_button(type:"" uri:"")
+<$button
+   class="py-btn btn-small btn-primary"
+	 message="tm-open-external-window"
+	 param="$uri$"
+	 tooltip="$uri$"
+   aria-label="$uri$"
+>
+<$action-listops $tiddler="$:/twit/latesturis-$type$" $field='list'  $subfilter=<<add-this-tiddler>>/>
+<$list filter="[title[$:/plugins/opensecuritytools/twit/defs/uri_fields/$type$]]">
+{{||$:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon}}
+{{!!name}}
+</$list>
+</$button>
+\end
+
+\define entity_uri_button(entity: "" type:"" uri:"")
+<$button
+   class="py-btn btn-small"
+	 message="tm-open-external-window"
+	 param="$uri$"
+	 tooltip="$uri$"
+   aria-label="$uri$"
+>
+<$action-listops $tiddler="$:/twit/latesturis-$type$" $field='list'  $subfilter=<<add-this-tiddler>>/>
+<$list filter="[title[$:/plugins/opensecuritytools/twit/defs/uri_fields/$type$]]">
+{{||$:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon}} $entity$
+</$list>
+</$button>
+\end
+
+\define entity_uri_link(entity: "" type:"" uri:"")
+<$button
+   class="tc-btn-invisible tc-tiddlylink"
+	 message="tm-open-external-window"
+	 param="$uri$"
+	 tooltip="$uri$"
+   aria-label="$uri$"
+>
+<$action-listops $tiddler="$:/twit/latesturis-$type$" $field='list'  $subfilter=<<add-this-tiddler>>/>
+<$list filter="[title[$:/plugins/opensecuritytools/twit/defs/uri_fields/$type$]]">
+{{||$:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon}} $entity$
+</$list>
+</$button>
+\end

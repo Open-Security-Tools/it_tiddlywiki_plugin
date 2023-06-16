@@ -1,0 +1,29 @@
+created: 20220725183038676
+modified: 20230605072545976
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/virtual-class
+type: text/vnd.tiddlywiki
+
+<$set name=twit_class tiddler="$:/twit/explorer-state/virtual-twit-class">
+
+<<explorer_root_btn>><$button>
+<$list filter="[title[virtual]addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
+<$view field=title/>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+</$button>
+<$list filter="[title<twit_class>]">
+<<disabled_twit_class_button>>
+</$list>
+
+<hr/>
+
+<$set name=twit_class tiddler="$:/twit/explorer-state/virtual-twit-class">
+
+<div class="py-todos">
+<$list filter ="[twit_class<twit_class>sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>
+
+</$set>

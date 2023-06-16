@@ -1,0 +1,16 @@
+can_connect: yes
+class_name: Access Point
+class_name_plural: Access Points
+created: 20211101141124533
+explore_view: 
+family: fas
+glyph: fa-wifi
+has_operating_system: yes
+is_host: yes
+modified: 20230604173256784
+physical_class: infrastructure
+tag_colour: hsl(10, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/access_point
+type: physical
+

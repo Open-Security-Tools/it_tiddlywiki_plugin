@@ -1,0 +1,34 @@
+created: 20220720153853113
+creator: paul
+modified: 20220818070027940
+modifier: paul
+tags: $:/tags/PageControls
+title: $:/plugins/opensecuritytools/twit/ui/forms/recent_uis_page_button
+type: text/vnd.tiddlywiki
+
+<$button
+  popup="$:/state/twit/ui-dropdown"
+  tooltip="User Interface links"
+  aria-label="User Interface links"
+  class={{{ [[desktop-only ]addsuffix<tv-config-toolbar-class>] }}}
+  selectedClass="tc-selected"
+>
+  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$vars fieldIconClass=uris_page_icon>
+  {{$:/plugins/opensecuritytools/twit/defs/uri_fields/ui||$:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon}}
+	</$vars>
+  </$list>
+  <$list filter="[<tv-config-toolbar-text>match[yes]]">
+    <span class="tc-btn-text">User Interface Links</span>
+  </$list>
+</$button>
+
+<$reveal state="$:/state/twit/ui-dropdown" type="popup" position="belowleft">
+  <div class="tc-drop-down">
+<$list filter="[list[$:/twit/latesturis-ui]has[ui]first[10]sort[]]">
+<$list filter="[all[current]get[ui]]" variable="fv">
+<$macrocall $name="entity_uri_link" entity=<<currentTiddler>> type=ui uri=<<fv>>/>
+</$list>
+</$list>
+  </div>
+</$reveal>

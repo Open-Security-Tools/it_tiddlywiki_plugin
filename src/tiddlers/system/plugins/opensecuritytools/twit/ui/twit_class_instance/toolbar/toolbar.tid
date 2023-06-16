@@ -1,0 +1,49 @@
+created: 20220720152937503
+modified: 20230604164842762
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar
+type: text/vnd.tiddlywiki
+
+<div class="twit_entity_toolbar">
+<$list filter="[all[current]has[twit_class]]" variable=ignore>
+<$list filter="[all[current]filter<can_host>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_hosts}}
+</$list>
+<$list filter="[all[current]filter<is_hosted>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_hosted_by}}
+</$list>
+<$list filter="[all[current]twit_class[owner]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/owner/btn_compliance_tracking}}
+</$list>
+<$list filter="[all[current]filter<is_physical>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btns}}
+</$list>
+<$list filter="[all[current]twit_class[location]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_parent_location}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_child_locations}}
+</$list>
+<$list filter="[all[current]twit_class[asset_model]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_assets}}
+</$list>
+<$list filter="[all[current]has[twit_class]filter<has_operating_system>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btns}}
+</$list>
+<$list filter="[all[current]twit_class[operating_system]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btns}}
+</$list>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_external_links}}
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_docs}}
+
+<<entity_action_button>>
+
+
+</$list>
+</div>
+
+<div class="twit_entity_toolbar">
+<span class="py-todo-actions">
+{{||$:/plugins/opensecuritytools/twit/ui/row_element_icons}}
+{{||$:/plugins/opensecuritytools/twit/ui/row_actions}}
+</span>
+</div>

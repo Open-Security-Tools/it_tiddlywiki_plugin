@@ -1,0 +1,90 @@
+created: 20220715221346041
+creator: paul
+modified: 20220716080851278
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/all_compliance_items
+type: text/vnd.tiddlywiki
+
+\define assessment_select()
+<$select field=$(assessment)$ actions='
+<$action-setfield $(reviewed)$=<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">>/>'>
+<option>Yes</option>
+<option>No</option>
+<option>Partial</option>
+</$select>
+\end
+
+\define reviewed_display()
+<$view field=$(reviewed)$ format="date" template="MMM YYYY"/>
+\end
+
+\define edit_period()
+<$edit-text size=4 type=number field=$(period)$/>
+\end
+
+\define status_calculation()
+<$list filter="[all[current]get<period>negate[]]" variable=period_value>
+<$list filter="[all[current]get<assessment>]" variable=assessment_value>
+<$list filter="[all[current]days:$(reviewed)$<period_value>then<assessment_value>else[Review Due!]]">
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_value/result_cell}}
+</$list>
+</$list>
+</$list>
+\end
+
+\define edit_notes()
+<$edit-text field=$(notes)$/>
+\end
+
+\define compliance_check()
+<$list filter="1 2 3 4" variable="ci">
+<$list filter="[title<ci>addprefix[compliance]]" variable="statement">
+<$list filter="[all[current]get<statement>]" variable="sv">
+<tr>
+<td>
+<$list filter="[all[current]compare:string:eq<local_current>]" variable=ignore03>
+<<sv>>
+</$list>
+<$list filter="[all[current]compare:string:ne<local_current>]" variable=ignore03>
+<$link><<sv>></$link>
+</$list>
+</td>
+<$list filter="[title<ci>addprefix[assessment]]" variable=assessment>
+<$list filter="[title<ci>addprefix[reviewed]]" variable=reviewed>
+<$list filter="[title<ci>addprefix[period]]" variable=period>
+<$list filter="[title<ci>addprefix[notes]]" variable=notes>
+<td>
+<<assessment_select>>
+</td>
+<td><<edit_notes>></td>
+<td><<reviewed_display>></td>
+<td><<edit_period>></td>
+<<status_calculation>>
+</$list>
+</$list>
+</$list>
+</$list>
+
+</tr>
+</$list>
+</$list>
+</$list>
+\end
+
+<$list filter="[all[current]]" variable=local_current>
+<table>
+<tr>
+<th>Audit Statement</th>
+<th>Assessment</th>
+<th>Notes</th>
+<th>Reviewed</th>
+<th>Period Days</th>
+<th>Status</th>
+</tr>
+<$list filter="[all[]filter<has_compliance>]">
+<<compliance_check>>
+</$list>
+</table>
+</$list>
+

@@ -1,0 +1,11 @@
+action_name: Set assessment duration to 1 month
+created: 20220806211538672
+modified: 20220806224444691
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/actions/set_period_30
+type: text/vnd.tiddlywiki
+
+\define set_period()
+<$action-setfield $(complianceField)$_period=30/>
+\end
+<<set_period>>

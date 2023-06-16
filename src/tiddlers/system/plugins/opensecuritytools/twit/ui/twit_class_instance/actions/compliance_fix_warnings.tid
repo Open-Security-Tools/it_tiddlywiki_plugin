@@ -1,0 +1,9 @@
+action_name: Fix compliance warnings
+action_type: warning
+created: 20220806184821755
+modified: 20220806184831048
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/compliance_fix_warnings
+type: text/vnd.tiddlywiki
+
+<$action-navigate/>

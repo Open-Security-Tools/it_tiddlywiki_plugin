@@ -1,0 +1,13 @@
+class_name: Light
+class_name_plural: Lights
+created: 20211106110845521
+family: fas
+glyph: fa-lightbulb
+has_operating_system: yes
+modified: 20220721083818624
+physical_class: accessory
+tag_colour: hsl(250, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/light
+type: physical
+

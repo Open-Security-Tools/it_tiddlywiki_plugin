@@ -1,0 +1,15 @@
+can_connect: yes
+can_host: yes
+class_name: Computer
+class_name_plural: Computers
+created: 20210926214050368
+family: fas
+glyph: fa-desktop
+has_operating_system: yes
+modified: 20220808070652644
+physical_class: user_terminal
+tag_colour: hsl(90, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/computer
+type: physical
+

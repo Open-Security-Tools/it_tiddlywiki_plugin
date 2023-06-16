@@ -1,0 +1,11 @@
+action_name: Set assessment duration to half a year
+created: 20220806224506117
+modified: 20220806224526748
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/actions/set_period_180
+type: text/vnd.tiddlywiki
+
+\define set_period()
+<$action-setfield $(complianceField)$_period=180/>
+\end
+<<set_period>>

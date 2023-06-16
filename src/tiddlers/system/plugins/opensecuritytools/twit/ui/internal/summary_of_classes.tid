@@ -1,0 +1,15 @@
+caption: Summary of Classes
+created: 20220714205909995
+modified: 20220719223922172
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/summary_of_classes
+type: text/vnd.tiddlywiki
+
+<ul>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]">
+<li>
+<<currentTiddler>>
+<$list filter="[all[]twit_class<currentTiddler>count[]]"><<currentTiddler>></$list>
+</li>
+</$list>
+</ul>

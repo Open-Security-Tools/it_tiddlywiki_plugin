@@ -1,0 +1,29 @@
+created: 20220724082723452
+modified: 20220724220248968
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btn_instances
+type: text/vnd.tiddlywiki
+
+<$list filter="[has[twit_class]filter<has_operating_system>operating_system<currentTiddler>first[]]" variable=ignore>
+<$list filter="[has[twit_class]filter<has_operating_system>operating_system<currentTiddler>count[]]" variable=instance_count>
+<$vars popupTiddler=<<qualify "$:/state/twit/is-operating-system-instances-dropdown">> >
+<$button
+   class="py-btn btn-small"
+	 popup=<<popupTiddler>>
+>
+<<instance_count>> instances
+ <i class="fas fa-caret-down"/>
+</$button>
+<$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down">
+<$list filter="[has[twit_class]filter<has_operating_system>operating_system<currentTiddler>]">
+<div class="tc-menu-list-item">
+<$link>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}}
+<$view field=title/>
+</$link>
+</div>
+</$list>
+</$reveal>
+</$vars>
+</$list>
+</$list>

@@ -1,0 +1,10 @@
+action_name: Mark ''{{!!operating_system}}'' as supported
+action_type: error
+created: 20220729125524451
+modified: 20220805200724200
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_instance_os_set_supported
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[operating_system]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_set_supported}}
+</$list>

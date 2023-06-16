@@ -1,0 +1,10 @@
+check_days: 30
+check_description: Check tracking latest version and manually patch
+check_version: yes
+created: 20220722174840291
+modified: 20220729191939920
+name: Manual (Monthly)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/patching_strategy/manual_one_month
+type: text/vnd.tiddlywiki
+

@@ -1,0 +1,16 @@
+can_connect: yes
+can_host: 
+class_name: Network Connected Thing
+class_name_plural: Network Connected Things
+created: 20211102113832082
+family: fas
+glyph: fa-lightbulb
+has_operating_system: yes
+is_hosted: 
+modified: 20220808070641625
+physical_class: infrastructure
+tag_colour: hsl(210, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/iot
+type: physical
+

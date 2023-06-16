@@ -1,0 +1,10 @@
+created: 20230510200855894
+modified: 20230510200923311
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_does_not_relate_to_compliance
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+-<i class="far fa-check-square"/> Does not relate to Compliance
+<$action-deletefield relates_to_compliance/>
+</$button>

@@ -1,0 +1,9 @@
+created: 20230508212309427
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_proximity}}
+error: yes
+modified: 20230531092716781
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_missing_proximity
+type: text/vnd.tiddlywiki
+

@@ -1,0 +1,8 @@
+action_name: Re-mark ''<<currentTiddler>>'' as checked
+action_type: discretionary
+created: 20220729140826567
+modified: 20220805200949350
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_reset_checked
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_set_checked}}

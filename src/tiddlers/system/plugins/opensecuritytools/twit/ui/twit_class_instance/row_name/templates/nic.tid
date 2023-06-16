@@ -1,0 +1,15 @@
+created: 20230604222657248
+modified: 20230604222704865
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/nic
+type: text/vnd.tiddlywiki
+
+<$link>
+<$view field=title/>
+</$link>
+<$list filter="[all[current]get[mac]listed[nics]first[]]">
+-
+<$link>
+<$view field=title/>
+</$link>
+</$list>

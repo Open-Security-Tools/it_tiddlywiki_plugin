@@ -1,0 +1,11 @@
+created: 20230510215726268
+modified: 20230511160415417
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_impact
+type: text/vnd.tiddlywiki
+
+<span class="row_element">
+<$list filter="[all[current]impact[0]]">Negligable</$list>
+<$list filter="[all[current]impact[1]]">Significant</$list>
+<$list filter="[all[current]impact[2]]">Catastrophic!</$list>
+</span>

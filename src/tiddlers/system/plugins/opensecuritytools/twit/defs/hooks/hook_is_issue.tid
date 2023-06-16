@@ -1,0 +1,8 @@
+created: 20230508212328315
+dropdown_action: 
+modified: 20230510210718496
+row_element: {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_created_date}}
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_is_issue
+type: text/vnd.tiddlywiki
+

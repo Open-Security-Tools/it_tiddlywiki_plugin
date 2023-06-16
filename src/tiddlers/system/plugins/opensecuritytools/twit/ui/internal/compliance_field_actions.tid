@@ -1,0 +1,66 @@
+caption: Actions
+created: 20220806211622468
+modified: 20220806213113887
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/compliance_field_actions
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Action</th>
+<th>Name</th>
+<th>Has Actions</th>
+</tr>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]sort[]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]]" variable=tailname>
+<$link><<tailname>></$link>
+</$list>
+</td>
+<td><$edit-text size=40 field=action_name/></td>
+<td>
+<$list filter="[all[current]has[text]]">
+Yes
+</$list>
+</td>
+</tr>
+</$list>
+</table>
+
+<hr/>
+
+New action: <$edit-text tiddler="$:/twit/state/compliance_field_actions_form" field=new_action_title/>
+<$button class="py-btn">
+Add
+<$list filter="[title[$:/twit/state/compliance_field_actions_form]get[new_action_title]addprefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]]">
+<$list filter="[all[current]is[missing]]">
+<$action-createtiddler $basetitle=<<currentTiddler>> text=""/>
+<$action-setfield $tiddler="$:/twit/state/compliance_field_actions_form" new_action_title=""/>
+</$list>
+</$list>
+</$button>
+
+<hr/>
+
+<$vars popupTiddler=<<qualify "$:/state/twit/test-compliance-field-actions-button">>>
+
+<$button
+	class="py-btn"
+	popup=<<popupTiddler>>
+>
+Test
+</$button>
+<$reveal
+  state=<<popupTiddler>>
+	type="popup"
+	position="belowleft"
+	animate="yes"
+	class="tc-drop-down py-drop-down py-todo-actions-drop-down">
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]removeprefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]sort[]]" variable=action>
+<div class="tc-menu-list-item">
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btn_action}}
+</div>
+</$list>
+</$reveal>
+</$vars>

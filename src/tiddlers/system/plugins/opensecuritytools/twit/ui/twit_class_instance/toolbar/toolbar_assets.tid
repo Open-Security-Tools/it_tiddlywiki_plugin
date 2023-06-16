@@ -1,0 +1,24 @@
+created: 20220720223920452
+modified: 20230604164815614
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_assets
+type: text/vnd.tiddlywiki
+
+<$vars popupTiddler=<<qualify "$:/state/twit/assets-dropdown">> icon_class="fas fa-tag">
+<$button
+   class="py-btn"
+   popup=<<popupTiddler>>
+   tooltip="Asset model"
+>
+<i class=<<icon_class>>/>
+Model
+</$button>
+
+<$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down apy-drop-down">
+<ul>
+<li>Manufacturer: {{!!manufacturer}}</li>
+<li>Model: {{!!model_number}}</li>
+</ul>
+</$reveal>
+</$vars>
+

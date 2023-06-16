@@ -1,0 +1,28 @@
+created: 20220102165956692
+list-before: $:/core/ui/EditTemplate/body
+modified: 20230604141316501
+tags: $:/tags/EditTemplate
+title: $:/plugins/opensecuritytools/twit/ui/integrations/edit_template_class_field
+type: text/vnd.tiddlywiki
+
+
+<$list filter="[all[current]is[shadow]]">
+<div class="tfc-plugin-info">
+  <table class="tfc-plugin-info">
+
+<tr class="tfc-plugin-info-element">
+    <td class="tfc-plugin-info-element-name">
+      twit_class:
+    </td>
+    <td class="tfc-plugin-edit-element-value">
+	<$select tiddler=<<currentTiddler>> field='twit_class' >
+	<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]" variable=fv>
+<option><$action-setfield playbook/><<fv>></option>
+</$list>
+</$select>
+    </td>
+  </tr>
+
+</table>
+</div>
+</$list>

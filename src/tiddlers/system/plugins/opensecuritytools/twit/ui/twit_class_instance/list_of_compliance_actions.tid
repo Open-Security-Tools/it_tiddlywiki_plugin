@@ -1,0 +1,21 @@
+created: 20220715214008771
+modified: 20230604165746918
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/list_of_compliance_actions
+type: text/vnd.tiddlywiki
+
+\define list_actions()
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/row}}
+\end
+
+<$list filter="[all[current]twit_compliance_items[]first[]]" variable=ignore>
+<div class="py-todos">
+<$list filter="[all[current]]" variable=complianceParent>
+<$list filter="[all[current]twit_compliance_items[]]">
+<$list filter="[all[current]twit_compliance_fields[]]" variable=complianceField>
+<<list_actions>>
+</$list>
+</$list>
+</$list>
+</div>
+</$list>

@@ -1,0 +1,35 @@
+created: 20220819072306427
+modified: 20220819074447454
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset
+type: text/vnd.tiddlywiki
+
+<$vars popupTiddler=<<qualify "$:/state/twit/btn-asset-button-dropdown">>>
+<$list filter="[all[current]filter<has_twit_action_asset_errors>then[py-btn btn-small btn-danger]else[py-btn btn-small]]" variable=btnClass>
+<$button
+   class=<<btnClass>>
+   popup=<<popupTiddler>>
+   tooltip="Drop asset model, owner and location here to update"
+>
+<i class="fas fa-tag"/>
+<$view field=twit_id/>
+<i class="fas fa-caret-down"/>
+</$button>
+</$list>
+<$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down py-todo-actions-drop-down">
+<$list filter="[all[current]get[asset_owner]]">
+<$link>{{$:/plugins/opensecuritytools/twit/defs/twit_class/owner||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}} <$view field=title/></$link>
+</$list>
+<$list filter="[all[current]get[asset_model]]">
+
+<$link>{{$:/plugins/opensecuritytools/twit/defs/twit_class/asset_model||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}} <$view field=manufacturer/> - <$view field=model_number/></$link>
+</$list>
+<hr>
+<$list filter="[all[current]twit_actions:action[]sort[]]" variable=action>
+<div class="tc-menu-list-item">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/action/btn_action}}
+</div>
+</$list>
+</$reveal>
+
+</$vars>

@@ -1,0 +1,46 @@
+created: 20220806214308728
+modified: 20220806231929906
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/btn_status
+type: text/vnd.tiddlywiki
+
+\define action_list()
+<$list filter="[all[current]twit_compliance_field_actions:$(complianceField)$[]]" variable=action>
+<div class="tc-menu-list-item">
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/btn_action}}
+</div>
+</$list>
+\end
+\define btn()
+<$button
+  class="py-btn btn-small"
+	style="border-color: $(severity_colour)$;"
+	popup=<<popupTiddler>>
+>
+<<status_name>>
+<i class="fas fa-caret-down"/>
+</$button>
+\end
+\define compliance_status()
+<$list filter="[all[current]twit_compliance_field_status:$(complianceField)$[]]" variable=status>
+<$list filter="[title<status>addprefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]has[title]get[status_colour]else[red]]" variable="severity_colour">
+<$list filter="[title<status>addprefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]has[title]get[status_name]else<status>]" variable="status_name">
+<<btn>>
+</$list>
+</$list>
+</$list>
+\end
+\define status_button()
+<$vars popupTiddler=<<qualify "$:/state/twit/compliance-field-status-$(complianceField)$-button">>>
+<<compliance_status>>
+<$reveal
+  state=<<popupTiddler>>
+	type="popup"
+	position="belowleft"
+	animate="yes"
+	class="tc-drop-down py-drop-down py-todo-actions-drop-down">
+<<action_list>>
+</$reveal>
+</$vars>
+\end
+<<status_button>>

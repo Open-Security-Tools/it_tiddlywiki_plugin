@@ -1,0 +1,39 @@
+created: 20220720153125662
+modified: 20230604164822682
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_docs
+type: text/vnd.tiddlywiki
+
+\define add_subdocs()
+<$list filter="[all[current]subfilter<unrelated_tagging>]">
+<$link><$view field=title/></$link>
+<$list filter="[all[current]subfilter<unrelated_tagging>]">
+<$link class="toolbar_docs_nested"><$view field=title/></$link>
+</$list>
+</$list>
+\end
+
+<$list filter="[all[current]subfilter<unrelated_tagging>] [all[current]get[operating_system]subfilter<unrelated_tagging>] [all[current]get[asset_model]subfilter<unrelated_tagging>] +[first[]]" variable=ignore>
+<$vars popupTiddler=<<qualify "$:/state/twit/docs-button-dropdown">> icon_class="far fa-question-circle">
+<$button
+   class="py-btn btn-small"
+   popup=<<popupTiddler>>
+   tooltip="<<host_count>> entities which host this item"
+>
+<i class=<<icon_class>>/>
+Docs
+<i class="fas fa-caret-down"/>
+</$button>
+
+<$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down apy-drop-down">
+<<add_subdocs>>
+<$list filter="[all[current]get[operating_system]]">
+<<add_subdocs>>
+</$list>
+<$list filter="[all[current]get[asset_model]]">
+<<add_subdocs>>
+</$list>
+</$reveal>
+
+</$vars>
+</$list>

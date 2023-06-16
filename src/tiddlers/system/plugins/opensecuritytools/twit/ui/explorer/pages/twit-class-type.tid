@@ -1,0 +1,101 @@
+created: 20220725180930101
+modified: 20230605072357009
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type
+type: text/vnd.tiddlywiki
+
+\define convertSelectToCountFilter() $(selectFilter)$ +[count[]]
+
+\define has_type() [addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type<type>]
+
+<$set name=type tiddler='$:/twit/explorer-state/type'>
+
+<<explorer_root_btn>><$button disabled=yes>
+<$list filter="[title<type>addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
+<<currentTiddler>>
+</$list>
+</$button>
+
+<hr/>
+
+
+<$list filter="[title<type>compare:string:eq[virtual]]" variable=ignore>
+
+<ul>
+<$list filter="[has[twit_class]get[twit_class]filter<has_type>unique[]]">
+<li>
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$list filter="[twit_class<currentTiddler>get[twit_class]filter<has_type>count[]]" variable=count>
+<<explorer_twit_class_display>>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/virtual-class"/>
+<$action-setfield $tiddler="$:/twit/explorer-state/virtual-twit-class" text=<<currentTiddler>>/>
+</$button>
+</li>
+</$list>
+</ul>
+
+</$list>
+
+<$list filter="[title<type>compare:string:eq[physical]]" variable=ignore>
+
+<ul>
+<$list filter="[has[twit_class]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type<type>get[physical_class]unique[]]">
+<li>
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$list filter="[has[twit_class]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type<type>physical_class<currentTiddler>count[]]" variable=count>
+<$list filter="[title<currentTiddler>search-replace[_],[ ]titlecase[]]" variable=entity>
+<<entity>> (<<count>>)
+</$list>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
+<$action-setfield $tiddler="$:/twit/explorer-state/physical_class" text=<<currentTiddler>>/>
+</$button>
+</li>
+</$list>
+</ul>
+
+</$list>
+
+<$list filter="[title<type>compare:string:eq[contextual]]" variable=ignore>
+
+<ul>
+<$list filter="[has[twit_class]get[twit_class]filter<has_type>unique[]]">
+<li>
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$list filter="[twit_class<currentTiddler>get[twit_class]filter<has_type>count[]]" variable=count>
+<<explorer_twit_class_display>>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/contextual-class"/>
+<$action-setfield $tiddler="$:/twit/explorer-state/contextual-twit-class" text=<<currentTiddler>>/>
+</$button>
+</li>
+</$list>
+</ul>
+
+</$list>
+
+
+<$list filter="[title<type>compare:string:eq[issue]]" variable=ignore>
+
+<ul>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/ui/explorer/issue_views/]]">
+<li>
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$view field="caption"/>
+<$list filter="[all[current]get[select_filter]]" variable=selectFilter>
+<$list filter=<<convertSelectToCountFilter>> variable="count">
+(<<count>>)
+</$list>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/issue-view"/>
+<$action-setfield $tiddler="$:/twit/explorer-state/issue_view" text=<<currentTiddler>>/>
+</$button>
+</li>
+</$list>
+</ul>
+
+</$list>
+
+
+</$set>

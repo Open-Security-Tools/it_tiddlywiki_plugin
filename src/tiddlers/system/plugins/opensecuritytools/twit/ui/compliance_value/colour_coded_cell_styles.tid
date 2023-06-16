@@ -1,0 +1,17 @@
+created: 20220715214607215
+modified: 20220715214659295
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/compliance_value/colour_coded_cell_styles
+type: text/css
+
+td.status_red {
+  background-color: red;
+}
+
+td.status_orange {
+  background-color: orange;
+}
+
+td.status_green {
+  background-color: green;
+}

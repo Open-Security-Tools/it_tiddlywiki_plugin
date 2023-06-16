@@ -1,0 +1,8 @@
+action_name: Take ''<<currentTiddler>>'' out of operation
+action_type: discretionary
+created: 20220805072336962
+modified: 20220805200908775
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_instance_take_out_of_operation
+type: text/vnd.tiddlywiki
+
+<$action-setfield not_in_operation=yes/>

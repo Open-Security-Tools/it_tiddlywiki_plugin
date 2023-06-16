@@ -1,0 +1,42 @@
+caption: Misc Class Behaviours
+created: 20210807210450161
+modified: 20220715223537836
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/class_behaviours
+type: text/vnd.tiddlywiki
+
+\define class_inline_icon(class)
+<$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
+<td><$link>$class$</$link></td>
+
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+</td>
+
+<td>
+<$checkbox field="can_connect" checked="yes" unchecked="" default=""></$checkbox>
+</td>
+<td>
+<$checkbox field="can_host" checked="yes" unchecked="" default=""></$checkbox>
+</td>
+<td><$checkbox field="is_hosted" checked="yes" unchecked="" default=""></$checkbox></td>
+<td><$checkbox field="is_host" checked="yes" unchecked="" default=""></$checkbox></td>
+
+</$set>
+\end
+
+<table>
+<tr>
+<th>Class</th>
+<th>Inline Icon</th>
+<th>Can Connect?</th>
+<th>Can Host?</th>
+<th>Is Hosted?</th>
+<th>Is Host?</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]" variable="class">
+<tr>
+<$macrocall $name="class_inline_icon" class=<<class>>/>
+</tr>
+</$list>
+</table>

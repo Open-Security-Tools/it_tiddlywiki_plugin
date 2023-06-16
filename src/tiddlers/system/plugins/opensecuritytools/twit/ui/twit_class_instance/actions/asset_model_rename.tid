@@ -1,0 +1,11 @@
+action_name: Update Asset Model's Name
+action_type: error
+created: 20220729152144444
+modified: 20220801073512816
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/asset_model_rename
+type: text/vnd.tiddlywiki
+
+\define concatenate() Asset Model: {{!!manufacturer}} - {{!!model_number}}
+<$wikify name="newtitle" text=<<concatenate>> >
+<$action-sendmessage $message="tm-rename-tiddler" from={{!!title}} to=<<newtitle>> />
+</$wikify>

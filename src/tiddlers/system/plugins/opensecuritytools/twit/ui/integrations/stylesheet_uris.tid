@@ -1,0 +1,147 @@
+created: 20220714165332359
+modified: 20230604150839154
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_uris
+type: text/css
+
+.twit-btn { 
+   border-radius: 1.5em; 
+	 border: 2px solid #ccc; 
+	 background: #ffffff; 
+	 padding: .3em 1em; 
+	 cursor: pointer; 
+	 transition: box-shadow ease-in .1s;
+	 margin: 5px;
+}
+
+.twit-btn:focus { outline: 0 none; }
+
+.twit-btn:active { box-shadow: 0 0 0 0.2rem rgba(0,0,0,.08); }
+
+div.uris {
+  list-style: none;
+  border: none;
+	  align-items: center;
+  justify-content: center;
+	width: 100%;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+	  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+	padding: 10px;
+	}
+
+button.local_uri_button {
+    min-width: 180px;
+    max-width: 180px;
+  	min-height: 50px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);  
+}
+
+
+button.entity_uri_button {
+    min-width: 220px;
+    max-width: 220px;
+  	min-height: 80px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);  
+}
+
+
+button.local_uri_button > div.inner {
+        position: absolute;
+        left: 12px;
+    z-index: 0;
+        top: 0px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0;
+    text-align: left;
+    z-index: 1;		
+}
+
+button.entity_uri_button > div.inner {
+        position: absolute;
+        left: 12px;
+    z-index: 0;
+        bottom: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0;
+    text-align: left;
+    z-index: 1;		
+}
+
+button.entity_uri_button > div.entity {
+        position: absolute;
+        left: 12px;
+    z-index: 0;
+        top: 3px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #0;
+    text-align: left;
+    z-index: 1;		
+}
+
+
+
+button.local_uri_button > div.icon {
+        position: absolute;
+        right: 12px;
+    z-index: 0;
+        top: 3px;
+}
+
+button.local_uri_button > div.icon i {
+    font-size: 40px;
+    top: 5px;
+    transition: all .3s linear;
+    color: rgba(0,0,0,.05);
+        z-index: 0;
+
+}
+
+button.entity_uri_button > div.icon {
+        position: absolute;
+        right: 12px;
+    z-index: 0;
+        top: 3px;
+}
+
+button.entity_uri_button > div.icon i {
+    font-size: 80px;
+    top: 5px;
+    transition: all .3s linear;
+    color: rgba(0,0,0,.05);
+        z-index: 0;
+
+}

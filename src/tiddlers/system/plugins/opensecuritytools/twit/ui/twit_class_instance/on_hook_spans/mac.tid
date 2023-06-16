@@ -1,0 +1,12 @@
+created: 20230530205331234
+modified: 20230531074423733
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/mac
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[mac]]">
+<$button class="py-btn py-small">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>

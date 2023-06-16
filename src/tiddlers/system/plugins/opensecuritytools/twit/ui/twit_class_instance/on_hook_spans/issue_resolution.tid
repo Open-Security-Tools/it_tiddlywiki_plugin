@@ -1,0 +1,13 @@
+created: 20230510211552766
+modified: 20230510211914347
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_resolution
+type: text/vnd.tiddlywiki
+
+\define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<$list filter="[all[current]get[resolution]addprefix<resolutionPath>]" variable=resolution>
+<span class="row_element">
+<$transclude tiddler=<<resolution>> field="icon"/>
+<$transclude tiddler=<<resolution>> field="caption"/>
+</span>
+</$list>

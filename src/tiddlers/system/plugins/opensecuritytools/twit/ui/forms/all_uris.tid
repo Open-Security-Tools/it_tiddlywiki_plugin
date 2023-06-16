@@ -1,0 +1,19 @@
+created: 20220714155555160
+modified: 20220719071539212
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/all_uris
+type: text/vnd.tiddlywiki
+
+<div class="uris">
+<$list filter= "[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]removeprefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]] +[join[ ]]" variable="fn">
+<$list filter="[all[]sort[]]">
+<$list filter="[all[current]fields:include<fn>]" variable="fnn">
+<$list filter="[all[current]get<fnn>]" variable="fv">
+<$macrocall $name="entity_uri_button" entity=<<currentTiddler>> type=<<fnn>> uri=<<fv>>/>
+</$list>
+</$list>
+</$list>
+</$list>
+</div>
+
+

@@ -1,0 +1,16 @@
+created: 20230604172650481
+modified: 20230604173252213
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/helpers/select_explore_view
+type: text/vnd.tiddlywiki
+
+<$select field="explore_view">
+<option value="">None</option>
+<$list filter="[all[tiddlers+shadows]prefix<pathUI>] -[all[tiddlers+shadows]prefix<pathUITwitClassInstance>] +[sorted[]]">
+<$list filter="[all[current]removeprefix<pathUI>]" variable=relName>
+<option value=<<currentTiddler>>>
+<<relName>>
+</option>
+</$list>
+</$list>
+</$select>

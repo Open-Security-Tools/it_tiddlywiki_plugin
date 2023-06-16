@@ -1,0 +1,15 @@
+can_connect: yes
+class_name: Gateway
+class_name_plural: Gateways
+created: 20210926214244229
+family: fas
+glyph: fa-archway
+has_operating_system: yes
+is_host: yes
+modified: 20220721083811841
+physical_class: infrastructure
+tag_colour: hsl(170, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/gateway
+type: physical
+

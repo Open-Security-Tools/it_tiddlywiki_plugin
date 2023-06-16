@@ -1,0 +1,40 @@
+caption: Standard Behaviours
+created: 20220102153450075
+modified: 20220719103847624
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/class_standard_behaviours
+type: text/vnd.tiddlywiki
+
+\define class_inline_icon(class)
+<$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
+<td><$link>$class$</$link></td>
+<td><$edit-text field=class_name/></td>
+<td><$edit-text field=class_name_plural/></td>
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+</td>
+<td>{{||$:/plugins/opensecuritytools/twit/ui/twit_class/badge_icon}}
+</td>
+<td>
+<$edit-text field=tag_colour/>
+</td>
+</$set>
+\end
+
+Font Awsome: https://thediveo.github.io/TW5FontAwesome/output/fontawesome.html
+
+<table>
+<tr>
+<th>Class</th>
+<th>Singular</th>
+<th>Plural</th>
+<th>Inline Icon</th>
+<th>Badge Icon</th>
+<th>Tag Colour</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]sort[]]" variable="class">
+<tr>
+<$macrocall $name="class_inline_icon" class=<<class>>/>
+</tr>
+</$list>
+</table>

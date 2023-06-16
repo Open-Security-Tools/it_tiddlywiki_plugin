@@ -1,0 +1,13 @@
+created: 20220719105046050
+modified: 20230604150137257
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_has_twit_class_border_left_colour
+type: text/vnd.tiddlywiki
+
+<$list filter="[has[twit_class]]">
+<$list filter="[all[current]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]get[tag_colour]]" variable=class>
+[data-tiddler-title="<$view field=title/>"]  {
+  border-left: 5px solid <<class>>;
+}
+</$list>
+</$list> 

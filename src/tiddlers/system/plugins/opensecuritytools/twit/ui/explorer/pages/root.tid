@@ -1,0 +1,32 @@
+created: 20220725180222829
+modified: 20230605072210743
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/root
+type: text/vnd.tiddlywiki
+
+<<explorer_root_btn_disabled>>
+
+<hr/>
+
+<ul>
+<$list filter="[has[twit_class]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]get[type]unique[]]">
+<li>
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$list filter="[has[twit_class]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type<currentTiddler>count[]]" variable=count>
+<$list filter="[title<count>compare:integer:eq[0]]" variable=ignore>
+<$list filter="[all[current]addprefix<pathTwitClassTypeDef>get[category_description_singular]]" variable=display>
+<<display>> (<<count>>)
+</$list>
+</$list>
+<$list filter="[title<count>compare:integer:gt[0]]" variable=ignore>
+<$list filter="[all[current]addprefix<pathTwitClassTypeDef>get[category_description_plural]]" variable=display>
+<<display>> (<<count>>)
+</$list>
+</$list>
+</$list>
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/twit/explorer-state/type" text=<<currentTiddler>>/>
+</$button>
+</li>
+</$list>
+</ul>

@@ -1,0 +1,15 @@
+asset_model: 
+asset_owner: 
+asset_serial: 
+check_date: 
+created: 20230616201225588
+installed_os_version: 
+location: 
+modified: 20230616201241728
+operating_system: 
+tags: 
+title: Example Server
+twit_class: server
+twit_id: 1000
+type: text/vnd.tiddlywiki
+

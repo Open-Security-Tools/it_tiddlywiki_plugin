@@ -1,0 +1,13 @@
+created: 20220729163135698
+creator: paul
+modified: 20220729163149807
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/owners
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[all[]twit_class[owner]sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/owner/row}}
+</$list>
+</div>

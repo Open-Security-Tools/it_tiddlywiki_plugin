@@ -1,0 +1,11 @@
+action_name: Set Asset Model's Manufacturer
+action_type: error
+created: 20220729152131630
+modified: 20220801073503605
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/asset_model_set_manufacturer
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!has[manufacturer]]">
+<$action-setfield manufacturer=""/>
+</$list>
+<$action-sendmessage $message="tm-edit-tiddler" $param=<<currentTiddler>>/>

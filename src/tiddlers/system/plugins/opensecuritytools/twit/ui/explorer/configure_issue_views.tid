@@ -1,0 +1,29 @@
+created: 20230604181226066
+modified: 20230604181905846
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/configure_issue_views
+type: text/vnd.tiddlywiki
+
+\define pathIssueView() $:/plugins/opensecuritytools/twit/ui/explorer/issue_views/
+<table>
+<tr>
+<th>Name</th>
+<th>Caption</th>
+<th>Select Filter</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix<pathIssueView>sorted[]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix<pathIssueView>]" variable=name>
+<$link><<name>></$link>
+</$list>
+</td>
+<td>
+<$edit-text field=caption/>
+</td>
+<td>
+<$edit-text size=40 field=select_filter/>
+</td>
+</tr>
+</$list>
+</table>

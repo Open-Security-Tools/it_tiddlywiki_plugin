@@ -1,0 +1,21 @@
+created: 20220714183522836
+modified: 20230604150637968
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_uri_field_themes
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]]">
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/uri_fields/]]" variable=theme>
+
+.twit-btn.twit-btn-<<theme>> {
+background-color: hsl({{!!hue}}, 50%, 60%); 
+border-color: hsl({{!!hue}}, 50%, 40%); 
+color: #ffffff; 
+fill: #ffffff;
+}
+
+.uri_<<theme>>  {
+  background-color: <$view field=background_colour/>;
+}
+</$list> 
+</$list> 

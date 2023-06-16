@@ -1,0 +1,25 @@
+created: 20220715221515075
+creator: paul
+modified: 20220808064240046
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/forms/compliance_exceptions
+type: text/vnd.tiddlywiki
+
+\define candidate()
+<$list filter="[all[current]twit_compliance_field_status:$(complianceField)$[]addprefix[$:/plugins/opensecuritytools/twit/defs/compliance_field_status/]get[status_severity]compare:integer:gt[0]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/compliance_field/row}}
+</$list>
+\end
+
+
+
+<div class="py-todos">
+<$list filter="[all[current]]" variable=complianceParent>
+<$list filter="[has[twit_class]twit_compliance_items[]unique[]sort[]]">
+<$list filter="[all[current]twit_compliance_fields[]]" variable=complianceField>
+<<candidate>>
+</$list>
+</$list>
+</$list>
+</div>

@@ -1,0 +1,70 @@
+created: 20220720153313662
+modified: 20230604164836336
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_hosted_by
+type: text/vnd.tiddlywiki
+
+\define add-this-tiddler() [[$(actionTiddler)$]filter<can_host>then[$(currentTiddler)$]]+[putfirst[]]
+\define droppable-is-hosted-by-actions()
+<$action-listops $tiddler=<<actionTiddler>> $field='hosts'  $subfilter=<<add-this-tiddler>>/>
+\end
+
+\define btn_none()
+<$button
+   class="py-btn btn-small py-disabled"
+   tooltip="Nothing hosts this entity yet!"
+>
+<i class=<<icon_class>>/>
+0
+</$button>
+\end
+
+\define btn_one()
+<$button
+   class="py-btn btn-small"
+   tooltip="Entities which host this item"
+>
+<i class=<<icon_class>>/>
+<$list filter="[all[current]listed[hosts]first[]]">
+<<currentTiddler>>
+<$action-navigate $to=<<currentTiddler>>/>
+</$list>
+</$button>
+\end
+
+\define btn_many()
+<$button
+   class="py-btn btn-small"
+   popup=<<popupTiddler>>
+   tooltip="<<host_count>> entities which host this item"
+>
+<i class=<<icon_class>>/>
+<<host_count>>
+<i class="fas fa-caret-down"/>
+</$button>
+\end
+
+<$vars popupTiddler=<<qualify "$:/state/twit/hosted-by-dropdown">> icon_class="fas fa-chevron-circle-up">
+<$droppable actions=<<droppable-is-hosted-by-actions>>>
+<$list filter="[all[current]listed[hosts]count[]]" variable=host_count>
+<$list filter="[title<host_count>compare:integer:eq[0]]" variable=ignore>
+<<btn_none>>
+</$list>
+<$list filter="[title<host_count>compare:integer:eq[1]]" variable=ignore>
+<<btn_one>>
+</$list>
+<$list filter="[title<host_count>compare:integer:gt[1]]" variable=ignore>
+<<btn_many>>
+</$list>
+</$list>
+</$droppable>
+
+<$list filter="[all[current]listed[hosts]first[]]" variable=ignore>
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down apy-drop-down">
+<$list filter="[all[current]listed[hosts]]">
+<$link>{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/></$link>
+</$list>
+  </$reveal>
+</$list>
+</$vars>
+

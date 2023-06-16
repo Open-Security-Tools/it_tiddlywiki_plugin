@@ -1,0 +1,35 @@
+created: 20220726084737159
+modified: 20220729164824174
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_location
+type: text/vnd.tiddlywiki
+
+\define droppable-set-location-actions()
+<$list filter="[title<actionTiddler>twit_class[location]]" variable=ignore>
+<$action-setfield location=<<actionTiddler>>/>
+</$list>
+\end
+\define tooltip() Asset Location
+\define location_icon()
+{{$:/plugins/opensecuritytools/twit/defs/twit_class/location||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+\end
+<$droppable actions=<<droppable-set-location-actions>>>
+<$list filter="[all[current]get[location]]">
+<$button
+	class="py-btn btn-small"
+	tooltip=<<tooltip>>
+>
+<<location_icon>>
+<$view field=title/>
+<$action-navigate $to=<<currentTiddler>>/>
+</$button>
+</$list>
+<$list filter="[all[current]!has[location]]" variable=ignore>
+<$button
+	class="py-btn btn-small py-disabled"
+	tooltip=<<tooltip>>
+>
+<<location_icon>> ?
+</$button>
+</$list>
+</$droppable>

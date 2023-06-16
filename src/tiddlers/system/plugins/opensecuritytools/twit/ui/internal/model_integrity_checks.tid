@@ -1,0 +1,46 @@
+caption: Physical Behaviours
+created: 20220716105850642
+modified: 20220716115735749
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/model_integrity_checks
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[]prefix[$:/plugins/opensecuritytools/twit/ui/settings/model_integrity_checks/]]">
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/ui/settings/model_integrity_checks/]]" variable=check_name>
+
+! <$link><<check_name>></$link>
+</$list>
+
+<ul>
+<li>Icon: 
+<$list filter="[all[current]get[class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
+</$list>
+<$select field=class>
+<$list filter="[all[]prefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]">
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]]" variable=class_name>
+<option value=<<class_name>>>{{!!class_name}}</option>
+</$list>
+</$list>
+</$select>
+</li>
+<li>Singular: 
+<$edit-text field=pop_singular/>
+</li>
+<li>Plural: 
+<$edit-text field=pop_plural/>
+</li>
+<li>Tooltip:
+<$edit-text field=tooltip/>
+</li>
+<li>Count Filter:
+<$edit-text size=70 field=count_filter/>
+</li>
+<li>Non Zero Class (error): 
+<$edit-text field=nonzeroclass/>
+</li>
+<li>Target: 
+<$edit-text field=target/>
+</li>
+</ul>
+</$list>

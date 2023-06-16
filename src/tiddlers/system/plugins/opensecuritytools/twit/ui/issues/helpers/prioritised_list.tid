@@ -1,0 +1,15 @@
+created: 20230604091910573
+modified: 20230604181601389
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/issues/helpers/prioritised_list
+type: text/vnd.tiddlywiki
+
+\define isPriorityFilter() [get[proximity]add[3]subtract{!!impact}else[0]compare:number<priority>]
+
+<div class="py-todos">
+<$list filter="0 1 2 3 4 5 6" variable=priority>
+<$list filter="[twit_class[issue]!has[closed]filter<isPriorityFilter>] [twit_class[issue]days:closed[0]filter<isPriorityFilter>] +[unique[]sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/row}}
+</$list>
+</$list>
+</div>

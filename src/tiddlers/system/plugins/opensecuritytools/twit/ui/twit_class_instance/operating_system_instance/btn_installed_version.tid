@@ -1,0 +1,37 @@
+created: 20220724143819414
+modified: 20220805201436248
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btn_installed_version
+type: text/vnd.tiddlywiki
+
+\define droppable-set-operating-system-actions()
+<$list filter="[title<actionTiddler>twit_class[operating_system]]" variable=ignore>
+<$action-setfield operating_system=<<actionTiddler>>/>
+</$list>
+\end
+<$droppable actions=<<droppable-set-operating-system-actions>>>
+<$list filter="[all[current]has[operating_system]]">
+<$list filter="[all[current]get[installed_os_version]else[?]]" variable=installed_version>
+<$button class="py-btn btn-small">
+<$list filter="[all[current]not_in_operation[yes]then[far fa-times-circle]else[far fa-dot-circle]]" variable=os_icon>
+<i class=<<os_icon>>/> <$view field=operating_system/> 
+</$list>
+<$list filter="[all[current]get[operating_system]get[patching_strategy]addprefix[$:/plugins/opensecuritytools/twit/defs/patching_strategy/]check_version[yes]]" variable="ignore">
+<<installed_version>>
+<$list filter="[all[current]get[operating_system]get[target_version]compare:string:ne<installed_version>]">
+<i class="fas fa-long-arrow-alt-right"/> <<currentTiddler>>
+</$list>
+</$list>
+<$action-navigate $to={{!!operating_system}}/>
+</$button>
+</$list>
+</$list>
+<$list filter="[all[current]!has[operating_system]]" variable=ignore>
+<$button
+  class="py-btn btn-small py-disabled"
+	tooltip="No operating system set yet!"
+>
+<i class="far fa-dot-circle"/> ?
+</$button>
+</$list>
+</$droppable>

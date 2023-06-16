@@ -1,0 +1,38 @@
+created: 20230604174736195
+modified: 20230604222307270
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row
+type: text/vnd.tiddlywiki
+
+<div class="tc-menu-list-item">
+<div class="py-todo">
+<label class="">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/value}}
+
+</label>
+<$list filter="[all[current]filter<is_physical>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btns}}
+</$list>
+<$list filter="[all[current]twit_class[location]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_parent_location}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_child_locations}}
+</$list>
+<$list filter="[all[current]twit_class[asset_model]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_assets}}
+</$list>
+<$list filter="[all[current]has[twit_class]filter<has_operating_system>]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system_instance/btns}}
+</$list>
+<$list filter="[all[current]twit_class[operating_system]]" variable=ignore>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btns}}
+</$list>
+<span class="py-todo-actions">
+{{||$:/plugins/opensecuritytools/twit/ui/row_element_icons}}
+{{||$:/plugins/opensecuritytools/twit/ui/row_actions}}
+<$vars context=all>
+<<entity_action_button>>
+</$vars>
+</span>
+</div>
+</div>
