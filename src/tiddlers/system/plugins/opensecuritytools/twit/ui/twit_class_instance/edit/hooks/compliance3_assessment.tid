@@ -1,0 +1,8 @@
+created: 20220807151806675
+list-before: $:/config/FieldEditorFilters/default
+modified: 20220807151818430
+tags: $:/tags/FieldEditorFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/hooks/compliance3_assessment
+type: text/vnd.tiddlywiki
+
+[regexp[compliance3_assessment$]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/compliance_3assessment]]

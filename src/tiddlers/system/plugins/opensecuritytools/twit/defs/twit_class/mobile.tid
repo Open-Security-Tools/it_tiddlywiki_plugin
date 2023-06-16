@@ -1,0 +1,14 @@
+can_connect: yes
+class_name: Mobile
+class_name_plural: Mobiles
+created: 20210926214144658
+family: fas
+glyph: fa-mobile-alt
+has_operating_system: yes
+modified: 20220808070632582
+physical_class: user_terminal
+tag_colour: hsl(290, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/mobile
+type: physical
+

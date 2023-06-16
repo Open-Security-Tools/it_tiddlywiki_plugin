@@ -1,0 +1,18 @@
+created: 20230321223559771
+creator: paul
+modified: 20230604171511719
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_hooks/helpers/select_span
+type: text/vnd.tiddlywiki
+
+\define actionPath() $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/
+\define actionOption() <option value="{{||$(dropdownActionName)$}}">$(friendlyActionName)$</option>
+<$select field="row_element">
+<option value="">None</option>
+<$list filter="[all[tiddlers+shadows]prefix<actionPath>]" variable="dropdownActionName">
+<$list filter="[title<dropdownActionName>removeprefix<actionPath>]" variable="friendlyActionName">
+<<actionOption>>
+</$list>
+</$list>
+</$select>

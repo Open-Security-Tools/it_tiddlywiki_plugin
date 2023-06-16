@@ -1,0 +1,11 @@
+created: 20220721204857448
+modified: 20220721204905728
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/asset_model
+type: text/vnd.tiddlywiki
+
+<$select field=asset_model>
+<$list filter="[all[]twit_class[asset_model]sort[]]">
+<option value=<<currentTiddler>>><$view field="title"/></option>
+</$list>
+</$select>

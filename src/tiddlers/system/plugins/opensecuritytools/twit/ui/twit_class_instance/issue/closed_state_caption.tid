@@ -1,0 +1,13 @@
+created: 20230509211922486
+modified: 20230509212606328
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/closed_state_caption
+type: text/vnd.tiddlywiki
+
+\define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<$list filter="[all[current]get[closed]format:date[DDth MMM YYYY]]" variable=closedDate>
+<$list filter="[all[current]get[resolution]addprefix<resolutionPath>]" variable=resolution>
+<$transclude tiddler=<<resolution>> field="icon"/>
+<<closedDate>>
+</$list>
+</$list>

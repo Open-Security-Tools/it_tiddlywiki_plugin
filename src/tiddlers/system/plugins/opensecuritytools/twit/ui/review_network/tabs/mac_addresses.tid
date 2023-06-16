@@ -1,0 +1,12 @@
+caption: Mac Addresses
+created: 20230530211935007
+modified: 20230604174328188
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/review_network/tabs/mac_addresses
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[twit_class[nic]sorted[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>

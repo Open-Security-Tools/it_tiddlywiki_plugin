@@ -1,0 +1,20 @@
+created: 20230530211209642
+modified: 20230602220529703
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/network
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[network]]">
+<$list filter="[all[current]compare:string:ne<parentTiddler>]">
+<$button
+  class="py-btn py-small"
+	tooltip=<<currentTiddler>>
+>
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}}
+<$list filter="[all[current]get[vlan]]">
+vlan-<$view field=title/>
+</$list>
+<$action-navigate/>
+</$button>
+</$list>
+</$list>

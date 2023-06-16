@@ -1,0 +1,70 @@
+created: 20220727063538898
+modified: 20220727065714958
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_child_locations
+type: text/vnd.tiddlywiki
+
+\define droppable-location-actions()
+<$list filter="[title<actionTiddler>twit_class[location]!title<currentTiddler>]" variable=ignore>
+<$action-setfield $tiddler=<<actionTiddler>> location=<<currentTiddler>>/>
+</$list>
+\end
+
+\define btn_none()
+<$button
+   class="py-btn btn-small py-disabled"
+   tooltip="No sub-locations!"
+>
+<i class=<<icon_class>>/>
+0
+</$button>
+\end
+
+\define btn_one()
+<$button
+   class="py-btn btn-small"
+   tooltip="Sub location"
+>
+<i class=<<icon_class>>/>
+<$list filter="[twit_class[location]location<currentTiddler>first[]]">
+<<currentTiddler>>
+<$action-navigate $to=<<currentTiddler>>/>
+</$list>
+</$button>
+\end
+
+\define btn_many()
+<$button
+   class="py-btn btn-small"
+   popup=<<popupTiddler>>
+   tooltip="<<location_count>> sub-locations"
+>
+<i class=<<icon_class>>/>
+<<location_count>>
+<i class="fas fa-caret-down"/>
+</$button>
+\end
+
+<$vars popupTiddler=<<qualify "$:/state/twit/child-locations-dropdown">> icon_class="fas fa-map">
+<$droppable actions=<<droppable-location-actions>>>
+<$list filter="[twit_class[location]location<currentTiddler>count[]]" variable=location_count>
+<$list filter="[title<location_count>compare:integer:eq[0]]" variable=ignore>
+<<btn_none>>
+</$list>
+<$list filter="[title<location_count>compare:integer:eq[1]]" variable=ignore>
+<<btn_one>>
+</$list>
+<$list filter="[title<location_count>compare:integer:gt[1]]" variable=ignore>
+<<btn_many>>
+</$list>
+</$list>
+</$droppable>
+
+<$list filter="[twit_class[location]location<currentTiddler>first[]]" variable=ignore>
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down apy-drop-down">
+<$list filter="[twit_class[location]location<currentTiddler>sort[]]">
+<$link>{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/></$link>
+</$list>
+  </$reveal>
+</$list>
+</$vars>

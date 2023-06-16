@@ -1,0 +1,11 @@
+action_name: Upgrade ''<<currentTiddler>>''s installed version
+action_type: error
+created: 20220729125639692
+modified: 20220805200931826
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/os_instance_upgrade
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[operating_system]get[target_version]]" variable=target_version>
+<$action-setfield installed_os_version=<<target_version>>/>
+<$action-deletefield checked_date/>
+</$list>

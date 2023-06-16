@@ -1,0 +1,10 @@
+caption: Explorer
+created: 20220725175633369
+modified: 20230604215008433
+title: $:/plugins/opensecuritytools/twit/ui/explorer/dashboard
+title_as_caption: yes
+type: text/vnd.tiddlywiki
+
+<$set name=explorer-state filter="[title[$:/twit/explorer-state/display_tiddler]get[text]has[title]else[$:/plugins/opensecuritytools/twit/ui/explorer/pages/root]]">
+<$transclude tiddler=<<explorer-state>>/>
+</$set>

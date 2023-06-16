@@ -1,0 +1,18 @@
+created: 20230508205030014
+modified: 20230510215946891
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_impact
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+<i class="fas fa-bomb"/> Negligable Impact (0)
+<$action-setfield impact="0"/>
+</$button>
+<$button class="tc-btn-invisible">
+<i class="fas fa-bomb"/> Significant Impact (1)
+<$action-setfield impact="1"/>
+</$button>
+<$button class="tc-btn-invisible">
+<i class="fas fa-bomb"/> Catastrophic Impact (2)
+<$action-setfield impact="2"/>
+</$button>

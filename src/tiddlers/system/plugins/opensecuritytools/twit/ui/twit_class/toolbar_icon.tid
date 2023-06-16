@@ -1,0 +1,15 @@
+created: 20211211021755773
+modified: 20220715210744589
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class/toolbar_icon
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define render_class()
+<i class="$(family)$ $(glyph)$ $(id_icon_class)$ twit_toolbar_icon fa-xs"></i>
+\end
+<$set name="family" value={{!!family}}>
+<$set name="glyph" value={{!!glyph}}>
+<<render_class>>
+</$set>
+</$set>

@@ -1,0 +1,12 @@
+action_name: Assess as partial
+created: 20220806225632474
+modified: 20220806225648328
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/actions/set_assessment_partial
+type: text/vnd.tiddlywiki
+
+\define set_period()
+<$action-setfield $(complianceField)$_assessment=partial/>
+<$action-setfield $(complianceField)$_reviewed=<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">>/>
+\end
+<<set_period>>

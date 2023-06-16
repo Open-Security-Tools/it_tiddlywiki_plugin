@@ -1,0 +1,8 @@
+action_name: Close
+action_type: discretionary
+created: 20230508201931122
+modified: 20230508202036152
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/issue_close
+type: text/vnd.tiddlywiki
+

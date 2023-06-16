@@ -1,0 +1,11 @@
+class_name: Policy
+class_name_plural: Policies
+created: 20220731091631531
+family: fas
+glyph: fa-file-contract
+modified: 20220731091720791
+tag_colour: hsl(270, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/policy
+type: contextual
+

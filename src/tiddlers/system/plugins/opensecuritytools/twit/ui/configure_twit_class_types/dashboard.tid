@@ -1,0 +1,30 @@
+created: 20230605071026572
+modified: 20230605072029697
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_twit_class_types/dashboard
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Twit Class Type</th>
+<th>Category Description (Singular)</th>
+<th>Category Description (Plural)</th>
+</tr>
+<$list filter="[all[tiddlers+shadows]prefix<pathTwitClassTypeDef>sorted[]]">
+<$list filter="[all[current]removeprefix<pathTwitClassTypeDef>]" variable=name>
+<tr>
+<td>
+<$link>
+<<name>>
+</$link>
+</td>
+<td>
+<$edit-text field=category_description_singular size=30/>
+</td>
+<td>
+<$edit-text field=category_description_plural size=30/>
+</td>
+</tr>
+</$list>
+</$list>
+</table>

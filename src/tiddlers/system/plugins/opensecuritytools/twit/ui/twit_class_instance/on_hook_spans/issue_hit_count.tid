@@ -1,0 +1,11 @@
+created: 20230509063822240
+modified: 20230510210311295
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_hit_count
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[repeated_hit_count]else[0]add[1]]" variable=hitCount>
+<span class="row_element">
+<i class="far fa-copy"/> <<hitCount>>
+</span>
+</$list>

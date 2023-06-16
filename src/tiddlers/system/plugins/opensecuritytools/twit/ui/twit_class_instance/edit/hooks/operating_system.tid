@@ -1,0 +1,8 @@
+created: 20220721205017726
+list-before: $:/config/FieldEditorFilters/default
+modified: 20220721205028023
+tags: $:/tags/FieldEditorFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/hooks/operating_system
+type: text/vnd.tiddlywiki
+
+[regexp[operating_system$]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/operating_system]]

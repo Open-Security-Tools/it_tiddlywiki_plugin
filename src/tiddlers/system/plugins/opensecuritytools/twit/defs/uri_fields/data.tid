@@ -1,0 +1,12 @@
+background_colour: #d1f2eb
+created: 20220714155743971
+hue: 60
+icon_family: fas
+icon_glyph: fa-database
+modified: 20220718225508307
+name: Data
+singular_name: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/uri_fields/data
+type: physical
+

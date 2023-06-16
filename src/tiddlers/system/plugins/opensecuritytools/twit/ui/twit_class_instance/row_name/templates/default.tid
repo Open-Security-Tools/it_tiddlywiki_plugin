@@ -1,0 +1,7 @@
+created: 20230604220824862
+modified: 20230604222414134
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/default
+type: text/vnd.tiddlywiki
+
+<$link><$view field=title/></$link>

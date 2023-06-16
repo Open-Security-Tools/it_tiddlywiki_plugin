@@ -1,0 +1,11 @@
+created: 20220724082941350
+modified: 20220724221416679
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btn_target_version
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[target_version]]">
+<$button class="py-btn btn-small" disabled=yes style="pointer-events: none;">
+<i class="far fa-dot-circle"/> <$view field=target_version/>
+</$button>
+</$list>

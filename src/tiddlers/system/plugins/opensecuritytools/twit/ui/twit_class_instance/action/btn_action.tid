@@ -1,0 +1,30 @@
+created: 20220729133038974
+modified: 20220819074443945
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/action/btn_action
+type: text/vnd.tiddlywiki
+
+\define tooltip()
+Resolve action '$(action)$'!
+\end
+\define unknown_action()
+<$button
+   class="tc-btn-invisible"
+	 tooltip=<<tooltip>>
+>
+<i class="fas fa-exclamation-triangle"/>
+Unknown Action: <<action>>
+</$button>
+\end
+<$list filter="[title<action>addprefix[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/actions/]has[title]]" variable=action_tiddler emptyMessage=<<unknown_action>>>
+<$button
+   class="tc-btn-invisible"
+	 tooltip=<<tooltip>>
+>
+<$list filter="[title<action_tiddler>get[action_type]addprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]has[title]]">
+{{||$:/plugins/opensecuritytools/twit/ui/action_type/icon}}
+</$list>
+<$transclude tiddler=<<action_tiddler>>/>
+<$transclude tiddler=<<action_tiddler>> field=action_name/>
+</$button>
+</$list>

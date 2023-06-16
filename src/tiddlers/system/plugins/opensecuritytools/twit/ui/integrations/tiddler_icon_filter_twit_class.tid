@@ -1,0 +1,7 @@
+created: 20220719100150733
+modified: 20230604164629679
+tags: $:/tags/TiddlerIconFilter
+title: $:/plugins/opensecuritytools/twit/ui/integrations/tiddler_icon_filter_twit_class
+type: text/vnd.tiddlywiki
+
+[get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon]]

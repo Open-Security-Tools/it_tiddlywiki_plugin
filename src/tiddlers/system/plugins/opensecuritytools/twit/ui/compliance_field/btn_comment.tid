@@ -1,0 +1,17 @@
+created: 20220807091839281
+modified: 20220807092130974
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/btn_comment
+type: text/vnd.tiddlywiki
+
+\define field_comment()
+<$list filter="[all[current]get[$(complianceField)$_comment]]">
+<$button
+	class="py-btn btn-small"
+	tooltip=<<currentTiddler>>
+>
+<i class="fas fa-info-circle"/>
+</$button>
+</$list>
+\end
+<<field_comment>>

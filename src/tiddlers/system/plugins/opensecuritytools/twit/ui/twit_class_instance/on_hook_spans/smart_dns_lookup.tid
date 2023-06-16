@@ -1,0 +1,38 @@
+created: 20230531074131250
+modified: 20230601203242093
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/smart_dns_lookup
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[hosts]enlist-input[]count[]]" variable="dnsLookupCount">
+<$list filter="[title<dnsLookupCount>compare:integer:eq[1]]" variable="ignore">
+<$list filter="[all[current]get[hosts]enlist-input[]first[]]">
+<$button class="py-btn py-small">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>
+</$list>
+<$list filter="[title<dnsLookupCount>compare:integer:gt[1]]" variable="ignore">
+<$vars
+  popupTiddler=<<qualify "$:/state/twit/smart-dns-lookup-dropdown">>
+>
+<$button
+  class="py-btn py-small"
+  popup=<<popupTiddler>>
+>
+{{$:/plugins/opensecuritytools/twit/defs/twit_class/dns_lookup||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}} <<dnsLookupCount>> <i class="fas fa-angle-down"/>
+</$button>
+<$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+<div class="tc-drop-down py-drop-down">
+<$list filter="[all[current]get[hosts]enlist-input[]sort[]]">
+<$button class="tc-btn-invisible">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/inline_icon}} <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>
+</div>
+</$reveal>
+</$vars>
+</$list>
+</$list>

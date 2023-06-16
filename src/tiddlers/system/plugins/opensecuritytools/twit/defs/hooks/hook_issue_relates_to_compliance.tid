@@ -1,0 +1,8 @@
+created: 20230510194740178
+dropdown_action: 
+modified: 20230510212452513
+row_element: {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_relates_to_compliance}}
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_relates_to_compliance
+type: text/vnd.tiddlywiki
+

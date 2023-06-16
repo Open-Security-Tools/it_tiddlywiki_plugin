@@ -1,0 +1,12 @@
+background_colour: #fdebd0
+created: 20220714155804240
+hue: 120
+icon_family: fas
+icon_glyph: fa-power-off
+modified: 20220718225521214
+name: IPMI
+singular_name: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/uri_fields/ipmi
+type: physical
+

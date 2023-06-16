@@ -1,0 +1,8 @@
+created: 20220806232940477
+modified: 20220806233022374
+status_colour: red
+status_name: Okay (Expired)
+status_severity: 2
+title: $:/plugins/opensecuritytools/twit/defs/compliance_field_status/okay_expired
+type: text/vnd.tiddlywiki
+

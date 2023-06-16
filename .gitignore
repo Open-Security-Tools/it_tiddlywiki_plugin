@@ -1,0 +1,6 @@
+node_modules/
+npm-debug.log
+Thumbs.db
+src/tiddlers/system/StoryList.tid
+.DS_Store
+/.package

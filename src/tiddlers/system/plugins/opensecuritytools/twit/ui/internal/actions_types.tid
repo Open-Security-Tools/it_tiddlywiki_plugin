@@ -1,0 +1,31 @@
+caption: URI Fields
+created: 20220729133613474
+modified: 20220729143219755
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/internal/actions_types
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Action Type</th>
+<th>Name</th>
+<th>Severity</th>
+<th>Icon</th>
+<th>Colour</th>
+<th>Render</th>
+</tr>
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/defs/action_type/]sort[]]">
+<tr>
+<td>
+<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]]" variable=tailname>
+<$link><<tailname>></$link>
+</$list>
+</td>
+<td><$edit-text size=10 field=action_type_name/></td>
+<td><$edit-text type=number size=1 field=action_type_severity/></td>
+<td><$edit-text size=30 field=icon/></td>
+<td><$edit-text size=8 field=colour/></td>
+<td>{{||$:/plugins/opensecuritytools/twit/ui/action_type/icon}}</td>
+</tr>
+</$list>
+</table>

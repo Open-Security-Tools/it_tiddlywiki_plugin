@@ -1,0 +1,8 @@
+caption: Prioritised
+created: 20230604180923197
+modified: 20230604181918873
+select_filter: [twit_class[issue]!has[closed]] [twit_class[issue]days:closed[0]]
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/issue_views/prioritised
+type: text/vnd.tiddlywiki
+

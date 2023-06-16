@@ -1,0 +1,8 @@
+caption: TWIT
+created: 20211113181827643
+modified: 20230604141723966
+tags: $:/tags/ControlPanel
+title: $:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel
+type: text/vnd.tiddlywiki
+
+<<tabs "[all[tiddlers+shadows]tag[$:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel]] +[unique[]!sort[order]]" "$:/plugins/opensecuritytools/twit/ui/settings/model_integrity" explicitState:"$:/plugins/opensecuritytools/twit/ui/settings/state">>

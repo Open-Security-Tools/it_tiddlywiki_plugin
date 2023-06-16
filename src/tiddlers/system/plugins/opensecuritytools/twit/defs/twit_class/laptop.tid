@@ -1,0 +1,15 @@
+can_connect: yes
+can_host: yes
+class_name: Laptop
+class_name_plural: Laptops
+created: 20210926214103135
+family: fas
+glyph: fa-laptop
+has_operating_system: yes
+modified: 20220808070635084
+physical_class: user_terminal
+tag_colour: hsl(230, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/laptop
+type: physical
+

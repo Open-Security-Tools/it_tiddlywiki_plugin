@@ -1,0 +1,11 @@
+class_name: Location
+class_name_plural: Locations
+created: 20211024224255592
+family: fas
+glyph: fa-map
+modified: 20230508161328520
+tag_colour: hsl(270, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/location
+type: contextual
+

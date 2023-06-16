@@ -1,0 +1,12 @@
+caption: Assets
+created: 20220727073422841
+modified: 20220727073628452
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/owner/assets
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[has[twit_class]filter<is_physical>asset_owner<currentTiddler>sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/row}}
+</$list>
+</div>

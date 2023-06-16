@@ -1,0 +1,13 @@
+can_connect: 
+class_name: Owner
+class_name_plural: Owners
+created: 20211101175024126
+explore_view: $:/plugins/opensecuritytools/twit/ui/forms/owners
+family: fas
+glyph: fa-building
+modified: 20220729163311851
+tag_colour: hsl(350, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/owner
+type: contextual
+

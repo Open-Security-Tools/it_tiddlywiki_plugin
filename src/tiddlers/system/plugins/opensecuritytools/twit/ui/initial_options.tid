@@ -1,0 +1,28 @@
+created: 20230604102028024
+modified: 20230604215950746
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/initial_options
+type: text/vnd.tiddlywiki
+
+<div style="display: flex; justify-content: center; align-content: center; gap: 20px;">
+<$button class="py-btn btn-primary">
+Use?
+<$action-sendmessage 
+  $message="tm-close-tiddler" 
+/>
+</$button>
+<$button class="py-btn btn-primary">
+Explore?
+<$action-sendmessage 
+  $message="tm-close-tiddler" 
+/>
+<$action-navigate $to="$:/plugins/opensecuritytools/twit/ui/explorer/dashboard"/>
+</$button>
+<$button class="py-btn btn-primary">
+Maintain?
+<$action-sendmessage 
+  $message="tm-close-tiddler" 
+/>
+<$action-navigate $to="Planning"/>
+</$button>
+</div>

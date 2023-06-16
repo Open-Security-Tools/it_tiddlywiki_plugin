@@ -1,0 +1,10 @@
+created: 20230518105851201
+modified: 20230518110023506
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_flagged
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
++<i class="fas fa-flag"/> Set flagged
+<$action-setfield is_flagged="yes"/>
+</$button>

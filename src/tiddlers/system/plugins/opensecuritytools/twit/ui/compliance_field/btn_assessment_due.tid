@@ -1,0 +1,16 @@
+created: 20220806230246096
+modified: 20220806232340742
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/compliance_field/btn_assessment_due
+type: text/vnd.tiddlywiki
+
+\define field_due_btn()
+<$list filter="[all[current]twit_compliance_field_due:$(complianceField)$[]]">
+<$button
+	class="py-btn btn-small"
+>
+<i class="far fa-clock"/> <<currentTiddler>>
+</$button>
+</$list>
+\end
+<<field_due_btn>>

@@ -1,0 +1,7 @@
+created: 20230530203705297
+modified: 20230531214526804
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/vlan
+type: text/vnd.tiddlywiki
+
+<span class="row_element">VLAN-<$view field="vlan"/></span>

@@ -1,0 +1,18 @@
+created: 20230509212429340
+modified: 20230509213251344
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/change_resolution_buttons
+type: text/vnd.tiddlywiki
+
+\define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<$list filter="[all[shadows+tiddlers]prefix<resolutionPath>]" variable=resolutionTiddler>
+<$list filter="[title<resolutionTiddler>removeprefix<resolutionPath>]" variable=resolutionName>
+<$list filter="[all[current]get[resolution]else[]compare:string:ne<resolutionName>]" variable=ignore>
+<$button class="tc-btn-invisible">
+<$transclude tiddler=<<resolutionTiddler>> field=icon/>
+Change to <$transclude tiddler=<<resolutionTiddler>> field=caption/>
+<$action-setfield resolution=<<resolutionName>>/>
+</$button>
+</$list>
+</$list>
+</$list>

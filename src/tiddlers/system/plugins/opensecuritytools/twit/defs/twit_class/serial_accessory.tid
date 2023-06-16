@@ -1,0 +1,13 @@
+class_name: Serial Accessory
+class_name_plural: Serial Accessories
+created: 20210926214233954
+family: fas
+glyph: fa-keyboard
+is_physical: yes
+modified: 20220719104506120
+physical_class: accessory
+tag_colour: hsl(80, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/serial_accessory
+type: physical
+

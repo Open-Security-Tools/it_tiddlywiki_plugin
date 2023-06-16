@@ -1,0 +1,11 @@
+created: 20220721162846493
+creator: paul
+modified: 20220721163218469
+modifier: paul
+tags: $:/tags/Macro
+title: $:/plugins/opensecuritytools/twit/macros/misc
+type: text/vnd.tiddlywiki
+
+\define inline_error()
+<i style="color: red;" class="fas fa-exclamation-triangle"/>
+\end

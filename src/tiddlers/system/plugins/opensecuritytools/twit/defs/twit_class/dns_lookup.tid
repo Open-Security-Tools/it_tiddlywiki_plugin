@@ -1,0 +1,13 @@
+class_name: DNS Lookup
+class_name_plural: DNS Lookups
+created: 20230530211541177
+display_table: $:/plugins/opensecuritytools/twit/ui/context/none/all_networks
+family: fas
+glyph: fa-globe
+icon: $:/core/icon
+modified: 20230530212735129
+tag_colour: hsl(330, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/dns_lookup
+type: virtual
+

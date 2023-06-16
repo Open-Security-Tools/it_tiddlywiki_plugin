@@ -1,0 +1,10 @@
+created: 20230531091954678
+modified: 20230531094855015
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/attach_to_network_parent
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+Attach NIC to device!
+<$action-navigate/>
+</$button>

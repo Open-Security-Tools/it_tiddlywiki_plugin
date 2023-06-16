@@ -1,0 +1,11 @@
+created: 20230510210540991
+modified: 20230510210753931
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_created_date
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[created]format:date[MMM-YYYY]]" variable=createdDate>
+<span class="row_element">
+<<createdDate>>
+</span>
+</$list>

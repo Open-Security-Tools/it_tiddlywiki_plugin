@@ -1,0 +1,8 @@
+created: 20220807152049100
+list-before: $:/config/FieldEditorFilters/default
+modified: 20220807152100089
+tags: $:/tags/FieldEditorFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/hooks/compliance2_period
+type: text/vnd.tiddlywiki
+
+[regexp[compliance2_period$]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/compliance2_period]]

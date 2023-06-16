@@ -1,0 +1,29 @@
+created: 20220725223409333
+modified: 20230604175233717
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-twit-class
+type: text/vnd.tiddlywiki
+
+
+<$set name=physical_twit_class tiddler="$:/twit/explorer-state/physical_twit_class">
+
+<<explorer_root_btn>><$button>
+Physical
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+</$button>
+<$button>
+Infrastructure
+<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
+</$button>
+<$list filter="[title<physical_twit_class>]">
+<<disabled_twit_class_button>>
+</$list>
+<hr/>
+
+<div class="py-todos">
+<$list filter="[twit_class<physical_twit_class>sort[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>
+
+</$set>

@@ -1,0 +1,11 @@
+created: 20220726084431314
+modified: 20230602215840776
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btns
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_model}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_owner}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_location}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_label}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_disabled}}

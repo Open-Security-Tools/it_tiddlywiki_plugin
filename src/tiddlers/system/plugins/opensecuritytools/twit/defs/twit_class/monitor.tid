@@ -1,0 +1,12 @@
+class_name: Monitor
+class_name_plural: Monitors
+created: 20211106110716260
+family: fas
+glyph: fa-desktop
+modified: 20220719104434332
+physical_class: accessory
+tag_colour: hsl(310, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/monitor
+type: physical
+

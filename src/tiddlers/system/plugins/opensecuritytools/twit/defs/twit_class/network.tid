@@ -1,0 +1,13 @@
+class_name: Network
+class_name_plural: Networks
+created: 20210926213813183
+display_table: $:/plugins/opensecuritytools/twit/ui/context/none/all_networks
+family: fas
+glyph: fa-network-wired
+icon: $:/core/icon
+modified: 20220719104436305
+tag_colour: hsl(330, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/network
+type: virtual
+

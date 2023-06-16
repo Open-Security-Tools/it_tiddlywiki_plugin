@@ -1,0 +1,9 @@
+created: 20220807151738304
+modified: 20220807151746671
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/compliance_3assessment
+type: text/vnd.tiddlywiki
+
+<$vars complianceindex=3>
+<<assessment_select>>
+</$vars>

@@ -1,0 +1,9 @@
+created: 20230508214632161
+dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_missing_resolution}}
+error: yes
+modified: 20230531092718729
+row_element: 
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks/hook_issue_missing_resolution
+type: text/vnd.tiddlywiki
+

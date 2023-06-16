@@ -1,0 +1,32 @@
+caption: Span Mapping
+created: 20230531211350453
+creator: paul
+modified: 20230604171511723
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/span_mapping
+type: text/vnd.tiddlywiki
+
+\define actionPath() $:/plugins/opensecuritytools/twit/defs/hooks/
+<style>
+input.edit-action-field {
+  width: 100%;
+}
+</style>
+
+<table style="width: 100%;">
+<tr>
+<th>Action Name</th>
+<th>Span</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix<actionPath>sort[]]">
+<$list filter="[all[current]removeprefix<actionPath>]" variable="name">
+<tr>
+<td><$link><<name>></$link></td>
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/configure_hooks/helpers/select_span}}
+</td>
+</tr>
+</$list>
+</$list>
+</table>

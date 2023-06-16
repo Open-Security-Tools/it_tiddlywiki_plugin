@@ -1,0 +1,12 @@
+class_name: Pair of Headphones
+class_name_plural: Headphones
+created: 20211106110521308
+family: fas
+glyph: fa-headphones
+modified: 20220719104416841
+physical_class: accessory
+tag_colour: hsl(190, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/headphones
+type: physical
+

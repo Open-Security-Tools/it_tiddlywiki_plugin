@@ -1,0 +1,7 @@
+created: 20220807152331491
+modified: 20220807152339471
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/edit/fields/compliance2_reviewed
+type: text/vnd.tiddlywiki
+
+<$view field=compliance2_reviewed format="date" template="DD MMM YYYY"/>

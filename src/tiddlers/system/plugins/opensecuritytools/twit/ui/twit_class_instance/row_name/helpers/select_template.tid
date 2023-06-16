@@ -1,0 +1,16 @@
+created: 20230604221746903
+modified: 20230604222111646
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/helpers/select_template
+type: text/vnd.tiddlywiki
+
+\define templatePath() $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/
+<$select field="row_name_template">
+<option value="">None</option>
+<$list filter="[all[tiddlers+shadows]prefix<templatePath>]" variable="rowNameTemplate">
+<$list filter="[title<rowNameTemplate>removeprefix<templatePath>titlecase[]]" variable="friendlyName">
+<option value=<<rowNameTemplate>>>
+<<friendlyName>></option>
+</$list>
+</$list>
+</$select>

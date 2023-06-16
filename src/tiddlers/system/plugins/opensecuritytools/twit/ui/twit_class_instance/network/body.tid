@@ -1,0 +1,15 @@
+created: 20220715210954291
+modified: 20230605082210498
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/network/body
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]twit_class[network]]" variable="ignore">
+Network IP addresses:
+
+<div class="py-todos">
+<$list filter="[all[current]get[ip_addresses]enlist-input[]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row}}
+</$list>
+</div>
+</$list>

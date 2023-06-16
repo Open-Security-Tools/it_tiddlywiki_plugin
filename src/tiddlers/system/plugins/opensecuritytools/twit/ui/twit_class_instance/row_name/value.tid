@@ -1,0 +1,9 @@
+created: 20230604221052614
+modified: 20230604222445793
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/value
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]get[twit_class]addprefix<pathTwitClassDef>get[row_name_template]else[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/row_name/templates/default]]" variable=valueTemplate>
+<$transclude tiddler=<<valueTemplate>>/>
+</$list>

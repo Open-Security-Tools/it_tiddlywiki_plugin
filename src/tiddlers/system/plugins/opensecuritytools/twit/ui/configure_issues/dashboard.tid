@@ -1,0 +1,35 @@
+created: 20230509204355807
+creator: paul
+modified: 20230604171653801
+modifier: paul
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/configure_issues/dashboard
+type: text/vnd.tiddlywiki
+
+\define path() $:/plugins/opensecuritytools/twit/defs/issue_resolution/
+<style>
+input.edit-action-field {
+  width: 100%;
+}
+</style>
+
+
+<table style="width: 100%;">
+<tr>
+<th>Resolution</th>
+<th>Caption</th>
+<th>Icon</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]prefix<path>sort[]]">
+<$list filter="[all[current]removeprefix<path>]" variable="name">
+<tr>
+<td><$link><<name>></$link></td>
+<td><$edit-text field=caption/></td>
+<td>
+{{||$:/plugins/opensecuritytools/twit/ui/configure_issues/helpers/select_icon}}
+{{!!icon}}
+</td>
+</tr>
+</$list>
+</$list>
+</table>

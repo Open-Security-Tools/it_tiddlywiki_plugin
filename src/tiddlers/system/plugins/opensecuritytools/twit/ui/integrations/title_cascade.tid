@@ -1,0 +1,9 @@
+created: 20230508171005112
+list-before: $:/config/ViewTemplateTitleFilters/system
+modified: 20230604215808403
+tags: $:/tags/ViewTemplateTitleFilter
+title: $:/plugins/opensecuritytools/twit/ui/integrations/title_cascade
+type: text/vnd.tiddlywiki
+
+[title_as_caption[yes]then[$:/plugins/opensecuritytools/twit/ui/caption_as_title]]
+[twit_class[issue]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/title]]

@@ -1,0 +1,7 @@
+created: 20210807212933526
+modified: 20220715210738331
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class/badge_icon
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="fa-lbadge" glyph={{!!glyph}} fam={{!!family}}>>

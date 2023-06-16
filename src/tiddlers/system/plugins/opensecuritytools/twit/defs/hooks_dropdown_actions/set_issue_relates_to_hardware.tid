@@ -1,0 +1,10 @@
+created: 20230510201220479
+modified: 20230510201450160
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_relates_to_hardware
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
++<i class="fas fa-tools"/> Relates to Hardware
+<$action-setfield relates_to_hw="yes"/>
+</$button>

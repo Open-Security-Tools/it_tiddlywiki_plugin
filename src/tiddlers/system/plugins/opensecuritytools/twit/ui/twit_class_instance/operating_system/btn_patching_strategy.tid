@@ -1,0 +1,17 @@
+created: 20220728214159718
+modified: 20220728215025190
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/operating_system/btn_patching_strategy
+type: text/vnd.tiddlywiki
+
+\define tooltip() $(description)$ Check OS every $(check_days)$ day(s). Check every $(check_days)$ day(s). 
+<$list filter="[all[current]get[patching_strategy]addprefix[$:/plugins/opensecuritytools/twit/defs/patching_strategy/]]">
+<$vars description={{!!check_description}} check_days={{!!check_days}} check_days={{!!check_days}}>
+<$button
+	class="py-btn btn-small"
+	tooltip=<<tooltip>>
+>
+<i class="fas fa-calendar-check"/> <$view field=name/>
+</$button>
+</$vars>
+</$list>
