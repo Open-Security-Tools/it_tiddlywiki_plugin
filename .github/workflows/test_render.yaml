@@ -1,0 +1,43 @@
+name: TestRender
+on:
+  push:
+    branches:
+      - '!main'
+jobs:
+  test_render:
+    name: TestRender
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # We need to fetch all history for the current branch to get our version injection correct.
+          fetch-depth: 0      
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Inject version
+        run: |
+          python inject_version.py
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build
+      - name: Check output
+        run: |
+          ls -la editions/demo/output
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          path: website
+      - name: Strip off the git history
+        run: |
+          rm -rf website/.git
+      - name: Update the index.html page
+        run: |
+          cp editions/demo/output/demo.html website/index.html
+      - name: Check the contents of the website
+        run: |
+          ls -laR website

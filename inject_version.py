@@ -2,7 +2,7 @@
 import os
 import subprocess
 
-TID_FILE = "src/tiddlers/system/plugins/opensecuritytools/twit.tid"
+TID_FILE = "plugins/opensecuritytools/twit/plugin.info"
 VERSION_FILE = "VERSION"
 
 def get_commit_count():
