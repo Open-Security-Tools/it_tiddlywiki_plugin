@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           # We need to fetch all history for the current branch to get our version injection correct.
-          fetch-depth: 0      
+          fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
