@@ -4,3 +4,5 @@ Thumbs.db
 /src/tiddlers/system/StoryList.tid
 .DS_Store
 /.package
+/editions/demo/tiddlers/\$__StoryList*.tid
+/tiddlers/\$__StoryList*.tid
