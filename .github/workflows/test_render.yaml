@@ -28,17 +28,3 @@ jobs:
       - name: Check output
         run: |
           ls -la editions/demo/output
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v3
-        with:
-          ref: gh-pages
-          path: website
-      - name: Strip off the git history
-        run: |
-          rm -rf website/.git
-      - name: Update the index.html page
-        run: |
-          cp editions/demo/output/demo.html website/index.html
-      - name: Check the contents of the website
-        run: |
-          ls -laR website
