@@ -2,6 +2,7 @@ name: TestRender
 on:
   push:
     branches:
+      - '*'
       - '!main'
 jobs:
   test_render:
