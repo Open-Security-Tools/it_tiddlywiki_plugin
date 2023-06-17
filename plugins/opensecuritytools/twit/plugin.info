@@ -6,7 +6,7 @@
     "version": "1.4.1",
     "core-version": ">=5.1.23",
     "source": "https://github.com/Open-Security-Tools/it_tiddlywiki_plugin",
-    "list": "readme license syntax",
+    "list": "readme help explore license development",
     "dependents": "",
     "plugin-type": "plugin"
 }
