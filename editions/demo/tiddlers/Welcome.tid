@@ -1,0 +1,12 @@
+created: 20220312215441379
+modified: 20230617092648826
+title: Welcome
+type: text/vnd.tiddlywiki
+
+This website distributes and demonstrates a  [[TiddlyWiki|https://tiddlywiki.com/]] plugin called ''T''iddly''W''iki ''I''nformation ''T''echnology (TWIT).
+TWIT extends a wiki to provide IT management functionality.
+
+The source code is available on [[GitHub|https://github.com/Open-Security-Tools/it_tiddlywiki_plugin]] and published under the [[MIT License|$:/plugins/opensecuritytools/twit/license]].
+
+{{$:/plugins/opensecuritytools/twit||$:/core/ui/Components/plugin-info}}
+
