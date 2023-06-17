@@ -1,0 +1,20 @@
+{
+    "description": "TWIT",
+	"plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+		"opensecuritytools/twit"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+	"build": {
+        "index": [
+            "--rendertiddler",
+			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "demo.html",
+            "text/plain"
+        ]
+    }
+}
