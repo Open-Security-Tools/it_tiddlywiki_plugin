@@ -5,4 +5,11 @@ tags: $:/tags/ControlPanel
 title: $:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel
 type: text/vnd.tiddlywiki
 
-<<tabs "[all[tiddlers+shadows]tag[$:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel]] +[unique[]!sort[order]]" "$:/plugins/opensecuritytools/twit/ui/settings/model_integrity" explicitState:"$:/plugins/opensecuritytools/twit/ui/settings/state">>
+\define controlPanelTiddler() $:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel
+<$list filter="[all[tiddlers+shadows]tag<controlPanelTiddler>!sort[order]first[]]" variable=defaultTab>
+<$macrocall
+  $name=tabs
+  default=<<defaultTab>>
+  tabsList="[all[tiddlers+shadows]tag<controlPanelTiddler>!sort[order]]"
+/>
+</$list>
