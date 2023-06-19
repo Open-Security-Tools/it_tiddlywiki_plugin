@@ -7,5 +7,7 @@ type: text/vnd.tiddlywiki
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_model}}
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_owner}}
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_location}}
+<$list filter="[title[$:/config/twit/display-asset-identifiers]text[yes]]" variable=ignore>
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_label}}
+</$list>
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btn_asset_disabled}}

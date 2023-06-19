@@ -1,0 +1,15 @@
+caption: Config
+created: 20220729165937720
+modified: 20230604141723966
+tags: $:/plugins/opensecuritytools/twit/ui/integrations/twit_control_panel
+title: $:/plugins/opensecuritytools/twit/ui/settings/config
+type: text/vnd.tiddlywiki
+
+\define display-asset-identifiers()
+<$select tiddler="$:/config/twit/display-asset-identifiers" default=no>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</$select>
+\end
+
+|Display TWIT asset identifiers |<<display-asset-identifiers>> |
