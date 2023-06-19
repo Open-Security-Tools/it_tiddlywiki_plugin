@@ -6,6 +6,10 @@ tags: [[Wiki Internals]] $:/tags/Stylesheet
 title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_misc
 type: text/css
 
+span.tc-tag-label {
+  white-space: nowrap;
+}
+
 button.py-disabled {
 	color: lightgray;
 }
