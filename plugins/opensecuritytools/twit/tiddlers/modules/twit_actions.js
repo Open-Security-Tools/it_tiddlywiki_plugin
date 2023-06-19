@@ -440,6 +440,10 @@ function calculate_tiddlers_with_compliance_fields_for_root(tiddler, title) {
 }        
 
 function calculate_max_compliance_error_for_tiddler(tiddler) {
+    if ((tiddler === undefined) || (tiddler.fields === undefined)) {
+        return ERROR_LEVEL_NONE;
+    }
+
     // Only twit entities can have compliance issues
     if (!tiddler.fields.twit_class) {
         return ERROR_LEVEL_NONE;
