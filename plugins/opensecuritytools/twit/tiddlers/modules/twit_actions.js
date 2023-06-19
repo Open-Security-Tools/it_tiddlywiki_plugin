@@ -467,11 +467,13 @@ function calculate_compliance_actions_for_children(tiddler) {
 
     maxError = Math.max(maxError, calculate_max_compliance_error_for_tiddler(tiddler));
 
-    // Check items in the tags field for this tiddler
-    $tw.wiki.filterTiddlers("[title[" + tiddler.fields.title + "]tagging[]]").forEach(function (tt) {
-        var tv = $tw.wiki.getTiddler(tt);
-        maxError = Math.max(maxError, calculate_max_compliance_error_for_tiddler(tv));
-    });
+    if (tiddler && tiddler.fields) {
+        // Check items in the tags field for this tiddler
+        $tw.wiki.filterTiddlers("[title[" + tiddler.fields.title + "]tagging[]]").forEach(function (tt) {
+            var tv = $tw.wiki.getTiddler(tt);
+            maxError = Math.max(maxError, calculate_max_compliance_error_for_tiddler(tv));
+        });
+    }
 
     if (maxError == ERROR_LEVEL_WARNING) {
         result.push("compliance_fix_warnings");
