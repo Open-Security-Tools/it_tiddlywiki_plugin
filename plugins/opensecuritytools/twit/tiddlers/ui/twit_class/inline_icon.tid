@@ -5,11 +5,8 @@ title: $:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-\define render_class()
-<i class="$(family)$ $(glyph)$ $(id_icon_class)$"></i>
-\end
+\define render_class() <i class="$(family)$ $(glyph)$ $(id_icon_class)$"/>
 <$set name="family" value={{!!family}}>
 <$set name="glyph" value={{!!glyph}}>
-<<render_class>>
-</$set>
+<<render_class>></$set>
 </$set>
