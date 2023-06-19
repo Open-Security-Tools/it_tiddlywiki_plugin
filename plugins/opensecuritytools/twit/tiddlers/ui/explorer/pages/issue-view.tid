@@ -7,11 +7,11 @@ type: text/vnd.tiddlywiki
 \define isPriorityFilter() [get[proximity]add[3]subtract{!!impact}else[0]compare:number<priority>]
 \define subPriorityFilter() $(selectFilter)$ +[filter<isPriorityFilter>unique[]sort[]]
 
-<$set name=issue_view tiddler="$:/twit/explorer-state/issue_view">
+<$set name=issue_view tiddler="$:/temp/twit/explorer-state/issue_view">
 
 <<explorer_root_btn>><$button>
 Issue
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
 </$button>
 <$list filter="[title<issue_view>get[caption]]">
 <$button disabled=yes>

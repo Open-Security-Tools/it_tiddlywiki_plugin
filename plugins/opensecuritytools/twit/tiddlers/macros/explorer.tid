@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 \define explorer_root_btn()
 <$button>
 <<_explorer_root_icon>>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="explorer-root"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="explorer-root"/>
 </$button>
 \end
 
