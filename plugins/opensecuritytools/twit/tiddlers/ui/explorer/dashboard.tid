@@ -5,6 +5,6 @@ title: $:/plugins/opensecuritytools/twit/ui/explorer/dashboard
 title_as_caption: yes
 type: text/vnd.tiddlywiki
 
-<$set name=explorer-state filter="[title[$:/twit/explorer-state/display_tiddler]get[text]has[title]else[$:/plugins/opensecuritytools/twit/ui/explorer/pages/root]]">
+<$set name=explorer-state filter="[title[$:/temp/twit/explorer-state/display_tiddler]get[text]has[title]else[$:/plugins/opensecuritytools/twit/ui/explorer/pages/root]]">
 <$transclude tiddler=<<explorer-state>>/>
 </$set>

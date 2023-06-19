@@ -6,13 +6,13 @@ type: text/vnd.tiddlywiki
 
 \define is_physical_class() [addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type[physical]physical_class<physical_class>]
 
-<$set name=physical_class tiddler="$:/twit/explorer-state/physical_class">
+<$set name=physical_class tiddler="$:/temp/twit/explorer-state/physical_class">
 
 <<explorer_root_btn>><$button>
 <$list filter="[title[physical]addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
 <$view field=title/>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
 </$button>
 <$button disabled=yes>
 <$list filter="[title<physical_class>search-replace[-],[ ]titlecase[]]">
@@ -28,8 +28,8 @@ type: text/vnd.tiddlywiki
 <$list filter="[twit_class<currentTiddler>get[twit_class]filter<is_physical_class>count[]]" variable=count>
 <<explorer_twit_class_display>>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-twit-class"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/physical_twit_class" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-twit-class"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/physical_twit_class" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>

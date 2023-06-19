@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 \define has_type() [addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]type<type>]
 
-<$set name=type tiddler='$:/twit/explorer-state/type'>
+<$set name=type tiddler='$:/temp/twit/explorer-state/type'>
 
 <<explorer_root_btn>><$button disabled=yes>
 <$list filter="[title<type>addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
@@ -28,8 +28,8 @@ type: text/vnd.tiddlywiki
 <$list filter="[twit_class<currentTiddler>get[twit_class]filter<has_type>count[]]" variable=count>
 <<explorer_twit_class_display>>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/virtual-class"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/virtual-twit-class" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/virtual-class"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/virtual-twit-class" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>
@@ -48,8 +48,8 @@ type: text/vnd.tiddlywiki
 <<entity>> (<<count>>)
 </$list>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/physical_class" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/physical_class" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>
@@ -66,8 +66,8 @@ type: text/vnd.tiddlywiki
 <$list filter="[twit_class<currentTiddler>get[twit_class]filter<has_type>count[]]" variable=count>
 <<explorer_twit_class_display>>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/contextual-class"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/contextual-twit-class" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/contextual-class"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/contextual-twit-class" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>
@@ -88,8 +88,8 @@ type: text/vnd.tiddlywiki
 (<<count>>)
 </$list>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/issue-view"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/issue_view" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/issue-view"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/issue_view" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>

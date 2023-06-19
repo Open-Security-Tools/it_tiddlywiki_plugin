@@ -5,15 +5,15 @@ title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-twit-class
 type: text/vnd.tiddlywiki
 
 
-<$set name=physical_twit_class tiddler="$:/twit/explorer-state/physical_twit_class">
+<$set name=physical_twit_class tiddler="$:/temp/twit/explorer-state/physical_twit_class">
 
 <<explorer_root_btn>><$button>
 Physical
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
 </$button>
 <$button>
 Infrastructure
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/physical-class"/>
 </$button>
 <$list filter="[title<physical_twit_class>]">
 <<disabled_twit_class_button>>
