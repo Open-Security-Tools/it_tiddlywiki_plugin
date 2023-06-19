@@ -1,0 +1,18 @@
+created: 20190923165924142
+creator: paul
+modified: 20230604150724590
+modifier: paul
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_read_only
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" default={{{ [[$:/config/twit/read-only]is[tiddler]] }}} text="$:/config/twit/read-only">
+button:is(
+[aria-label="edit"],
+[aria-label="delete"],
+[aria-label*="new"],
+[aria-label="clone"],
+[aria-label="set"] ) {
+  display:none;
+}
+</$reveal>
