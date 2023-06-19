@@ -4,13 +4,13 @@ tags:
 title: $:/plugins/opensecuritytools/twit/ui/explorer/pages/contextual-class
 type: text/vnd.tiddlywiki
 
-<$set name=twit_class tiddler="$:/twit/explorer-state/contextual-twit-class">
+<$set name=twit_class tiddler="$:/temp/twit/explorer-state/contextual-twit-class">
 
 <<explorer_root_btn>><$button>
 <$list filter="[title[contextual]addprefix<pathTwitClassTypeDef>get[category_description_plural]]">
 <$view field=title/>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
 </$button>
 <$list filter="[title<twit_class>]">
 <<disabled_twit_class_button>>
