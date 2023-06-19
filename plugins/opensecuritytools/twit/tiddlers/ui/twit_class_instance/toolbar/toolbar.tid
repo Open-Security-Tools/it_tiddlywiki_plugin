@@ -18,10 +18,6 @@ type: text/vnd.tiddlywiki
 <$list filter="[all[current]filter<is_physical>]" variable=ignore>
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/asset/btns}}
 </$list>
-<$list filter="[all[current]twit_class[location]]" variable=ignore>
-{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_parent_location}}
-{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/location/btn_child_locations}}
-</$list>
 <$list filter="[all[current]twit_class[asset_model]]" variable=ignore>
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/toolbar/toolbar_assets}}
 </$list>
