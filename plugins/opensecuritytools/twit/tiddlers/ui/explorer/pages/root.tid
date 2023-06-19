@@ -24,8 +24,8 @@ type: text/vnd.tiddlywiki
 </$list>
 </$list>
 </$list>
-<$action-setfield $tiddler="$:/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
-<$action-setfield $tiddler="$:/twit/explorer-state/type" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/twit-class-type"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/type" text=<<currentTiddler>>/>
 </$button>
 </li>
 </$list>
