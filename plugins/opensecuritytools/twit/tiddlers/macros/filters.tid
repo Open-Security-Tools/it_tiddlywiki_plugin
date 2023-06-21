@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 
 \define has_operating_system() [get[twit_class]addprefix<pathTwitClassDef>has_operating_system[yes]]
 
-\define unrelated_tagging() [!twit_class[issue]tagging[]!has[twit_class]]
+\define unrelated_tagging() [!twit_class[issue]tagging[]!has[twit_class]type[text/vnd.tiddlywiki]]
 
 \define debug_unrelated_tagging() [tagging[]]
 
