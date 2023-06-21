@@ -26,5 +26,15 @@ type: text/vnd.tiddlywiki
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/list_of_connected_items}}
 </$list>
 
+<$list filter="[all[current]!has[text]subfilter<unrelated_tagging>] [all[current]!has[text]get[operating_system]subfilter<unrelated_tagging>] [all[current]!has[text]get[asset_model]subfilter<unrelated_tagging>] +[first[]]" variable=ignore>
+Related documentation:
+
+<ul>
+<$list filter="[all[current]!has[text]subfilter<unrelated_tagging>sort[]]">
+<li><$link><$view field=title/></$link></li>
+</$list>
+</ul>
+
+</$list>
 
 </$list>
