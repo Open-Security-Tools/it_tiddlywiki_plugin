@@ -6,8 +6,10 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[has[twit_class]]">
 <$list filter="[all[current]get[twit_class]addprefix[$:/plugins/opensecuritytools/twit/defs/twit_class/]get[tag_colour]]" variable=class>
+<$list filter="[all[current]escapecss[]]">
 [data-tiddler-title="<$view field=title/>"]  {
   border-left: 5px solid <<class>>;
 }
+</$list>
 </$list>
 </$list> 
