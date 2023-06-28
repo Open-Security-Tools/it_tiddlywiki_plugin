@@ -19,15 +19,9 @@ type: text/vnd.tiddlywiki
 <$link><<tailname>></$link>
 </$list>
 </td>
-<td><$edit-text size=40 field=action_name/></td>
+<td><$view field=action_name/></td>
 <td>
-<$select field=action_type>
-<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/opensecuritytools/twit/defs/action_type/]]">
-<$list filter="[all[current]removeprefix[$:/plugins/opensecuritytools/twit/defs/action_type/]]" variable=trailer>
-<option value=<<trailer>>>{{!!action_type_name}}</option>
-</$list>
-</$list>
-</$select>
+<$view field=action_type/>
 </td>
 <td>
 <$list filter="[all[current]has[text]]">

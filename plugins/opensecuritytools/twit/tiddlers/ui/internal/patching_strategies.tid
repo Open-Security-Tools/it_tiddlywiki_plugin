@@ -20,10 +20,10 @@ type: text/vnd.tiddlywiki
 <$link><<tailname>></$link>
 </$list>
 </td>
-<td><$edit-text size=20 field=name/></td>
-<td><$edit-text size=4 field=check_days type=number/></td>
-<td align=center><$checkbox field="check_version" checked="yes" unchecked=""/></td>
-<td><$edit-text size=30 field=check_description/></td>
+<td><$view field=name/></td>
+<td><$view field=check_days/></td>
+<td align=center><$view field="check_version"/></td>
+<td><$view field=check_description/></td>
 </tr>
 </$list>
 </table>

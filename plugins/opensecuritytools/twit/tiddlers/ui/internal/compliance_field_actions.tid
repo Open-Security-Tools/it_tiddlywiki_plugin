@@ -1,4 +1,4 @@
-caption: Actions
+caption: Compliance Field Actions
 created: 20220806211622468
 modified: 20220806213113887
 tags: 
@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
 <$link><<tailname>></$link>
 </$list>
 </td>
-<td><$edit-text size=40 field=action_name/></td>
+<td><$view field=action_name/></td>
 <td>
 <$list filter="[all[current]has[text]]">
 Yes
@@ -27,19 +27,6 @@ Yes
 </tr>
 </$list>
 </table>
-
-<hr/>
-
-New action: <$edit-text tiddler="$:/twit/state/compliance_field_actions_form" field=new_action_title/>
-<$button class="py-btn">
-Add
-<$list filter="[title[$:/twit/state/compliance_field_actions_form]get[new_action_title]addprefix[$:/plugins/opensecuritytools/twit/ui/compliance_field/actions/]]">
-<$list filter="[all[current]is[missing]]">
-<$action-createtiddler $basetitle=<<currentTiddler>> text=""/>
-<$action-setfield $tiddler="$:/twit/state/compliance_field_actions_form" new_action_title=""/>
-</$list>
-</$list>
-</$button>
 
 <hr/>
 

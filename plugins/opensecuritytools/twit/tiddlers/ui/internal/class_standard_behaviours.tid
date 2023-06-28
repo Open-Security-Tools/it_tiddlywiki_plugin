@@ -8,15 +8,15 @@ type: text/vnd.tiddlywiki
 \define class_inline_icon(class)
 <$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
 <td><$link>$class$</$link></td>
-<td><$edit-text field=class_name/></td>
-<td><$edit-text field=class_name_plural/></td>
+<td><$view field=class_name/></td>
+<td><$view field=class_name_plural/></td>
 <td>
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
 </td>
 <td>{{||$:/plugins/opensecuritytools/twit/ui/twit_class/badge_icon}}
 </td>
 <td>
-<$edit-text field=tag_colour/>
+<$view field=tag_colour/>
 </td>
 </$set>
 \end

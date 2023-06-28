@@ -1,4 +1,4 @@
-caption: URI Fields
+caption: Action Types
 created: 20220729133613474
 modified: 20220729143219755
 tags: 
@@ -21,10 +21,10 @@ type: text/vnd.tiddlywiki
 <$link><<tailname>></$link>
 </$list>
 </td>
-<td><$edit-text size=10 field=action_type_name/></td>
-<td><$edit-text type=number size=1 field=action_type_severity/></td>
-<td><$edit-text size=30 field=icon/></td>
-<td><$edit-text size=8 field=colour/></td>
+<td><$view field=action_type_name/></td>
+<td><$view field=action_type_severity/></td>
+<td><$view field=icon/></td>
+<td><$view field=colour/></td>
 <td>{{||$:/plugins/opensecuritytools/twit/ui/action_type/icon}}</td>
 </tr>
 </$list>
