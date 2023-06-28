@@ -1,5 +1,6 @@
 can_connect: no
 can_host: yes
+is_hosted: yes
 class_name: Self Managed Service
 class_name_plural: Self Managed Services
 created: 20220714151324300
