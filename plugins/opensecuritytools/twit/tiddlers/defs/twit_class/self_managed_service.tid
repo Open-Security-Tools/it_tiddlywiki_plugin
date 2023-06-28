@@ -1,0 +1,14 @@
+can_connect: no
+can_host: yes
+class_name: Self Managed Service
+class_name_plural: Self Managed Services
+created: 20220714151324300
+family: fas
+glyph: fa-briefcase
+modified: 20220808070627308
+physical_class: infrastructure
+tag_colour: hsl(80, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/self_managed_service
+type: virtual
+
