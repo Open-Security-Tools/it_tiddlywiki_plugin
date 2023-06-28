@@ -21,13 +21,13 @@ type: text/vnd.tiddlywiki
 <$link><<tailname>></$link>
 </$list>
 </td>
-<td><$edit-text size=10 field=name/></td>
-<td><$edit-text size=8 field=hue type=number/></td>
+<td><$view field=name/></td>
+<td><$view field=hue/></td>
 <td>
 {{||$:/plugins/opensecuritytools/twit/ui/uri_field/inline_icon}}
 </td>
-<td><$edit-text size=6 field=icon_family/></td>
-<td><$edit-text size=6 field=icon_glyph/></td>
+<td><$view field=icon_family/></td>
+<td><$view field=icon_glyph/></td>
 
 </tr>
 </$list>

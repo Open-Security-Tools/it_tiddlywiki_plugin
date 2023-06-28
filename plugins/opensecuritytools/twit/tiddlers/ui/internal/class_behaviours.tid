@@ -13,14 +13,10 @@ type: text/vnd.tiddlywiki
 {{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}
 </td>
 
-<td>
-<$checkbox field="can_connect" checked="yes" unchecked="" default=""></$checkbox>
-</td>
-<td>
-<$checkbox field="can_host" checked="yes" unchecked="" default=""></$checkbox>
-</td>
-<td><$checkbox field="is_hosted" checked="yes" unchecked="" default=""></$checkbox></td>
-<td><$checkbox field="is_host" checked="yes" unchecked="" default=""></$checkbox></td>
+<td><$view field="can_connect"/></td>
+<td><$view field="can_host"/></td>
+<td><$view field="is_hosted" /></td>
+<td><$view field="is_host" /></td>
 
 </$set>
 \end
