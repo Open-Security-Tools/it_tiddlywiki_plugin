@@ -1,0 +1,14 @@
+can_connect: no
+can_host: yes
+class_name: Public Cloud
+class_name_plural: Public Clouds
+created: 20220714151324300
+family: fas
+glyph: fa-cloud
+modified: 20220808070627308
+physical_class: infrastructure
+tag_colour: hsl(60, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/public_cloud
+type: virtual
+
