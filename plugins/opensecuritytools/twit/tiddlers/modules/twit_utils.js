@@ -94,7 +94,7 @@ function entity_class_get_hosts_parents_inclusive(title) {
     var to_process = [title, ];
 
     while (to_process.length > 0) {
-        t = to_process.pop();
+        var t = to_process.pop();
 
         result.push(t);
         
