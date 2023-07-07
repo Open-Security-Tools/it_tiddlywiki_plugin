@@ -1,0 +1,15 @@
+can_connect: no
+can_host: yes
+is_hosted: yes
+class_name: 3rd Party Managed Service
+class_name_plural: 3rd Party Managed Services
+created: 20220714151324300
+family: fas
+glyph: fa-handshake
+modified: 20220808070627308
+physical_class: infrastructure
+tag_colour: hsl(120, 60%, 60%)
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/3rd_party_managed_service
+type: virtual
+
