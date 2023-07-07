@@ -68,7 +68,7 @@ function entity_class_get_hosts_children(title) {
     var to_process = [title, ];
 
     while (to_process.length > 0) {
-        t = to_process.pop();
+        var t = to_process.pop();
 
         // Can it host?
         if (entity_class_can_host(t)) {
