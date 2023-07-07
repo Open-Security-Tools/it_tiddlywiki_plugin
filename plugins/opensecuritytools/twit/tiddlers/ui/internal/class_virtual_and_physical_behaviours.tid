@@ -9,9 +9,9 @@ type: text/vnd.tiddlywiki
 <$set name="currentTiddler" value="$:/plugins/opensecuritytools/twit/defs/twit_class/$class$">
 <td><$link>$class$</$link></td>
 <td>{{||$:/plugins/opensecuritytools/twit/ui/twit_class/inline_icon}}</td>
-<td><$checkbox field="can_host" checked="yes" unchecked="" default=""></$checkbox></td>
-<td><$checkbox field="is_hosted" checked="yes" unchecked="" default=""></$checkbox></td>
-<td><$checkbox field="has_operating_system" checked="yes" unchecked="" default=""></$checkbox></td>
+<td><$view field="can_host" /></td>
+<td><$view field="is_hosted" /></td>
+<td><$view field="has_operating_system" /></td>
 </$set>
 \end
 
