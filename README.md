@@ -1,4 +1,6 @@
-# it_tiddlywiki_plugin
+# TiddlyWiki Plugin for managing Information Technology (IT)
+
+
 TiddlyWiki Plugin for managing IT
 
 
