@@ -76,7 +76,7 @@ type: text/vnd.tiddlywiki
 </$list>
 
 
-<$list filter="[title<type>compare:string:eq[issue]]" variable=ignore>
+<$list filter="[title<type>compare:string:eq[challenge]]" variable=ignore>
 
 <ul>
 <$list filter="[all[tiddlers+shadows]prefix[$:/plugins/opensecuritytools/twit/ui/explorer/issue_views/]]">
@@ -88,7 +88,7 @@ type: text/vnd.tiddlywiki
 (<<count>>)
 </$list>
 </$list>
-<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/issue-view"/>
+<$action-setfield $tiddler="$:/temp/twit/explorer-state/display_tiddler" text="$:/plugins/opensecuritytools/twit/ui/explorer/pages/challenge-view"/>
 <$action-setfield $tiddler="$:/temp/twit/explorer-state/issue_view" text=<<currentTiddler>>/>
 </$button>
 </li>

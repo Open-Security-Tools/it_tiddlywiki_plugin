@@ -144,7 +144,7 @@ function get_nic_hooks(tiddler, title, options) {
 
 
 function get_issue_hooks(tiddler, title, options) {
-    if ((tiddler === undefined) || (tiddler.fields === undefined) || (tiddler.fields.twit_class !== "issue")) {
+    if ((tiddler === undefined) || (tiddler.fields === undefined) || (tiddler.fields.twit_class !== "challenge")) {
         return [];
     }
 
@@ -229,7 +229,7 @@ function get_issue_hooks(tiddler, title, options) {
 }
 
 var twit_class_contexts = {
-    "issue": get_issue_hooks,
+    "challenge": get_issue_hooks,
     "network": get_network_hooks,
     "ip_address": get_ip_address_hooks,
     "dns_lookup": get_dns_lookup_hooks,

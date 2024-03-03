@@ -1,7 +1,7 @@
 created: 20230508162046093
 modified: 20230530182959906
 tags: 
-title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/row
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/challenge/row
 type: text/vnd.tiddlywiki
 
 \define mydtag()

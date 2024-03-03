@@ -6,6 +6,6 @@ glyph: fa-exclamation-triangle
 modified: 20230604175716718
 tag_colour: hsl(1, 60%, 60%)
 tags: 
-title: $:/plugins/opensecuritytools/twit/defs/twit_class/issue
-type: issue
+title: $:/plugins/opensecuritytools/twit/defs/twit_class/challenge
+type: challenge
 

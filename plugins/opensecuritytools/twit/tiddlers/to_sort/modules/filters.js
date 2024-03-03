@@ -27,7 +27,7 @@ function get_human_date(event_date) {
 }
 
 function get_issue_display_date(tiddler, title) {
-    if ((tiddler === undefined) || (tiddler.fields === undefined) || (tiddler.fields.twit_class === undefined) || !((tiddler.fields.twit_class === "issue"))) {
+    if ((tiddler === undefined) || (tiddler.fields === undefined) || (tiddler.fields.twit_class === undefined) || !((tiddler.fields.twit_class === "challenge"))) {
         return [];
     }
 

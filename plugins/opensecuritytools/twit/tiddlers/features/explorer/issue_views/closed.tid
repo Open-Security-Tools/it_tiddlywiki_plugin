@@ -1,7 +1,7 @@
 caption: Closed
 created: 20230604180950556
 modified: 20230604191618319
-select_filter: [twit_class[issue]has[closed]]
+select_filter: [twit_class[challenge]has[closed]]
 tags: 
 title: $:/plugins/opensecuritytools/twit/ui/explorer/issue_views/closed
 type: text/vnd.tiddlywiki

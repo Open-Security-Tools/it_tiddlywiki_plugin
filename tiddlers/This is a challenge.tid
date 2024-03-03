@@ -1,11 +1,11 @@
 created: 20240302120800633
 impact: 2
-modified: 20240303205307446
+modified: 20240303205910166
 proximity: 1
 reopened_count: 2
 repeated_hit_count: 4
 tags: [[Example Server]]
 title: This is a challenge
-twit_class: issue
+twit_class: challenge
 twit_id: 1005
 type: text/vnd.tiddlywiki
