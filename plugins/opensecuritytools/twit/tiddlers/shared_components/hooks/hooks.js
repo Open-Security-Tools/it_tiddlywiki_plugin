@@ -46,6 +46,7 @@ const Hooks = Object.freeze({
     ISSUE_HAS_PROXIMITY: "hook_issue_has_proximity",
     ISSUE_HAS_PRIORITY: "hook_issue_has_priority",
     ISSUE_HAS_TEXT: "hook_issue_has_text",
+    SUPPORTS_ANNOTATIONS: "hook_supports_annotations",
 });
 
 
@@ -150,6 +151,7 @@ function get_issue_hooks(tiddler, title, options) {
 
     var result= [];
 
+
     if (tiddler.fields.text) {
         result.push(Hooks.ISSUE_HAS_TEXT);
     }
@@ -177,6 +179,8 @@ function get_issue_hooks(tiddler, title, options) {
     if (tiddler.fields.reopened_count && parseInt(tiddler.fields.reopened_count) > 0) {
         result.push(Hooks.ISSUE_HAS_BEEN_REOPENED);
     }
+    result.push(Hooks.SUPPORTS_ANNOTATIONS);
+
     result.push(Hooks.IS_ISSUE);
     result.push(Hooks.ISSUE_CAN_BE_HIT);
     if (tiddler.fields.effort_hours) {

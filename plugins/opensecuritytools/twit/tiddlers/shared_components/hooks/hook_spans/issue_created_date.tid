@@ -4,7 +4,7 @@ tags:
 title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_created_date
 type: text/vnd.tiddlywiki
 
-<$list filter="[all[current]get[created]format:date[MMM-YYYY]]" variable=createdDate>
+<$list filter="[all[current]get[created]format:relativedate[]]" variable=createdDate>
 <span class="row_element">
 <<createdDate>>
 </span>
