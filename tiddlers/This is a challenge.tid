@@ -1,7 +1,9 @@
+closed: 20240303203426656
 created: 20240302120800633
 impact: 2
-modified: 20240303182459672
+modified: 20240303203426656
 proximity: 0
+resolution: fixed
 tags: [[Example Server]]
 title: This is a challenge
 twit_class: issue

@@ -17,23 +17,8 @@ type: text/vnd.tiddlywiki
 <div class="tc-menu-list-item">
 <div class="py-todo">
 <label class="">
-<$list filter="[all[current]has[closed]]" variable="ignore">
-<$list filter="[all[current]proximity[0]then[Issue: ]else[Risk: ]]">
-~~<<currentTiddler>>~~
-</$list>
-</$list>
-<$list filter="[all[current]!has[closed]]" variable="ignore">
-<$list filter="[all[current]proximity[0]then[Issue: ]else[Risk: ]]">
-<<currentTiddler>>
-</$list>
-</$list>
 <$link>
-<$list filter="[all[current]has[closed]]" variable="ignore">
-~~<$view field=title/>~~
-</$list>
-<$list filter="[all[current]!has[closed]]" variable="ignore">
-<$view field=title/>
-</$list>
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateTitleFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/title/default]] }}} />
 </$link>
 <$list filter="[all[current]is_flagged[yes]]" variable="ignore">
 <span style="color: red!important;"><i class="fas fa-flag"/></span>
