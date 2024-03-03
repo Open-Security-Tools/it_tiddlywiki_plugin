@@ -4,8 +4,38 @@ tags:
 title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_impact
 type: text/vnd.tiddlywiki
 
-<span class="row_element">
+<$vars
+  popupTiddler=<<qualify "$:/state/twit/challenge-impact-dropdown">>
+>
+<$button
+  class="py-btn py-small"
+  popup=<<popupTiddler>>
+>
 <$list filter="[all[current]impact[0]]">Negligable</$list>
 <$list filter="[all[current]impact[1]]">Significant</$list>
 <$list filter="[all[current]impact[2]]">Catastrophic!</$list>
-</span>
+<i class="fas fa-angle-down"/>
+</$button>
+<$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+<div class="tc-drop-down py-drop-down">
+<$list filter="[all[current]!impact[0]]">
+<$button class="tc-btn-invisible">
+Set 'Negligable'
+<$action-setfield impact=0/>
+</$button>
+</$list>
+<$list filter="[all[current]!impact[1]]">
+<$button class="tc-btn-invisible">
+Set 'Significant'
+<$action-setfield impact=1/>
+</$button>
+</$list>
+<$list filter="[all[current]!impact[2]]">
+<$button class="tc-btn-invisible">
+Set 'Catastrophic'!
+<$action-setfield impact=2/>
+</$button>
+</$list>
+</div>
+</$reveal>
+</$vars>

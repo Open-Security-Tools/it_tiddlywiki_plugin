@@ -4,8 +4,39 @@ tags:
 title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_proximity
 type: text/vnd.tiddlywiki
 
-<span class="row_element">
+
+<$vars
+  popupTiddler=<<qualify "$:/state/twit/challenge-proximity-dropdown">>
+>
+<$button
+  class="py-btn py-small"
+  popup=<<popupTiddler>>
+>
 <$list filter="[all[current]proximity[0]]">Now!</$list>
 <$list filter="[all[current]proximity[1]]">Any Day</$list>
 <$list filter="[all[current]proximity[2]]">In a While</$list>
-</span>
+<i class="fas fa-angle-down"/>
+</$button>
+<$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+<div class="tc-drop-down py-drop-down">
+<$list filter="[all[current]!proximity[0]]">
+<$button class="tc-btn-invisible">
+Set 'Now!'
+<$action-setfield proximity=0/>
+</$button>
+</$list>
+<$list filter="[all[current]!proximity[1]]">
+<$button class="tc-btn-invisible">
+Set 'Any Day'
+<$action-setfield proximity=1/>
+</$button>
+</$list>
+<$list filter="[all[current]!proximity[2]]">
+<$button class="tc-btn-invisible">
+Set 'In a While'
+<$action-setfield proximity=2/>
+</$button>
+</$list>
+</div>
+</$reveal>
+</$vars>

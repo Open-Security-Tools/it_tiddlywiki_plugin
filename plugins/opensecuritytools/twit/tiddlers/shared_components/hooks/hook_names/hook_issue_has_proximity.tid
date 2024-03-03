@@ -1,5 +1,4 @@
 created: 20230509202706762
-dropdown_action: {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/set_issue_proximity}}
 modified: 20230510220422639
 row_element: {{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_proximity}}
 tags: 
