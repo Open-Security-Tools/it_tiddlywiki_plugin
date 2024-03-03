@@ -3,7 +3,7 @@ creator: paul
 modified: 20230604171336276
 modifier: paul
 tags: 
-title: $:/plugins/opensecuritytools/twit/ui/configure_hooks/dashboard
+title: $:/plugins/opensecuritytools/twit/shared_components/hooks/dashboard
 type: text/vnd.tiddlywiki
 
 <<tabs "$:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/span_mapping $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/span_order $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/menu_item_mapping $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/menu_item_order $:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/add_remove" "$:/plugins/opensecuritytools/twit/ui/configure_hooks/tabs/span_mapping" "$:/state/twit/debug/actions-tab">>

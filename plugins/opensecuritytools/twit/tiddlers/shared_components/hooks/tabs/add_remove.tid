@@ -22,7 +22,7 @@ input.edit-action-field {
 <$list filter="[all[shadows+tiddlers]prefix<actionPath>removeprefix<actionPath>] [hook_names[]] +[sort[]]" variable="name">
 <$list filter="[title<name>addprefix<actionPath>]">
 <tr>
-<td><$link><<name>></$link></td>
+<td><$link><<name>></$link><<currentTiddler>></td>
 <td>
 <$list filter="[all[current]is[missing]]" variable="ignore">
 <$button class="py-btn btn-small">
