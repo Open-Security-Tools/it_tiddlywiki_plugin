@@ -20,8 +20,9 @@ type: text/css
 .twit_header_text {
   font-size: small;
   color: #a0a0a0;
-  margin-left: -4px;
+  margin-left: 4px;
   margin-right: 7px;
+
 }
 
 .twit_header_text a {

@@ -10,7 +10,7 @@ P<<priority>>
 </span>
 \end
 <$list filter="[all[current]get[impact]]" variable=impact>
-<$list filter="[all[current]get[proximity]add[3]subtract<impact>]" variable=priority>
+<$list filter="[all[current]get[impact]addprefix{!!proximity}lookup:0[$:/plugins/opensecuritytools/twit/defs/priority_lookup/priority-lookup-]]" variable="priority">
 <<prioritySpan>>
 </$list>
 </$list>

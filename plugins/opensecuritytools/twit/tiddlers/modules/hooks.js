@@ -45,6 +45,7 @@ const Hooks = Object.freeze({
     ISSUE_MISSING_PROXIMITY: "hook_issue_missing_proximity",
     ISSUE_HAS_PROXIMITY: "hook_issue_has_proximity",
     ISSUE_HAS_PRIORITY: "hook_issue_has_priority",
+    ISSUE_HAS_TEXT: "hook_issue_has_text",
 });
 
 
@@ -149,6 +150,10 @@ function get_issue_hooks(tiddler, title, options) {
 
     var result= [];
 
+    if (tiddler.fields.text) {
+        result.push(Hooks.ISSUE_HAS_TEXT);
+    }
+
     if ($tw.wiki.filterTiddlers("[title[" + title + "]days[0]then[True]else[False]]")[0] === "True") {
         result.push(Hooks.ISSUE_MODIFIED_TODAY);
     }
@@ -196,6 +201,15 @@ function get_issue_hooks(tiddler, title, options) {
         }
         if (!tiddler.fields.effort_hours) {
             result.push(Hooks.ISSUE_MISSING_EFFORT_HOURS);
+        }
+        if (!tiddler.fields.proximity) {
+            result.push(Hooks.ISSUE_MISSING_PROXIMITY);
+        } else {
+            result.push(Hooks.ISSUE_HAS_PROXIMITY);
+        }
+
+        if (tiddler.fields.proximity && tiddler.fields.impact) {
+            result.push(Hooks.ISSUE_HAS_PRIORITY);
         }
     } else {
         result.push(Hooks.ISSUE_IS_OPEN);

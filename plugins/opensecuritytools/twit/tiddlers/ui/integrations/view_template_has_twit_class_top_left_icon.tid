@@ -17,7 +17,6 @@ $:/plugins/opensecuritytools/twit/defs/twit_class/$(twit_class)$
 <div class="twit_header">
 <$set name="twit_class" value={{!!twit_class}}>
 <$set name="currentTiddler" value=<<get_twit_class_tiddler>>>
-<div class="twit_header_icon">{{||$:/plugins/opensecuritytools/twit/ui/twit_class/badge_icon}}</div>
 <div class="twit_header_text">{{!!class_name}}</div>
 </$set>
 </$set>

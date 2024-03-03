@@ -1,8 +1,8 @@
-class_name: Issue
-class_name_plural: Issues
+class_name: Challenge
+class_name_plural: Challenges
 created: 20230508161331028
 family: fas
-glyph: fa-spider
+glyph: fa-exclamation-triangle
 modified: 20230604175716718
 tag_colour: hsl(1, 60%, 60%)
 tags: 

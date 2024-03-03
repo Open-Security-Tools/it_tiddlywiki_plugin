@@ -1,0 +1,10 @@
+created: 20230509200846337
+modified: 20230510214358082
+tags: 
+title: $:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/remove_issue_text
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-invisible">
+Migrate issue text to journal
+<$action-navigate/>
+</$button>
