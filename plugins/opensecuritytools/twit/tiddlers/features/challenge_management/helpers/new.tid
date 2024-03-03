@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 
 \define addIssue()
-<$action-setfield $tiddler=<<itemName>> twit_class=issue/>
+<$action-setfield $tiddler=<<itemName>> twit_class=challenge/>
 <$action-setfield $tiddler="$:/state/twit/new_issue" item=""/>
 \end
 

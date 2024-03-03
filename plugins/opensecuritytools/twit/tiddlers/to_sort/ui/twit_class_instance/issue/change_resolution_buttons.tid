@@ -1,7 +1,7 @@
 created: 20230509212429340
 modified: 20230509213251344
 tags: 
-title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/change_resolution_buttons
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/challenge/change_resolution_buttons
 type: text/vnd.tiddlywiki
 
 \define resolutionPath() $:/plugins/opensecuritytools/twit/defs/issue_resolution/

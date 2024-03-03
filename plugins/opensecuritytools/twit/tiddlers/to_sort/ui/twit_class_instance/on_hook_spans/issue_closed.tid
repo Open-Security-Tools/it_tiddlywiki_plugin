@@ -4,12 +4,12 @@ tags:
 title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/issue_closed
 type: text/vnd.tiddlywiki
 
-<$vars popupTiddler=<<qualify "$:/state/twit/issue-closed-button">>>
+<$vars popupTiddler=<<qualify "$:/state/twit/challenge-closed-button">>>
 <$button
 	class="py-btn btn-small"
 	popup=<<popupTiddler>>
 >
-{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/closed_state_caption}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/challenge/closed_state_caption}}
 <i class="fas fa-angle-down"/>
 </$button>
 <$reveal
@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
 	position="belowleft"
 	animate="yes"
 	class="tc-drop-down py-drop-down py-todo-actions-drop-down">
-{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/change_resolution_buttons}}
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/challenge/change_resolution_buttons}}
 {{||$:/plugins/opensecuritytools/twit/defs/hooks_dropdown_actions/reopen_issue}}
 </$reveal>
 </$vars>

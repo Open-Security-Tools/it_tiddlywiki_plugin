@@ -1,7 +1,7 @@
 created: 20230508201501133
 modified: 20230508201730433
 tags: 
-title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/btn_open
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/challenge/btn_open
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[current]!has[closed]]" variable=ignore>
