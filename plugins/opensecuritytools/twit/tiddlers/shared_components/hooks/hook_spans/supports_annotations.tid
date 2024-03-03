@@ -1,0 +1,38 @@
+created: 20230530204115691
+modified: 20230601211243102
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/on_hook_spans/supports_annotations
+type: text/vnd.tiddlywiki
+
+\define newHereActions()
+\whitespace trim
+<$set name="tags" filter="[<currentTiddler>] Journal">
+<$action-sendmessage $message="tm-new-tiddler" tags=<<tags>>/>
+</$set>
+\end
+<$vars
+  popupTiddler=<<qualify "$:/state/twit/supports-annotations-dropdown">>
+>
+<$button
+  class="py-btn py-small"
+  popup=<<popupTiddler>>
+>
+<$list filter="[all[current]tagging[]tag[Journal]count[]]" variable=annotationCount>
+<<annotationCount>> <i class="far fa-comments"/> <i class="fas fa-angle-down"/>
+</$list>
+</$button>
+<$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+<div class="tc-drop-down py-drop-down">
+<$list filter="[all[current]tagging[]tag[Journal]!sort[created]]">
+<$button class="tc-btn-invisible">
+<$view format=relativedate field=created/>: <$view field=title/>
+<$action-navigate/>
+</$button>
+</$list>
+<hr/>
+<$button class="tc-btn-invisible" actions=<<newHereActions>>>
+New Annotation
+</$button>
+</div>
+</$reveal>
+</$vars>
