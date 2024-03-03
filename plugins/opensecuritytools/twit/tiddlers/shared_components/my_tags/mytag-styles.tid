@@ -1,0 +1,25 @@
+created: 20230604101826102
+modified: 20230604172228859
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/my_tags/mytag-styles
+type: text/css
+
+.mytagbutton {
+   font-size: small!important;
+}
+
+.mytagpopup {
+  padding: 0px!important;
+}
+
+.mytagpopup hr {
+  margin: 0;
+}
+
+.mytagpopup  a {
+  font-size: small!important;
+}
+
+.mytagpopup div {
+  margin: 0;
+}

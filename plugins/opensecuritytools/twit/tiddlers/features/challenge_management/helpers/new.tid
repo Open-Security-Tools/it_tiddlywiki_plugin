@@ -1,0 +1,28 @@
+created: 20230604101826102
+modified: 20230604172228859
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/issues/helpers/new
+type: text/vnd.tiddlywiki
+
+
+\define addIssue()
+<$action-setfield $tiddler=<<itemName>> twit_class=issue/>
+<$action-setfield $tiddler="$:/state/twit/new_issue" item=""/>
+\end
+
+<$edit-text
+   tiddler="$:/state/twit/new_issue"
+   field="item"
+   size=40
+   class="new_issue_item"
+   placeholder="Create new challenge..."
+/>
+
+<$list filter="[title[$:/state/twit/new_issue]get[item]]" variable="itemName">
+<$list filter="[title<itemName>is[missing]]" variable="ignore">
+<$button>
+Create Challenge
+<<addIssue>>
+</$button>
+</$list>
+</$list>

@@ -1,0 +1,34 @@
+created: 20210601203204048
+modified: 20230604150652827
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_entity_type
+type: text/css
+
+.twit_header {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.twit_header_icon {
+  font-size: 60%;
+  color: #a0a0a0;
+}
+
+.twit_header_text {
+  font-size: small;
+  color: #a0a0a0;
+  margin-left: 4px;
+  margin-right: 7px;
+
+}
+
+.twit_header_text a {
+  color: #a0a0a0;
+}
+
+.twit_header_text button {
+  color: #a0a0a0;
+}

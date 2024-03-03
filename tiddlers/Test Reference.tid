@@ -1,0 +1,15 @@
+created: 20240114215224457
+extra_docs: [[A Documentation Category]]
+modified: 20240114215533004
+tags: 
+title: Test Reference
+type: text/vnd.tiddlywiki
+
+list[!!tags]
+
+
+<$set name=myfilter value="[!twit_class[issue]tagging[]!has[twit_class]!has[type]] [!twit_class[issue]tagging[]!has[twit_class]type[text/vnd.tiddlywiki]] [list[!!extra_docs]!twit_class[issue]tagging[]!has[twit_class]!has[type]] [list[!!extra_docs]!twit_class[issue]tagging[]!has[twit_class]type[text/vnd.tiddlywiki]]">
+<$list filter="[all[current]subfilter<myfilter>] +[sort[]]">
+
+</$list>
+</$set>

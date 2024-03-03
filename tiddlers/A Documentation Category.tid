@@ -1,0 +1,12 @@
+created: 20240114211122817
+modified: 20240114215245542
+tags: 
+title: A Documentation Category
+type: text/vnd.tiddlywiki
+
+
+<$set name=myfilter value="[!twit_class[issue]tagging[]!has[twit_class]!has[type]] [!twit_class[issue]tagging[]!has[twit_class]type[text/vnd.tiddlywiki]]">
+<$list filter="[all[current]subfilter<myfilter>] +[sort[]]">
+
+</$list>
+</$set>

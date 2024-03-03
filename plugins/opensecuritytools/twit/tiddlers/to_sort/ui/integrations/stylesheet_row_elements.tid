@@ -1,0 +1,40 @@
+created: 20230510205207329
+creator: Tobias Beer
+modified: 20230604150809271
+modifier: Tobias Beer
+tags: $:/tags/Stylesheet
+title: $:/plugins/opensecuritytools/twit/ui/integrations/stylesheet_row_elements
+type: text/css
+
+.row_element {
+  border: none;
+	padding: 3px;
+	font-size: .8em;
+}
+span.priority0 {
+  color: #FF0505;
+}
+span.priority1 {
+  color: #FF0505;
+}
+span.priority2 {
+  color: #FF2704;
+}
+span.priority3 {
+  color: #FF4A04;
+}
+span.priority4 {
+  color: #FF6C03;
+}
+span.priority5 {
+  color: #FF8F02;
+}
+span.priority6 {
+  color: #FFB101;
+}
+span.priority7 {
+  color: #FFD401;
+}
+span.priority8 {
+  color: #FFF600;
+}

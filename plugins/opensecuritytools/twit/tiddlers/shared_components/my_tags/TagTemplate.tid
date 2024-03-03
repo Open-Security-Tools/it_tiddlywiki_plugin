@@ -1,0 +1,24 @@
+created: 20230604101826102
+modified: 20230604172228859
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/my_tags/TagTemplate
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$set name="transclusion" value=<<currentTiddler>>>
+	<$macrocall $name="mytag-pill-body"
+		tag=<<currentTiddler>>
+		icon={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/TiddlerIconFilter]!is[draft]get[text]] }}}
+		colour={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/TiddlerColourFilter]!is[draft]get[text]] }}}
+		palette={{$:/palette}}
+		element-tag="$button"
+		element-attributes="""popup=<<qualify "$:/state/popup/tag">> dragFilter="[all[current]tagging[]]" tag='span'"""
+	/>
+	<$reveal state=<<qualify "$:/state/popup/tag">> type="popup" position="below" animate="yes" class="tc-drop-down tc-reveal tc-popup mytagpopup">
+		<$set name="tv-show-missing-links" value="yes">
+			<$transclude tiddler="$:/core/ui/ListItemTemplate"/>
+		</$set>
+		<hr>
+		<$macrocall $name="list-tagged-draggable" tag=<<currentTiddler>>/>
+	</$reveal>
+</$set>

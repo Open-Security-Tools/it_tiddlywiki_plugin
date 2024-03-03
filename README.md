@@ -4,6 +4,17 @@
 TiddlyWiki Plugin for managing IT
 
 
+## Local Development
+
+The development environment can be invoked by:
+
+```bash
+npm run develop
+```
+
+This runs the Tiddlywiki server and reloads it if any of the development files change.
+So, change the code and then bounce the browser page to see changes.
+
 ## Read-Only Mode
 
 Read only mode is turned on by creating the following tiddler:

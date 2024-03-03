@@ -1,0 +1,12 @@
+created: 20230604091910573
+modified: 20230604181601389
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/issues/helpers/prioritised_list
+type: text/vnd.tiddlywiki
+
+<div class="py-todos">
+<$list filter="[twit_class[issue]!has[closed]] [twit_class[issue]days:closed[0]] +[unique[]] :sort:number[get[impact]addprefix{!!proximity}lookup:0[$:/plugins/opensecuritytools/twit/defs/priority_lookup/priority-lookup-]]">
+{{||$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/row}}
+</$list>
+</div>
+

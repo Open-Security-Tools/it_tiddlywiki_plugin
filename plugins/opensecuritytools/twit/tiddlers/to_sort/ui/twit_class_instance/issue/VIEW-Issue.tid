@@ -1,0 +1,21 @@
+created: 20240219095824227
+modified: 20240219104855535
+tags: 
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/VIEW-Issue
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]twit_class[issue]]">
+<$transclude mode="block"/>
+</$list>
+
+Journal log:
+
+<$set name=parentTiddler value=<<currentTiddler>>>
+<ul>
+<$list filter="[all[current]tagging[]tag[Journal]!sort[created]]" counter="transclusion">
+<li><$view format=relativedate field=created/>: <$link><$view field=title/></$link>
+<$list filter="[<currentTiddler>tags[]] -[[Journal]] -[<parentTiddler>]"> <<tag>> </$list>
+</li>
+</$list>
+</ul>
+</$set>

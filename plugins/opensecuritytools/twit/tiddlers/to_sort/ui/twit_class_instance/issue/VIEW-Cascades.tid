@@ -1,0 +1,8 @@
+created: 20240219095723518
+list-before: $:/config/ViewTemplateBodyFilters/hide-body
+modified: 20240219100352464
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/VIEW-Cascades
+type: text/vnd.tiddlywiki
+
+[twit_class[issue]then[$:/plugins/opensecuritytools/twit/ui/twit_class_instance/issue/VIEW-Issue]]
